@@ -1,1 +1,30 @@
-<!doctype html> <html lang="en"> <head> <meta charset="utf-8" /> <meta name="viewport" content="width=device-width,initial-scale=1" /> <title>D&D Notes Viewer</title> <link rel="stylesheet" href="style.css" /> </head> <body> <header> <h1>D&D Notes</h1> <nav> <!-- Quick links to notes --> <a href="#" data-file="notes/session1.md" class="note-link">Session 1</a> </nav> </header> <main> <div id="content">Loading…</div> </main> <footer> <small>Edit files in the notes/ folder to add content.</small> </footer> <!-- marked.js CDN (markdown -> HTML). You can vendor this if desired. --> <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script> <script src="script.js"></script> </body> </html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>D&D Notes Viewer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>D&D Notes</h1>
+    <nav>
+      <!-- Quick links to notes -->
+      <a href="#" data-file="notes/session1.md" class="note-link">Session 1</a>
+    </nav>
+  </header>
+
+  <main>
+    <div id="content">Loading…</div>
+  </main>
+
+  <footer>
+    <small>Edit files in the `notes/` folder to add content.</small>
+  </footer>
+
+  <!-- marked.js (Markdown → HTML) -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
