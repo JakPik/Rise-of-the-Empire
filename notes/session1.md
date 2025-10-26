@@ -9,6 +9,7 @@ location="Bronzová vesnice (může být odkaz)"
 info="Zajímamvé informace of Františkovy"
 description="Popis Františka, jak vypadá, co má za charakteristcké vlastnosti, např. jizva pod okem"
 tasks="Seznam úkolů"
+  img="frantisek.jpg"
 ></div>
 
 ## Oblast / území
