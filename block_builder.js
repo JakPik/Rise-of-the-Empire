@@ -12,7 +12,7 @@ function buildItem(tag, attributeName) {
 
 function getAttributeParagraph(tag, attributeName, className) {
     const p = document.createElement('p');
-    const text = tag.getAttribute(attributeName);
+    const text = tag.dataset[attributeName];
     p.textContent = text;
     if (className) {
         p.className = className;
@@ -22,7 +22,7 @@ function getAttributeParagraph(tag, attributeName, className) {
 
 function constructTaskList(tag) {
     const tasksList = document.createElement('ul');
-    const tasksAttr = tag.getAttribute('tasks');
+    const tasksAttr = tag.dataset['task'];
     const taskArr = tasksAttr ? tasksAttr.split(',').map(item => item.trim()) : [];
 
     taskArr.forEach(task => {
