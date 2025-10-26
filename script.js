@@ -104,10 +104,10 @@ function processEventTags() {
 
 
 function processNPCTags() {
-  const tags = Array.from(document.getElementsByTagName('NPC'));
+  const tags = document.querySelectorAll('.NPC');
 
   tags.forEach(tag => {
-    const rawName = tag.getAttribute('name');
+    const rawName = tag.dataset['name'];
     const title = rawName || 'Unnamed Event';
 
     const card = document.createElement('div');
@@ -125,9 +125,9 @@ function processNPCTags() {
     article.appendChild(buildItem(tag, 'location'));
     header.appendChild(article);
     
-    if(tag.getAttribute('img')) {
+    if(tag.dataset['img']) {
       const img = document.createElement('img');
-      img.src = tag.getAttribute('img');
+      img.src = tag.dataset['img'];
       img.alt = 'NPC Image';
       header.appendChild(img);
     }
