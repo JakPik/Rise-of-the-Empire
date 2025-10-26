@@ -55,7 +55,7 @@ function loadMarkdownPageLocal(pageId) {
 
 async function loadMarkdownPage(pageId) {
   try {
-    const rest = await fetch('notes/${pageId}.md')
+    const rest = await fetch('notes/' + pageId + '.md')
     if (!rest.ok) throw new Error('Failed to fetch: ' + rest.status);
     const md = await rest.text();
     contentEl.innerHTML = marked.parse(md);
