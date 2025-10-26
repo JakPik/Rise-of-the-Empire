@@ -1,0 +1,99 @@
+main {
+    min-height: 100vh;   
+    background-color: #595959;
+	transition: all 0.3s ease;
+    display: grid;
+    grid-template-columns: auto 1fr;
+	margin: 0;
+}
+
+#sidebar {
+  border-right: 1px solid #000000;
+  padding: 0;
+  transition: all 0.5s ease;
+  background-color: #8f8f8f;
+  overflow: hidden;
+}
+
+#sidebar.collapsed {
+  width: 35px;
+  padding: 0;
+  overflow: hidden;
+}
+
+#content {
+  font-family: 'Alex Brush', cursive;
+  border-radius: 20px;
+  border: 2px solid #00000075;
+  padding: 10px;
+  margin: 20px;
+  background-color: #c9a97a;
+  transition: all 0.5s ease;
+}
+
+#toggle-sidebar {
+	border-color: #8f8f8f;
+	border-style: solid;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #737373;
+}
+
+aside {
+  padding-left: 15px;
+  margin-left: 15px;
+  width: 250px;
+  float: right;
+  font-style: italic;
+  margin: 0;
+  white-space: nowrap;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.Nav_Header {
+	background-color: #595959;
+	display: grid;
+	grid-template-columns: 35px 1fr;
+	height: 35px;
+	margin: 0;
+	padding: 0;
+}
+
+.Nav_Header h2 {
+	color: #000000;
+	width: 100%;
+	font-size: 20px;
+	text-align: center;
+	align-self: center;
+	margin: 0;
+	padding: 0;
+    padding-top: 7px;
+    height: 35px;
+    border-left: #000000 solid;
+}
+ul {
+    margin: 0;
+}
+
+.Nav_Body {
+	margin-left: 35px;
+    background-color: #686868;
+    border-left: #000000 solid;
+}
+
+.collapsible-list {
+  list-style: none; /* remove bullets */
+  padding-left: 0;
+}
+
+.collapsible-list .nested {
+  display: none;       /* hidden by default */
+  padding-left: 20px;  /* indent sublist */
+}
+
+.collapsible-list .toggle {
+  cursor: pointer;
+  user-select: none;   /* prevents text selection */
+}

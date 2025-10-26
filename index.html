@@ -4,20 +4,80 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>D&D Notes Viewer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="navigation.css" />
+  <link rel="stylesheet" href="markdown.css" />
 </head>
 <body>
+
   <header>
     <h1>D&D Notes</h1>
-    <nav>
-      <!-- Quick links to notes -->
-      <a href="#" data-file="notes/session1.md" class="note-link">Session 1</a>
-    </nav>
   </header>
 
-  <main>
-    <div id="content">Loading…</div>
-  </main>
+	<main>
+		<aside id="sidebar">
+			<div class="Nav_Header">
+				<button id="toggle-sidebar">☰</button>
+				<h2>Navigation Menu</h2>
+			</div>
+			<div class="Nav_Body">
+				<ul class="collapsible-list">
+					<li>
+						<span class="toggle">▶ Session 1</span>
+						<ul class="nested">
+						<li><a href="#" data-md="session1" class="note-link">Session 1</a></li>
+						<li><a href="#" data-md="session2" class="note-link">Session 2</a></li>
+						</ul>
+					</li>
+					<li>
+						<span class="toggle">▶ Session 2</span>
+						<ul class="nested">
+						<li>Event A</li>
+						<li>Event B</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</aside>
+		<div id="content">
+			<!--<div id="content">Loading…</div>-->
+			<div>
+				<div class="display">
+					<article>
+						<h1>NPC name</h1>
+						<div class="item">
+							<h2>race:</h2>
+							<p>human</p>
+						</div>
+						<div class="item">
+							<h2>profession:</h2>
+							<p>merchant</p>
+						</div>
+						<div class="item">
+							<h2>age:</h2>
+							<p>28</p>
+						</div>
+						<div class="item">
+							<h2>location:</h2>
+							<p>Bronze Village (link)</p>
+						</div>
+					</article>
+					<img src="acuraBack.jpg" alt="NPC Image" />
+				</div>
+				<div class="separator"></div>
+				<h2>Info</h2>
+				<p class="info_text">Information about the NPC.</p>
+				<h2>Description</h2>
+				<p class="info_text">Description of the NPC, appearance, characteristics, e.g., scar under the eye.</p>
+				<h2>Tasks</h2>
+				<ul>
+					<li>List of tasks, quest 1</li>
+					<li>List of tasks, quest 2</li>
+				</ul>
+			</div>
+		</div>
+	</main>
 
   <footer>
     <small>Edit files in the `notes/` folder to add content.</small>
@@ -25,6 +85,7 @@
 
   <!-- marked.js (Markdown → HTML) -->
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="block_builder.js"></script> 
   <script src="script.js"></script>
 </body>
 </html>
