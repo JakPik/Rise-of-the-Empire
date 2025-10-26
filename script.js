@@ -182,4 +182,4 @@ document.querySelectorAll('.collapsible-list .toggle').forEach(item => {
 });
 
 // Load default note
-loadMarkdownPage('notes/session1.md');
+loadMarkdownPage('session1');
