@@ -129,7 +129,7 @@ function setUpEvents() {
 document.querySelectorAll('.note-link').forEach(link => {
   link.addEventListener('click', e => {
     e.preventDefault();                // prevent default link navigation
-    const pageId = link.dataset.md;    // get which page to load
+    const pageId = link.dataset.path;    // get which page to load
     loadMarkdownPage(pageId);          // inject into #content
   });
 });
