@@ -89,6 +89,7 @@ async function start(pageId) {
   catch (err) {
     contentEl.innerHTML = '<p>Error loading page: ' + err.message + '</p>';
   }
+  setUpEvents();
 }
 
 start('NavBar.json');
@@ -122,7 +123,7 @@ function buildNavBar(folder, parentEl, basePath = '') {
 }
 
 
-
+function setUpEvents() {
 
 // Navigation link handling
 document.querySelectorAll('.note-link').forEach(link => {
@@ -146,6 +147,7 @@ document.querySelectorAll('.collapsible-list .toggle').forEach(item => {
     }
   });
 });
+}
 
 
 
