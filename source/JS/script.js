@@ -78,11 +78,20 @@ async function loadMarkdownPage(pageId) {
   }
 }
 
-fetch('NavBar.json')
+async function start(pageId) {
+  try {
+    const rest = await fetch(pageId)
   .then(res => res.json())
   .then(data => {
     buildNavBar(data.notes, document.querySelector('.collapsible-list'));
   });
+  }
+  catch (err) {
+    contentEl.innerHTML = '<p>Error loading page: ' + err.message + '</p>';
+  }
+}
+
+start('NavBar.json');
 
 function buildNavBar(folder, parentEl, basePath = '') {
   for (const key in folder) {
