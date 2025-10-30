@@ -153,4 +153,4 @@ document.querySelectorAll('.collapsible-list .toggle').forEach(item => {
 //loadMarkdownPage('session1');
 //loadMarkdownPageLocal('session1');
 
-start('NavBar.json');
+start('source/json/NavBar.json');
