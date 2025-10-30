@@ -1,16 +1,16 @@
 {
   "notes": {
-    "Sessions": {
-      "Session 1.md": {}
+    "Locations": {
+      "Bronzova Vesnice.md": {}
     },
     "NPCs": {
       "Frantisek.md": {}
     },
-    "Locations": {
-      "Bronzova Vesnice.md": {}
-    },
     "Quests": {
       "Ztraceny nahrdelnik.md": {}
+    },
+    "Sessions": {
+      "Session 1.md": {}
     }
   }
 }

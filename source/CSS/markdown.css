@@ -41,11 +41,12 @@
     text-transform: capitalize;
 }
 
-.separator {
+hr {
     height: 2px;
+    border-color: transparent;
     background-color: #00000000;
     margin: 10px 0;
-    border-bottom: 2px solid #00000080;
+    border-bottom: 3px solid #00000080;
 }
 
 .display {

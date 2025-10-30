@@ -1,7 +1,6 @@
 function parseMarkdown(md) {
-  const parsed = preprocessCallouts(md);
-  contentEl.innerHTML = marked.parse(parsed);
-  processEventTags();
+  //const parsed = preprocessCallouts(md);
+  contentEl.innerHTML = marked.parse(md);
   processNPCTags();
   processLocationTags();
   processQuestTags()
@@ -23,38 +22,16 @@ function preprocessCallouts(md) {
   );
 }
 
-function processEventTags() {
-  const eventEls = Array.from(document.getElementsByTagName('event'));
-
-  eventEls.forEach(ev => {
-    const nameAttr = ev.getAttribute('name');
-    const rawName = (nameAttr && nameAttr.trim()) ? nameAttr.trim() : ev.textContent.trim();
-    const title = rawName || 'Unnamed Event';
-
-    const card = document.createElement('div');
-    card.className = 'event-card';
-
-    const h2 = document.createElement('h2');
-    h2.textContent = title;
-    card.appendChild(h2);
-
-    // Create 2×2 table
-    const table = document.createElement('table');
-    const tbody = document.createElement('tbody');
-
-    const r1 = document.createElement('tr');
-    r1.innerHTML = '<td>date</td><td></td>';
-
-    const r2 = document.createElement('tr');
-    r2.innerHTML = '<td>location</td><td></td>';
-
-    tbody.appendChild(r1);
-    tbody.appendChild(r2);
-    table.appendChild(tbody);
-    card.appendChild(table);
-
-    ev.parentNode.replaceChild(card, ev);
-  });
+function calloutBlock(kind, lines) {  
+    const id = kind.toLowerCase();
+  	const header = `<h1>${kind}</h1>`;
+  	const body = lines.map(line => `<p>${line}</p>`).join('\n');
+  
+  	return `<div class="callout" id="${id}">
+    	${header}
+		<hr>
+    	${body}
+  		</div>`;
 }
 
 function processLocationTags() {
@@ -138,16 +115,4 @@ function processQuestTags() {
     tag.parentNode.replaceChild(card, tag);
   
   });
-}
-
-function calloutBlock(kind, lines) {  
-    const id = kind.toLowerCase();
-  	const header = `<h1>${kind}</h1>`;
-  	const body = lines.map(line => `<p>${line}</p>`).join('\n');
-  
-  	return `<div class="callout" id="${id}">
-    	${header}
-		<div class="separator"></div>
-    	${body}
-  		</div>`;
 }

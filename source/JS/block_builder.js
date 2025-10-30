@@ -45,8 +45,7 @@ function getImage(tag) {
 }
 
 function separator() {
-    const separator = document.createElement('div');
-    separator.className = 'separator';
+    const separator = document.createElement('hr');
     return separator;
 }
 

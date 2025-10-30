@@ -92,8 +92,6 @@ async function start(pageId) {
   setUpEvents();
 }
 
-start('NavBar.json');
-
 function buildNavBar(folder, parentEl, basePath = '') {
   for (const key in folder) {
     const value = folder[key];
@@ -152,5 +150,7 @@ document.querySelectorAll('.collapsible-list .toggle').forEach(item => {
 
 
 // Load default note
-loadMarkdownPage('session1');
-//loadMarkdownPageLocal('session1');
+//loadMarkdownPage('session1');
+loadMarkdownPageLocal('session1');
+
+//start('NavBar.json');

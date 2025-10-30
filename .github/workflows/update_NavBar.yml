@@ -1,0 +1,30 @@
+name: Update Notes JSON
+
+on:
+  push:
+    paths:
+      - 'notes/**'
+  workflow_dispatch:
+
+jobs:
+  build-json:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11
+
+      - name: Generate notes.json
+        run: python scripts/generate_nav_json.py
+
+      - name: Commit updated JSON
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add notes.json
+          git diff --cached --quiet || git commit -m "Update notes.json"
+          git push
