@@ -151,6 +151,6 @@ document.querySelectorAll('.collapsible-list .toggle').forEach(item => {
 
 // Load default note
 //loadMarkdownPage('session1');
-loadMarkdownPageLocal('session1');
+//loadMarkdownPageLocal('session1');
 
-//start('NavBar.json');
+start('NavBar.json');
