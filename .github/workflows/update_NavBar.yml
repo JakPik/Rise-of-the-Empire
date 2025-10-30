@@ -19,7 +19,7 @@ jobs:
           python-version: 3.11
 
       - name: Generate notes.json
-        run: python scripts/generate_nav_json.py
+        run: python source/json/generate_json.py
 
       - name: Commit updated JSON
         run: |
