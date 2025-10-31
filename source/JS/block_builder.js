@@ -38,7 +38,7 @@ function getAttributeParagraph(content, className) {
 
 function getImage(tag) {
     const img = document.createElement('img');
-    const text = tag.dataset['img'];
+    const text = "Images/" + tag.dataset['img'];
     img.src = text;
     img.alt = text;
     return img;
