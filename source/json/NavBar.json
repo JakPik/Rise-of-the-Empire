@@ -4,8 +4,26 @@
       "Bronzova Vesnice.md": {}
     },
     "NPCs": {
-      "Frantisek.md": {}
+      "Elakdet": {
+        "Kei Ishimoto.md": {},
+        "Kenta Matsuda.md": {},
+        "Akira Akira.md": {},
+        "Amaterasu Akira.md": {},
+        "Cho Yoshida.md": {},
+        "Amaterasu Akira.md": {},
+        "Skelgrond.md": {},
+        "Shin Okamota.md": {},
+        "Naoki.md": {},
+        "Stínový věštec.md": {},
+
+              },
+      "Kriegurd": {
+          "Culmika Thornwood.md": {},
+          "Prapal Thornwood.md": {},
+      },
+
     },
+        
     "Quests": {
       "Ztraceny nahrdelnik.md": {}
     },
