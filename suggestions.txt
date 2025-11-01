@@ -1,2 +1,3 @@
 více obrázků na jednu záložku
-zvětšování obrázků
+
+zvětšování obrázků 
