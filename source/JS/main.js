@@ -98,6 +98,9 @@ function buildNavBar(folder, parentEl, basePath = '') {
     const li = document.createElement('li');
 
     if (key.endsWith('.md')) {
+      if(window.PLAYER_ROLE != "DM" && !value.includes(window.PLAYER_ROLE)) {
+        continue;
+      }
       const a = document.createElement('a');
       a.href = '#';
       a.className = 'note-link';
