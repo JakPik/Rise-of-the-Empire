@@ -20,8 +20,8 @@
         "Stinovyvestec.md": {}
       },
       "Okolí elakdetu": {
-        "Carodejka.md": {},
-        "Skelgrond.md": "--DEAD--",
+        "Carodejka.md": ["P2"],
+        "Skelgrond.md": ["--DEAD--" , "P1"],
         "Azura.md": {}
       }
     },

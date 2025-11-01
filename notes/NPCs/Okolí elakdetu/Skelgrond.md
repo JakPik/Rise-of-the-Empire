@@ -1,4 +1,4 @@
---DEAD--, --P1--
+--DEAD--
 <div class="NPC"
 data-name="Skelgrond"
 data-race="Člověk"
