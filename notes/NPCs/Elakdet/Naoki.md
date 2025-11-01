@@ -1,0 +1,11 @@
+<div class="NPC"
+data-name="Naoki"
+data-race="Halfling"
+data-profession="student magie"
+data-age="18"
+data-location="Elakdet"
+data-info="Informace o postavě"
+data-description="Popis postavy"
+data-tasks="Seznam úkolů"
+data-img="cesta k obrázku"
+></div>
