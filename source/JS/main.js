@@ -154,6 +154,6 @@ window.addEventListener('resize', updateCarousel);
 
 // Load default note
 //loadMarkdownPage('session1');
-loadMarkdownPageLocal('session1');
+//loadMarkdownPageLocal('session1');
 
-//start('source/json/NavBar.json');
+start('source/json/NavBar.json');

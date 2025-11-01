@@ -88,6 +88,8 @@ function buildCarousel(images) {
     buttonNext.onclick = () => { spinCarousel(1); };
     const imgContainer = document.createElement('div');
     imgContainer.className = 'carousel-track';
+    imgContainer.addEventListener('transitionend', () => {
+    adjustCarousel()});
     imgContainer.appendChild(BuildImage(images[num-3]));
     for(let i = 0; i < num-2; i++) {
         imgContainer.appendChild(BuildImage(images[i]));
