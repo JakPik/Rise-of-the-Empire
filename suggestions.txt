@@ -22,3 +22,6 @@ nějaká záložka s velkou mapou celého kontinentu která se dá zoomovat scro
 do složky lokace přidat obyvatelé
 
 k npc přidat nějakou ikonku vedle jména která implikuje že  má magickou moc v nějaké formě (např umí kouzlit, měnit se na zvířata nebo něco)
+k npc přidat ikonku že je mrtví
+
+aby budovy v lokacích fungovali jako seznam s odkazem na část o konkrétní budově

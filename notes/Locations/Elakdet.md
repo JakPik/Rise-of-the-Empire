@@ -1,5 +1,5 @@
 <div class="Location"
-data-name="Zipperdam"
+data-name="Elakdet"
 data-info=""
 data-img="Elakdet.png"
 data-buildings=""

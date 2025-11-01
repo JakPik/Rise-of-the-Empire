@@ -1,0 +1,11 @@
+<div class="NPC"
+data-name="Kei Ishimoto"
+data-race="Člověk"
+data-profession="Kněz"
+data-age="21"
+data-location="Elakdet"
+data-info="Informace o postavě"
+data-description="Extrémista, násilník, hodně pije"
+data-tasks="Seznam úkolů"
+data-img="Keiishimoto.jpg"
+></div>
