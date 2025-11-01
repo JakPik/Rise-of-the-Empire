@@ -7,5 +7,5 @@ data-location="Elakdet"
 data-info="Informace o postavě"
 data-description="Extrémista, násilník, hodně pije"
 data-tasks="Seznam úkolů"
-data-img="Keiishimoto.jpg"
+data-img="Images/Keiishimoto.jpg"
 ></div>

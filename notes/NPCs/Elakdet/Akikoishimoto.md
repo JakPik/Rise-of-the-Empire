@@ -7,5 +7,5 @@ data-location="Elakdet"
 data-info="Informace o postavě"
 data-description="Žena mladá, vlasy skrité pod závojem"
 data-tasks="Seznam úkolů"
-data-img="Akikoishimoto.jpg"
+data-img="Images/Akikoishimoto.jpg"
 ></div>

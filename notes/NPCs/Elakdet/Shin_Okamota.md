@@ -7,5 +7,5 @@ data-location="Elakdet"
 data-info="Informace o postavě"
 data-description="Arijec, lehce při těle"
 data-tasks="Seznam úkolů"
-data-img="shinokamota.jpg"
+data-img="Images/shinokamota.jpg"
 ></div>
