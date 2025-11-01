@@ -103,7 +103,12 @@ function buildNavBar(folder, parentEl, basePath = '') {
       a.className = 'note-link';
       const fullPath = `${basePath}/${key}`; // include subfolder path
       a.dataset.path = fullPath;
-      a.textContent = key.replace('.md', '') + " ✝";
+      if (value == "--DEAD--") {
+        a.textContent = key.replace('.md', '') + " ✝";
+      }
+      else {
+        a.textContent = key.replace('.md', '');
+      }
       li.appendChild(a);
     } else {
       const span = document.createElement('span');
