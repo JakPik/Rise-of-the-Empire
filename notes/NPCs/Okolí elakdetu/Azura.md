@@ -1,0 +1,11 @@
+<div class="NPC"
+data-name="Azura"
+data-race="Naiad"
+data-profession="-"
+data-age="?"
+data-location="okolí Elakdetu"
+data-info="Informace o postavě"
+data-description="Starší však stále krásná víla tvořená azurovou barvou připomínající oceán. Její tělo je humanoidního vzrůstu tvořené vodouz s lekníny a vodnímy rotlinami na mnoha místech. "
+data-tasks="Seznam úkolů"
+data-img="Images/Azura.jpg"
+></div>
