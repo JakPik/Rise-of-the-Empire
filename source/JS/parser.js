@@ -1,6 +1,6 @@
 function parseMarkdown(md) {
-  //const parsed = preprocessCallouts(md);
-  contentEl.innerHTML = marked.parse(md);
+  const parsed = preprocessCallouts(md);
+  contentEl.innerHTML = marked.parse(parsed);
   processNPCTags();
   processLocationTags();
   processQuestTags();
