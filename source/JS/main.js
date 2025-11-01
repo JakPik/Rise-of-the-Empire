@@ -113,7 +113,13 @@ function buildNavBar(folder, parentEl, basePath = '') {
       nested.className = 'nested';
       li.appendChild(span);
       li.appendChild(nested);
-      buildNavBar(value, nested, `${basePath}/${key}`); // recursive with folder path
+      if(basePath == '') {
+        buildNavBar(value, nested, `${key}`); // recursive with folder path
+      }
+      else {
+        buildNavBar(value, nested, `${basePath}/${key}`); // recursive with folder path
+      }
+      
     }
 
     parentEl.appendChild(li);
