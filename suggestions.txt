@@ -6,3 +6,4 @@ Full path k obrázkům
 tagy - visibilita
 mp4 player in session note
 prázdný tag se nezobrazuje
+pro více kampaní?
