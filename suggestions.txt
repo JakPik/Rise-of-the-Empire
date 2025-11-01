@@ -7,3 +7,18 @@ tagy - visibilita
 mp4 player in session note
 prázdný tag se nezobrazuje
 pro více kampaní?
+
+vylepšit strukturu session na něco ve stylu: 
+session1 
+    - úvod
+    - eventy/questy
+        - event 1
+        - event 2
+    - ......
+
+lokace rozdělit podle kontinentů
+nějaká záložka s velkou mapou celého kontinentu která se dá zoomovat scrolováním 
+
+do složky lokace přidat obyvatelé
+
+k npc přidat nějakou ikonku vedle jména která implikuje že  má magickou moc v nějaké formě (např umí kouzlit, měnit se na zvířata nebo něco)

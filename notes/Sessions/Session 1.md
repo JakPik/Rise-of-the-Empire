@@ -1,11 +1,11 @@
 # Úvod
 ## Sadosu
 
-Na pobřeží **klidného moře**, kde se vlny jemně opírají o dřevěné kůly, na kterých stojí domy osady, se odráží *poslední paprsky zapadajícího slunce*. Osada je jako spleť plovoucích a pevných staveb, spojených dřevěnými lávkami, které se vinou nad tyrkysovou hladinou.
+Na pobřeží klidného moře, kde se vlny jemně opírají o dřevěné kůly, na kterých stojí domy osady, se odráží poslední paprsky zapadajícího slunce. Osada je jako spleť plovoucích a pevných staveb, spojených dřevěnými lávkami, které se vinou nad tyrkysovou hladinou.
 
 Nad břehem se sklání **vysoká vrba**, jejichž dlouhé větve se jemně dotýkají mořské vody, a vytvářejí tak *tichý tanec* ve večerním vánku. Její stříbřitě zelené listy se třepotají v záři posledních paprsků a dodávají místu poklidnou atmosféru.
 
-Vzduchem se nese vůně **mořské soli a čerstvě otesaného dřeva**. Mezi domy se občas ozývá zvuk pily či kladiva, jak osadníci stále dokončují některé lodě, ale jinak je vše *klidné a tiché*. Voda se pod domy zlehka pohupuje, vlnky odplouvají a zase se vracejí, doprovázené **tichým šploucháním**.
+Vzduchem se nese vůně mořské soli a čerstvě otesaného dřeva. Mezi domy se občas ozývá zvuk pily či kladiva, jak osadníci stále dokončují některé lodě, ale jinak je vše klidné a tiché. Voda se pod domy zlehka pohupuje, vlnky odplouvají a zase se vracejí, doprovázené tichým šploucháním.
 
 ## Krag
 
