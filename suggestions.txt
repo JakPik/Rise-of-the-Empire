@@ -1,3 +1,8 @@
 více obrázků na jednu záložku
-
 zvětšování obrázků 
+složková struktura pro obrázky
+zobrazování map
+Full path k obrázkům
+tagy - visibilita
+mp4 player in session note
+prázdný tag se nezobrazuje
