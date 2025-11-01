@@ -7,5 +7,5 @@ data-location="Elakdet"
 data-info="Informace o postavě"
 data-description="Muž, velice podobný svému otci jen o něco drobnější, blondaté vlasy a vousy."
 data-tasks="Seznam úkolů"
-data-img="Osamuokamota.jpg"
+data-img="Images/Osamuokamota.jpg"
 ></div>

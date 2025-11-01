@@ -14,7 +14,7 @@ function preprocessCallouts(md) {
         .trim()
         .split(/\n/)
         .map(line => line.replace(/^>\s?/, '').trim())
-        .filter(line => line.length > 0 && !line.includes('--DEAD--'));
+        .filter(line => line.length > 0 || line.includes('--DEAD--'));
 
       const body = lines.map(l => `<p>${l}</p>`).join('\n');
       return calloutBlock(kind, lines);//`<div class="callout" id="${kind.toLowerCase()}">\n${body}\n</div>`;
