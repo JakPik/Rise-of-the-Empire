@@ -15,7 +15,7 @@ data-location="Bronzová vesnice (může být odkaz)"
 data-info="Zajímamvé informace of Františkovy"
 data-description="Popis Františka, jak vypadá, co má za charakteristcké vlastnosti, např. jizva pod okem"
 data-tasks="Seznam úkolů"
-data-img="frantisek.jpg"
+data-img="Images/frantisek.jpg, Images/wood.jpg, Images/naoki.jpg"
 ></div>
 
 <div class="Quest"
@@ -68,7 +68,7 @@ function loadMarkdownPageLocal(pageId) {
 
 async function loadMarkdownPage(pageId) {
   try {
-    const rest = await fetch('notes/' + pageId);
+    const rest = await fetch(pageId);
     if (!rest.ok) throw new Error('Failed to fetch: ' + rest.status);
     const md = await rest.text();
     parseMarkdown(md);
@@ -83,7 +83,7 @@ async function start(pageId) {
     const rest = await fetch(pageId)
   .then(res => res.json())
   .then(data => {
-    buildNavBar(data.notes, document.querySelector('.collapsible-list'));
+    buildNavBar(data, document.querySelector('.collapsible-list'));
   });
   }
   catch (err) {
@@ -147,10 +147,13 @@ document.querySelectorAll('.collapsible-list .toggle').forEach(item => {
 });
 }
 
+window.addEventListener('resize', updateCarousel);
+
+
 
 
 // Load default note
 //loadMarkdownPage('session1');
-//loadMarkdownPageLocal('session1');
+loadMarkdownPageLocal('session1');
 
-start('source/json/NavBar.json');
+//start('source/json/NavBar.json');

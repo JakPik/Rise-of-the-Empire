@@ -3,7 +3,7 @@ function parseMarkdown(md) {
   contentEl.innerHTML = marked.parse(md);
   processNPCTags();
   processLocationTags();
-  processQuestTags()
+  processQuestTags();
 }
 
 function preprocessCallouts(md) {

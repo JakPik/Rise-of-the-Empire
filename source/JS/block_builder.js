@@ -37,11 +37,73 @@ function getAttributeParagraph(content, className) {
 }
 
 function getImage(tag) {
+    const div = document.createElement('div');
+    div.appendChild(buildModal());
+    const images = tag.dataset['img'].split(',').map(item => item.trim());
+    if (images.length > 1) {
+        div.appendChild(buildCarousel(images));
+    }
+    else {
+        div.appendChild(BuildImage(images[0]));
+    }
+    return div;
+}
+
+function BuildImage(src) {
     const img = document.createElement('img');
-    const text = "Images/" + tag.dataset['img'];
-    img.src = text;
-    img.alt = text;
+    img.src = src;
+    img.alt = src;
+    img.className = 'zoomable';
+    img.onclick = openImage;
     return img;
+}
+
+function buildModal() {
+    const modal = document.createElement('div');
+    modal.id = 'imageModal';
+    modal.className = 'modal';
+    modal.onclick = closeImage;
+    const img = document.createElement('img');
+    img.className = 'modal-content';
+    img.id = 'modalImage';
+    modal.appendChild(img);
+    return modal;
+}
+
+function buildCarousel(images) {
+    const div = document.createElement('div');
+    div.className = 'container';
+    const carousel = document.createElement('div');
+    carousel.dataset.currentIndex = 1;
+    const num = +images.length + 2;
+    carousel.dataset.slides = num;
+    carousel.className = 'carousel';
+    const buttonPrev = document.createElement('button');
+    buttonPrev.className = 'prev';
+    buttonPrev.textContent = '<';
+    buttonPrev.onclick = () => { spinCarousel(-1); };
+    const buttonNext = document.createElement('button');
+    buttonNext.className = 'next';
+    buttonNext.textContent = '>';
+    buttonNext.onclick = () => { spinCarousel(1); };
+    const imgContainer = document.createElement('div');
+    imgContainer.className = 'carousel-track';
+    imgContainer.appendChild(BuildImage(images[num-3]));
+    for(let i = 0; i < num-2; i++) {
+        imgContainer.appendChild(BuildImage(images[i]));
+    }
+    imgContainer.appendChild(BuildImage(images[0]));
+    div.appendChild(buttonPrev);
+    carousel.appendChild(imgContainer);
+    div.appendChild(carousel);
+    div.appendChild(buttonNext);
+
+    imgContainer.children[1].onload = () => {
+            const width = +imgContainer.children[1].width / ( +imgContainer.children[1].height / 300);
+            document.getElementsByClassName('carousel')[0].style.width = width + 'px';
+            document.getElementsByClassName('carousel-track')[0].style.transform = `translateX(-${+imgContainer.children[0].width}px)`;
+        };
+    return div;
 }
 
 function separator() {

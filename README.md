@@ -12,14 +12,9 @@ Po vytvoření souboru lze udělat jednu ze dvou variant:
 
 ### Obrázky:
 v určitých místech lze přidávat obrázky v takovém případě je nutné jejich správně zapsání. Obrázky budou ukládány ve složce Images.
-> [!NOTE] Zápis
-> Standartní cesta by tedy byla:
+> Zápis cesty:
 > ```
 > Images/složka_A/složka_B/můj_obrazek.png
-> ```
- > Bude stačit pokud zapíšete:
-> ```
-> složka_A/složka_B/můj_obrazek.png
 > ```
 
 ## Předlohy formátovaných bloků
