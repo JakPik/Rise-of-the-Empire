@@ -6,19 +6,23 @@
       "Zipperdam.md": {}
     },
     "NPCs": {
-      "Aimiakira.md": {},
-      "Akemiakira.md": {},
-      "Akikoishimoto.md": {},
-      "Akiraakira.md": {},
-      "Amaterasuakira.md": "--DEAD--",
-      "Keiishimoto.md": {},
-      "Kentammatsuda.md": {},
-      "Naoki.md": {},
-      "Osamuokamota.md": {},
-      "Shin_Okamota.md": {},
-      "Stinovyvestec.md": {},
-      "Carodejka.md": {},
-      "Skelgrond.md": "--DEAD--"
+      "Elakdet": {
+        "Aimiakira.md": {},
+        "Akemiakira.md": {},
+        "Akikoishimoto.md": {},
+        "Akiraakira.md": {},
+        "Amaterasuakira.md": "--DEAD--",
+        "Keiishimoto.md": {},
+        "Kentammatsuda.md": {},
+        "Naoki.md": {},
+        "Osamuokamota.md": {},
+        "Shin_Okamota.md": {},
+        "Stinovyvestec.md": {}
+      },
+      "Okolí elakdetu": {
+        "Carodejka.md": {},
+        "Skelgrond.md": "--DEAD--"
+      }
     },
     "Quests": {
       "Ztraceny nahrdelnik.md": {}
