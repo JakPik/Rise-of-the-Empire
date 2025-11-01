@@ -1,6 +1,6 @@
 <div class="Location"
 data-name="Elakdet"
 data-info=""
-data-img="Elakdet.png"
+data-img="Images/Elakdet.png"
 data-buildings=""
 ></div>
