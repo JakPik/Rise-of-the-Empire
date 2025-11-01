@@ -74,8 +74,8 @@ function buildCarousel(images) {
     const div = document.createElement('div');
     div.className = 'container';
     const carousel = document.createElement('div');
-    carousel.dataset.currentIndex = 1;
-    const num = +images.length + 2;
+    carousel.dataset.currentIndex = 0;
+    const num = +images.length;
     carousel.dataset.slides = num;
     carousel.className = 'carousel';
     const buttonPrev = document.createElement('button');
@@ -88,22 +88,17 @@ function buildCarousel(images) {
     buttonNext.onclick = () => { spinCarousel(1); };
     const imgContainer = document.createElement('div');
     imgContainer.className = 'carousel-track';
-    imgContainer.addEventListener('transitionend', () => {
-    adjustCarousel()});
-    imgContainer.appendChild(BuildImage(images[num-3]));
-    for(let i = 0; i < num-2; i++) {
+    for(let i = 0; i < num; i++) {
         imgContainer.appendChild(BuildImage(images[i]));
     }
-    imgContainer.appendChild(BuildImage(images[0]));
     div.appendChild(buttonPrev);
     carousel.appendChild(imgContainer);
     div.appendChild(carousel);
     div.appendChild(buttonNext);
 
-    imgContainer.children[1].onload = () => {
-            const width = +imgContainer.children[1].width / ( +imgContainer.children[1].height / 300);
+    imgContainer.children[0].onload = () => {
+            const width = +imgContainer.children[0].width / ( +imgContainer.children[0].height / 300);
             document.getElementsByClassName('carousel')[0].style.width = width + 'px';
-            document.getElementsByClassName('carousel-track')[0].style.transform = `translateX(-${+imgContainer.children[0].width}px)`;
         };
     return div;
 }
