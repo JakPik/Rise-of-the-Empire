@@ -4,37 +4,25 @@
       "Bronzova Vesnice.md": {},
       "Elakdet.md": {},
       "Zipperdam.md": {}
-
     },
     "NPCs": {
-      "Elakdet": {
-        "Keiishimoto.md": {},
-        "Kentamatsuda.md": {},
-        "Akiraakira.md": {},
-        "Amaterasuakira.md": {},
-        "Choyoshida.md": {},
-        "Amaterasuakira.md": {},
-        "Skelgrond.md": {},
-        "Shin_Okamota.md": {},
-        "Naoki.md": {},
-        "Stinovyvestec.md": {}
-
-              },
-      "Kriegurd": {
-          "Culmika Thornwood.md": {},
-          "Prapal Thornwood.md": {}
-      }
-
+      "Frantisek.md": "--DEAD--",
+      "Akiraakira.md": {},
+      "Amaterasuakira.md": {},
+      "Keiishimoto.md": {},
+      "Kentammatsuda.md": {},
+      "Naoki.md": {},
+      "Shin_Okamota.md": {},
+      "Stinovyvestec.md": {}
     },
-        
     "Quests": {
       "Ztraceny nahrdelnik.md": {}
     },
     "Sessions": {
-      "Session 1.md": {}
+      "Session 1.md": {},
+      "Session 2.md": {},
+      "Session 3.md": {},
+      "test.md": {}
     }
-  },
-  "Images": {
-    "frantisek.jpg": {}
   }
 }

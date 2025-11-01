@@ -1,3 +1,4 @@
+--DEAD--
 <div class="NPC"
 data-name="Františike"
 data-race="člověk"

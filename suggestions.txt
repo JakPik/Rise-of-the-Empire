@@ -19,9 +19,9 @@ session1
 lokace rozdělit podle kontinentů
 nějaká záložka s velkou mapou celého kontinentu která se dá zoomovat scrolováním 
 
-do složky lokace přidat obyvatelé
+do složky lokace přidat obyvatelé - proklik ve filu
 
 k npc přidat nějakou ikonku vedle jména která implikuje že  má magickou moc v nějaké formě (např umí kouzlit, měnit se na zvířata nebo něco)
 k npc přidat ikonku že je mrtví
 
-aby budovy v lokacích fungovali jako seznam s odkazem na část o konkrétní budově
+aby budovy v lokacích fungovali jako seznam s odkazem na část o konkrétní budově - link na file

@@ -14,7 +14,17 @@ def scan_folder(folder):
             if f.endswith(".md"):
                 if top_folder not in result:
                     result[top_folder] = {}
-                result[top_folder][f] = {}  # empty object
+                file_path = os.path.join(root, f)
+                is_dead = False
+                # check for --DEAD-- tag
+                with open(file_path, "r", encoding="utf-8") as md_file:
+                    content = md_file.read()
+                    if "--DEAD--" in content:
+                        is_dead = True
+                if is_dead:
+                    result[top_folder][f] = "--DEAD--"  # empty object
+                else:
+                    result[top_folder][f] = {}  # empty object
     return result
 
 if __name__ == "__main__":
