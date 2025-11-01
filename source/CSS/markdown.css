@@ -74,7 +74,14 @@ img {
     max-height: 300px;
     border: 2px solid #00000080;
     border-radius: 10px;
+    transition: transform 0.5s ease;
+    cursor: zoom-in;
 }
+
+img:active {
+    max-height: 100%;
+    cursor: zoom-out;
+    z-index: 10;
 
 /*font-family: 'Alex Brush', cursive;*/
 
