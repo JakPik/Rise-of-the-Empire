@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>D&D Notes Viewer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="source/CSS/navigation.css" />
+  <link rel="stylesheet" href="source/CSS/style.css" />
+  <link rel="stylesheet" href="source/CSS/markdown.css" />
+</head>
+<body>
+  <div class="bg_glow" style="--x: 50; --y: 0; --cl: #ef010160"></div>
+  <header>
+	<div class="header_block">
+	<img src="Images/dungeons-and-dragons.png" alt="D&D Logo" id="logo"/>
+    <h1>Rise of the Empire</h1>
+	</div>
+  </header>
+
+	<main>
+		<aside id="sidebar">
+			<div class="Nav_Header">
+				<button id="toggle-sidebar">☰</button>
+				<h2>Navigation Menu</h2>
+			</div>
+			<div class="Nav_Body">
+				<ul class="collapsible-list">
+				</ul>
+			</div>
+		</aside>
+		<div id="content">
+			<div>
+				<hr>
+				<h1>Quest name</h1>
+					<div class="item">
+						<h2>Od koho:</h2>
+						<p>Františike</p>
+					</div>
+					<div class="item">
+						<h2>Odkud:</h2>
+						<p>Bronzová vesnice</p>
+					</div>
+					<div class="item">
+						<h2>Odměna:</h2>
+						<p>10 zlatých</p>
+					</div>
+					<div class="item">
+						<h2>Do kdy:</h2>
+						<p>Do festivalu ohně</p>
+					</div>
+					<div class="item">
+						<h2>Status:</h2>
+						<p>Odložen</p>
+					</div>			
+				<div class="separator"></div>
+				<h2>Popis:</h2>
+				<p>Popis questu Popis questu Popis questu Popis questu Popis questu
+			</div>
+		</div>
+	</main>
+
+
+
+  <!-- marked.js (Markdown → HTML) -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="source/JS/controls.js"></script>
+  <script src="source/JS/parser.js"></script>
+  <script src="source/JS/block_builder.js"></script> 
+  <script src="source/JS/main.js"></script>
+</body>
+</html>

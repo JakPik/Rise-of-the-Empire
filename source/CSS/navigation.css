@@ -93,6 +93,7 @@ ul {
 
 .Nav_Body a {
     color: rgb(246, 204, 148);
+    text-decoration: none;
 }
 
 .collapsible-list {

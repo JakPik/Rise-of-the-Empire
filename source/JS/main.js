@@ -167,4 +167,10 @@ window.addEventListener('resize', updateCarousel);
 //loadMarkdownPage('session1');
 //loadMarkdownPageLocal('session1');
 
+const urlParams = new URLSearchParams(window.location.search);
+  const playerRole = urlParams.get('role');
+
+  // Store role globally if needed
+  window.PLAYER_ROLE = playerRole;
+
 start('source/json/NavBar.json');

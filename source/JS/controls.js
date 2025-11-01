@@ -14,14 +14,13 @@ function updateCarousel() {
   const ref = document.getElementsByClassName('carousel')[0];
   const track = document.getElementsByClassName('carousel-track')[0];
   const curIdx = +ref.dataset.currentIndex;
-  const maxIdx = +ref.dataset.slides;
   let width = 2;
-  for(let i = 0; i < ref.dataset.currentIndex; i++) {
+  for(let i = 0; i < curIdx; i++) {
     width += track.children[i].clientWidth;
     width += 3;
   }
   
-  ref.style.width = track.children[ref.dataset.currentIndex].clientWidth + 'px';
+  ref.style.width = track.children[curIdx].clientWidth + 'px';
   track.style.transform = `translateX(-${width}px)`;
 }
 

@@ -1,3 +1,5 @@
+let foundTags = [];
+
 function parseMarkdown(md) {
   const parsed = preprocessCallouts(md);
   contentEl.innerHTML = marked.parse(parsed);
@@ -20,9 +22,18 @@ function preprocessCallouts(md) {
       return calloutBlock(kind, lines);//`<div class="callout" id="${kind.toLowerCase()}">\n${body}\n</div>`;
     }
   );
-  return md.split('\n')                              // split into lines
-    .filter(line => !line.trim().includes('--DEAD--'))  // remove lines with tag
-    .join('\n');
+  let lines = md.split('\n');
+
+lines = lines.filter(line => {
+  const tagsInLine = line.match(/--\w+--/g); // find all --TAG-- in the line
+  if (tagsInLine) {
+    foundTags.push(...tagsInLine); // add all found tags to the array
+    return false; // remove this line from the content
+  }
+  return true; // keep the line
+});
+
+return lines.join('\n');
 }
 
 function calloutBlock(kind, lines) {  
