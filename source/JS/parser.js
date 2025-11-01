@@ -7,7 +7,7 @@ function parseMarkdown(md) {
 }
 
 function preprocessCallouts(md) {
-  return md.replace(
+  md = md.replace(
     /^>\s*\[!(\w+)\]\s*\n((?:>\s?.*\n?)*)/gm,
     (_, kind, content) => {
       const lines = content
@@ -20,6 +20,9 @@ function preprocessCallouts(md) {
       return calloutBlock(kind, lines);//`<div class="callout" id="${kind.toLowerCase()}">\n${body}\n</div>`;
     }
   );
+  return md.split('\n')                              // split into lines
+    .filter(line => !line.trim().includes('--DEAD--'))  // remove lines with tag
+    .join('\n');
 }
 
 function calloutBlock(kind, lines) {  
