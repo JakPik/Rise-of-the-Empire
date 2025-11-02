@@ -98,7 +98,7 @@ function buildNavBar(folder, parentEl, basePath = '') {
     const li = document.createElement('li');
 
     if (key.endsWith('.md')) {
-      if(value && Object.keys(value).length !== 0 && window.PLAYER_ROLE != "DM" && !value.includes(window.PLAYER_ROLE)) {
+      if(testVisibility(value)) {
         continue;
       }
       const a = document.createElement('a');
@@ -106,28 +106,27 @@ function buildNavBar(folder, parentEl, basePath = '') {
       a.className = 'note-link';
       const fullPath = `${basePath}/${key}`; // include subfolder path
       a.dataset.path = fullPath;
-      if (value == "--DEAD--") {
+      if (value.includes("--DEAD--")) {
         a.textContent = key.replace('.md', '') + " ✝";
       }
       else {
         a.textContent = key.replace('.md', '');
       }
       li.appendChild(a);
-    } else {
-      const span = document.createElement('span');
-      span.className = 'toggle';
-      span.textContent = '▶ ' + key;
-      const nested = document.createElement('ul');
-      nested.className = 'nested';
-      li.appendChild(span);
-      li.appendChild(nested);
-      if(basePath == '') {
-        buildNavBar(value, nested, `${key}`); // recursive with folder path
-      }
-      else {
-        buildNavBar(value, nested, `${basePath}/${key}`); // recursive with folder path
-      }
-      
+    } else {   
+        if(basePath == '') {
+          buildNavBar(value, nested, `${key}`); // recursive with folder path
+        }
+        else {
+          const span = document.createElement('span');
+          span.className = 'toggle';
+          span.textContent = '▶ ' + key;
+          const nested = document.createElement('ul');
+          nested.className = 'nested';
+          li.appendChild(span);
+          li.appendChild(nested);
+          buildNavBar(value, nested, `${basePath}/${key}`); // recursive with folder path
+        }
     }
 
     parentEl.appendChild(li);

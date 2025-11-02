@@ -1,3 +1,5 @@
+const PLAYERS = ["DM","ALGAAR","KRAG","LYBA","SADOSU","TOHRU"];
+
 function openImage(img) {
   const modal = document.getElementById("imageModal");
   const modalImg = document.getElementById("modalImage");
@@ -31,4 +33,27 @@ function spinCarousel(offset) {
     let num = (currentIndex + offset + totalSlides) % totalSlides;
     ref.dataset.currentIndex = num;
     updateCarousel();
+}
+
+function testVisibility(value) {
+    if(value){
+        if(Object.keys(value).length === 0) {
+            return false;
+        }
+        else if(!value.some(v => PLAYERS.includes(v))) {
+            return false;
+        }
+        else if(window.PLAYER_ROLE == "DM") {
+            return false;
+        }
+        else if(value.includes(window.PLAYER_ROLE)) {
+            return false;
+        }
+        else {
+            return true;
+        }
+    }
+    else {
+        return false;
+    }
 }
