@@ -68,7 +68,7 @@ hr {
     display: inline;
 }
 
-img {
+.carousel-track img {
     display: inline-flex;
     flex-wrap: wrap;
     max-height: 300px;

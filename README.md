@@ -1,21 +1,31 @@
 # Rise-of-the-Empire
 Repo pro verzování poznámek a jejich vizualizaci
+
 ## Použití
 Pro vytvoření poznámky, záznamu z kampaně, či NPC a dalších... Stačí vytvořit soubor s koncovkou .md v příslušné složce.
 Všechny poznámky lze najít ve složce notes.
 Po vytvoření souboru lze udělat jednu ze dvou variant:
 1. Uložit soubor a dát o tom vědět na serveru. Já poté přegeneruju soubor NavBar.json který dělá vizualizaci navigačního menu
 2. Uložíte soubor a poté v source/json/NavBar.json ručně dopíšete do stromové struktury váš nový soubor. Nedoporučovaná varianta
-
-> [!CAUTION] Důležité
+   
+> Důležité <br>
 > Projevení změn není okamžité, a změna navigačního menu bude po oznámení většinou prováděna v noci.
 
 ### Obrázky:
-v určitých místech lze přidávat obrázky v takovém případě je nutné jejich správně zapsání. Obrázky budou ukládány ve složce Images.
+v určitých místech lze přidávat obrázky v takovém případě je nutné jejich správně zapsání. Lze přidat více obrázků, stačí je zapsat a rozdělovat pomocí čárky. Obrázky budou ukládány ve složce Images.
 > Zápis cesty:
 > ```
 > Images/složka_A/složka_B/můj_obrazek.png
 > ```
+> Více obrázků:
+>```
+> Images/složka_A/složka_B/můj_obrazek.png, Images/složka/obr.jpg
+> ```
+
+### Viditelnost a efekty
+Lze přidávat tagy viditelnosti, např. --LYBA-- <br>
+Tagy efektu:
+- --DEAD-- => ✝
 
 ## Předlohy formátovaných bloků
 ### Lokace

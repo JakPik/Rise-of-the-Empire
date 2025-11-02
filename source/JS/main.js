@@ -159,6 +159,13 @@ document.querySelectorAll('.collapsible-list .toggle').forEach(item => {
     }
   });
 });
+
+document.querySelectorAll('.backLink').forEach(roleBtn => {
+      roleBtn.addEventListener('click', () => {
+        // redirect to your main page with role as query param
+        window.location.href = `index.html`;
+      });
+    });
 }
 
 window.addEventListener('resize', updateCarousel);

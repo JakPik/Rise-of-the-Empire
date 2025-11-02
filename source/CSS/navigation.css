@@ -110,3 +110,7 @@ ul {
   cursor: pointer;
   user-select: none;   /* prevents text selection */
 }
+
+.backLink {
+  cursor: pointer;
+}

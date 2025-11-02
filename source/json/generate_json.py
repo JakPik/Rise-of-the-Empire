@@ -14,12 +14,22 @@ def scan_folder(folder):
         elif item.endswith(".md"):
             # Check if file contains --DEAD--
             is_dead = False
+            arr = []
             with open(path, "r", encoding="utf-8") as md_file:
                 content = md_file.read()
                 if "--DEAD--" in content:
-                    is_dead = True
+                    arr.append("--DEAD--")
+                if "--P1--" in content:
+                    arr.append("P1")
             # Add file entry with marker if dead
-            result[item] = "--DEAD--" if is_dead else {}
+            if len(arr) > 0:
+                text = "[" + arr[0]
+                for i in range (1,len(arr)):
+                    text += "," + arr[i]
+                text += "]"
+                result[item] = text
+            else:
+                result[item] = {}
     return result
 
 if __name__ == "__main__":
