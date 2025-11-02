@@ -1,7 +1,8 @@
 body {
 	padding: 0;
 	margin: 0;
-	background-color:#000000;
+	background-image: url(../../Images/page_ui/paper.jpg);
+    background-size: cover;
 	max-height: 100vh;
 }
 
@@ -25,6 +26,7 @@ header h1 {
 .header_block {
 	color: rgb(228, 54, 54);
 	border-bottom: 2px solid #000000;
+	background-color: #000000;
 }
 
 .bg_glow {

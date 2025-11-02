@@ -9,7 +9,7 @@
 <body>
   <header>
     <div class="header_block">
-    <img src="Images/dungeons-and-dragons.png" alt="D&D Logo" id="logo"/>
+    <img src="Images/page_ui/dungeons-and-dragons.png" alt="D&D Logo" id="logo"/>
       <h1>Rise of the Empire</h1>
     </div>
   </header>
@@ -27,14 +27,6 @@
     </div>
   </div>
 </main>
-  <script>
-    document.querySelectorAll('.role').forEach(roleBtn => {
-      roleBtn.addEventListener('click', () => {
-        const role = roleBtn.dataset.role;
-        // redirect to your main page with role as query param
-        window.location.href = `notes.html?role=${encodeURIComponent(role)}`;
-      });
-    });
-  </script>
+  <script src="source/JS/player_select.js"></script>
 </body>
 </html>

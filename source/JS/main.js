@@ -15,8 +15,10 @@ data-location="Bronzová vesnice (může být odkaz)"
 data-info="Zajímamvé informace of Františkovy"
 data-description="Popis Františka, jak vypadá, co má za charakteristcké vlastnosti, např. jizva pod okem"
 data-tasks="Seznam úkolů"
-data-img="Images/frantisek.jpg, Images/wood.jpg, Images/naoki.jpg"
+data-img="Images/naoki.jpg"
 ></div>
+
+---
 
 <div class="Quest"
 data-name="Ztracený náhrdelník"
@@ -28,12 +30,23 @@ data-status="Probíhající"
 data-description="Popis questu, co se stalo, jak náhrdelník vypadal, proč je důležitý"
 ></div>
 
+---
+
 <div class="Location"
 data-name="Bronzová vesnice"
 data-info="Informace o Bronzové vesnici"
 data-img="bronzova.jpg"
 data-buildings="Hostinec U zlatého lva: vyhlaseny bar, Kovárna, Tržiště"
 ></div>
+
+## Hostinec U zlatého lva
+velmi zlouhavý text Ah, I see! You want to change the background behind the Leaflet map container itself, not the map tiles. That’s purely CSS for the container or the page. Leaflet maps sit inside a (e.g., #map), so you can style what’s behind it.
+
+## Vyhlaseny bar
+fnsajkfaksjfkajf
+
+## Kovárna
+jjhafjfjklajfklaj
 `,
   session2: `
 <div class="Location"
@@ -57,8 +70,6 @@ const toggleBtn = document.getElementById('toggle-sidebar');
 toggleBtn.addEventListener('click', () => {
   sidebar.classList.toggle('collapsed');
 });
-
-
 
 // Fetch and render a Markdown file
 function loadMarkdownPageLocal(pageId) {
@@ -177,9 +188,13 @@ window.addEventListener('resize', updateCarousel);
 //loadMarkdownPageLocal('session1');
 
 const urlParams = new URLSearchParams(window.location.search);
-  const playerRole = urlParams.get('role');
+const playerRole = urlParams.get('role');
 
   // Store role globally if needed
-  window.PLAYER_ROLE = playerRole;
+window.PLAYER_ROLE = playerRole;
+
+const header = document.getElementById('main_header');
+let tag = window.PLAYER_ROLE;
+header.textContent += " - " + PLAYERS_MAP[window.PLAYER_ROLE];
 
 start('source/json/NavBar.json');

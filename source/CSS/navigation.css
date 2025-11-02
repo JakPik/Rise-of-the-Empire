@@ -1,6 +1,6 @@
 main {
     min-height: 100vh;
-    background-image: url(../../Images/paper.jpg);
+    background-image: url(../../Images/page_ui/paper.jpg);
     background-size: cover;
 	transition: all 0.3s ease;
     display: grid;
@@ -12,7 +12,7 @@ main {
   border-right: 1px solid #000000;
   padding: 0;
   transition: all 0.5s ease;
-  background-image: url(../../Images/wood.jpg);
+  background-image: url(../../Images/page_ui/wood.jpg);
   background-size:cover;
   overflow: hidden;
 }

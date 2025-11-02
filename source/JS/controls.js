@@ -1,4 +1,12 @@
 const PLAYERS = ["DM","ALGAAR","KRAG","LYBA","SADOSU","TOHRU"];
+const PLAYERS_MAP = {
+  DM: "DM",
+  ALGAAR: "Algaar",
+  KRAG: "Krag",
+  LYBA: "Lyba",
+  SADOSU: "Sadosu",
+  TOHRU: "Tohru"
+};
 
 function openImage(img) {
   const modal = document.getElementById("imageModal");
