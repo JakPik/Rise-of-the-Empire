@@ -1,38 +1,38 @@
 {
   "notes": {
     "Locations": {
-      "Bronzova Vesnice.md": {},
-      "Elakdet.md": {},
-      "Zipperdam.md": {}
+      "Bronzova Vesnice.md": [],
+      "Elakdet.md": [],
+      "Zipperdam.md": []
     },
     "NPCs": {
       "Elakdet": {
-        "Aimiakira.md": {},
-        "Akemiakira.md": {},
-        "Akikoishimoto.md": {},
-        "Akiraakira.md": {},
-        "Amaterasuakira.md": "--DEAD--",
-        "Keiishimoto.md": {},
-        "Kentammatsuda.md": {},
-        "Naoki.md": {},
-        "Osamuokamota.md": {},
-        "Shin_Okamota.md": {},
-        "Stinovyvestec.md": {}
+        "Aimiakira.md": [],
+        "Akemiakira.md": [],
+        "Akikoishimoto.md": [],
+        "Akiraakira.md": [],
+        "Amaterasuakira.md": ["--DEAD--"],
+        "Keiishimoto.md": [],
+        "Kentammatsuda.md": [],
+        "Naoki.md": [],
+        "Osamuokamota.md": [],
+        "Shin_Okamota.md": [],
+        "Stinovyvestec.md": []
       },
       "Okolí elakdetu": {
         "Carodejka.md": ["DM"],
-        "Skelgrond.md": ["--DEAD--" , "ALGAAR"],
-        "Azura.md": {}
+        "Skelgrond.md": ["--DEAD--", "ALGAAR"],
+        "Azura.md": []
       }
     },
     "Quests": {
-      "Ztraceny nahrdelnik.md": {}
+      "Ztraceny nahrdelnik.md": []
     },
     "Sessions": {
-      "Session 1.md": {},
-      "Session 2.md": {},
-      "Session 3.md": {},
-      "test.md": {}
+      "Session 1.md": [],
+      "Session 2.md": [],
+      "Session 3.md": [],
+      "test.md": []
     }
   }
 }

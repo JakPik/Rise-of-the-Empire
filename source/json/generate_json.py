@@ -29,7 +29,7 @@ def scan_folder(folder):
                 text += "]"
                 result[item] = text
             else:
-                result[item] = {}
+                result[item] = []
     return result
 
 if __name__ == "__main__":
