@@ -1,5 +1,6 @@
 import os
 import json
+import re
 
 # Folder to scan
 NOTES_DIR = "notes"
@@ -17,17 +18,14 @@ def scan_folder(folder):
             arr = []
             with open(path, "r", encoding="utf-8") as md_file:
                 content = md_file.read()
-                if "--DEAD--" in content:
-                    arr.append("--DEAD--")
-                if "--P1--" in content:
-                    arr.append("P1")
+
+                tags = set(re.findall(r'--(.*?)--', content))
+                for tag in tags:
+                    arr.append(f"--{tag}--")
+
             # Add file entry with marker if dead
             if len(arr) > 0:
-                text = "[" + arr[0]
-                for i in range (1,len(arr)):
-                    text += "," + arr[i]
-                text += "]"
-                result[item] = text
+                result[item] = arr
             else:
                 result[item] = []
     return result
