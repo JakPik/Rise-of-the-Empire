@@ -115,7 +115,7 @@ function buildNavBar(folder, parentEl, basePath = '') {
       li.appendChild(a);
     } else {   
         if(basePath == '') {
-          buildNavBar(value,undefined ,`${key}`); // recursive with folder path
+          buildNavBar(value,parentEl ,`${key}`); // recursive with folder path
         }
         else {
           const span = document.createElement('span');
