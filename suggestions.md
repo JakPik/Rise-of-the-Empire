@@ -26,4 +26,6 @@ session1
 - [ ] když se refrešne stránka tak to skočí na františike quest místo úvodní stránky
 - [x] k npc přidat ikonku že je mrtví v NavBar
 
+- [ ] ůvodní stránka má při fullscreenu trochu posunutý panel s výběrem postav
+
 - [ ] aby budovy v lokacích fungovali jako seznam s odkazem na část o konkrétní budově - link na file
