@@ -6,6 +6,23 @@ function parseMarkdown(md) {
   processNPCTags();
   processLocationTags();
   processQuestTags();
+  processDayTag();
+  processPlayerInfoTag();
+
+  
+
+document.querySelectorAll('.Day .toggle').forEach(item => {
+  item.addEventListener('click', () => {
+    const nested = item.nextElementSibling;
+    if (nested) {
+      nested.style.display = nested.style.display === 'block' ? 'none' : 'block';
+      // Optional: toggle arrow
+      item.textContent = item.textContent.startsWith('▶')
+        ? item.textContent.replace('▶', '▼')
+        : item.textContent.replace('▼', '▶');
+    }
+  });
+});
 }
 
 function preprocessCallouts(md) {
@@ -128,5 +145,73 @@ function processQuestTags() {
 
     tag.parentNode.replaceChild(card, tag);
   
+  });
+}
+
+function processPlayerInfoTag(_tag, parent) {
+	var doc = document;
+	if(_tag != undefined) {
+	const parser = new DOMParser();
+	doc = parser.parseFromString(_tag.innerHTML, "text/html");
+	}
+  	const tags = document.querySelectorAll('.Player_Info');
+
+  tags.forEach(tag => {
+    const rawName = tag.id;
+    const split = tag.innerHTML.split(/\n/);
+    const title = rawName || 'Unnamed Event';
+
+    const card = document.createElement('div');
+	card.className = 'Player_Info';
+	card.id = tag.id;
+
+
+    const h2 = getHeader('h2', '');
+    h2.className = 'toggle';
+    h2.textContent = '▼ ' + title;
+	const div = document.createElement('div');
+    div.className = 'nested';
+	div.style="display: block;"
+
+	for(var key in split) {
+      div.appendChild(getAttributeParagraph(split[key]));
+    }
+    card.appendChild(h2);
+	card.appendChild(div);
+	if(parent != undefined) {
+		parent.appendChild(card);
+	}
+	else {
+    tag.parentNode.replaceChild(card, tag);
+	}
+  });
+}
+
+function processDayTag() {
+  const tags = document.querySelectorAll('.Day');
+
+  tags.forEach(tag => {
+    const rawName = "Day " + tag.dataset['day'];
+    const split = tag.innerHTML.split("</div>");
+    const title = rawName || 'Unnamed Event';
+
+    const card = document.createElement('div');
+	card.className = "Day";
+
+	const h1 = getHeader('h1', '');
+    h1.className = 'toggle';
+    h1.textContent = '▼ ' + title;
+	const div = document.createElement('div');
+    div.className = 'nested';
+	div.style="display: block;"
+
+	Array.from(tag.childNodes).forEach(node => {
+        div.appendChild(node.cloneNode(true));
+    });
+    
+	card.appendChild(h1);
+	card.appendChild(div);
+
+    tag.parentNode.replaceChild(card, tag);
   });
 }

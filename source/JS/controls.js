@@ -51,7 +51,7 @@ function testVisibility(value) {
         else if(!value.some(v => PLAYERS.includes(v))) {
             return false;
         }
-        else if(window.PLAYER_ROLE == "DM") {
+        else if(window.PLAYER_ROLE == "--DM--") {
             return false;
         }
         else if(value.includes(window.PLAYER_ROLE)) {

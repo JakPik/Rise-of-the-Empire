@@ -1,0 +1,89 @@
+#Algaar {
+    border: #00000040 2px solid;
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#Algaar .nested {
+  display: block;       /* hidden by default */
+  padding-left: 20px;  /* indent sublist */
+}
+
+#Algaar .toggle {
+  cursor: pointer;
+  user-select: none;   /* prevents text selection */
+}
+
+#Krag {
+    border: #00000040 2px solid;
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#Krag .nested {
+  display: block;       /* hidden by default */
+  padding-left: 20px;  /* indent sublist */
+}
+
+#Krag .toggle {
+  cursor: pointer;
+  user-select: none;   /* prevents text selection */
+}
+
+#Lyba {
+    border: #00000040 2px solid;
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#Lyba .nested {
+  display: block;       /* hidden by default */
+  padding-left: 20px;  /* indent sublist */
+}
+
+#Lyba .toggle {
+  cursor: pointer;
+  user-select: none;   /* prevents text selection */
+}
+
+#Sadosu {
+    border: #00000040 2px solid;
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#Sadosu .nested {
+  display: block;       /* hidden by default */
+  padding-left: 20px;  /* indent sublist */
+}
+
+#Sadosu .toggle {
+  cursor: pointer;
+  user-select: none;   /* prevents text selection */
+}
+
+#Tohru {
+    border: #00000040 2px solid;
+    border-radius: 25px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#Tohru .nested {
+  display: block;       /* hidden by default */
+  padding-left: 20px;  /* indent sublist */
+}
+
+#Tohru .toggle {
+  cursor: pointer;
+  user-select: none;   /* prevents text selection */
+}
