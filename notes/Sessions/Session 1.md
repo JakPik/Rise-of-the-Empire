@@ -13,7 +13,7 @@ Nedaleko kovárny, kde sálá žár z pece a zvuk kladiva se nese večerním vzd
 Zvuky, které se začínají šířit od brány osady, přitahují jejich pozornost. Dav osadníků se shromažďuje, hlasy jsou plné očekávání a vzrušení. Krag se narovná, jeho obrovská postava vrhá dlouhý stín na zem, zatímco Kenta už také odložil své nástroje. Očima si vymění mlčenlivé porozumění – je čas zjistit, kdo způsobil tento rozruch.
 Setřou si krev z rukou, krag si přehodí kožešinu přes rameno, a oba se mlčky vydávají směrem k bráně, kde se osadníci tlačí kolem neznámého příchozího, který narušil klidný večer v této osadě.
 </div>
-<div class="Player_Info" id="Ardan">
+<div class="Player_Info" id="Algaar">
 Jak slunce začalo zapadat za vzdálené hory, nebe se barvilo do odstínů zlata, růžové a purpurové. Bylo to, jako by se svět chystal ponořit do kouzelného snu. Každý paprsek slunce, který se odrážel od křišťálově čistých řek a jezer, jako by šeptal tajemství starých časů a přísliby nových zázraků.
 Ve stínech lesa, kde se větve stromů skláněly jako ochranitelská křídla nad vesnicí, se zjevil druid. Jeho postava byla vysoká a majestátná, s dračími šupinami, které se blyštily jako drahokamy v posledních paprscích denního světla. Jeho oči, hluboké jako temné jezero, hleděly přímo před sebe s klidnou odhodlaností.
 Byl vyslancem vládce, pověřený důležitým úkolem. Úkolem, při jehož plnění již urazil dlouhou cestu. 
@@ -32,7 +32,7 @@ Jak slunce zapadalo, vyděl jsem před sebou brány Elakdetu. Malé rybářské 
 I když mě neznámo trochu děsí vešel jsem do vesnice sebevědomě. Velmi rychle se kolem mě udělal hlouček
 
 Skrz hlouček se ke mně dostal vůdce vesnice, Shin Okamota, jeho pozvání k němu domu mi trochu ulevilo, protože to znamenalo že se dostanu dál od shluku vesničanů. U Shina doma jsem předal zprávu se kterou jsem byl vyslán. Pochopitelně se jim moc nelíbila a řekli mi že budu muset zůstat, než se rozhodnou.
-<div class="Player_Info" id="Ardan">
+<div class="Player_Info" id="Algaar">
 Např nějaká moje specifická poznámka, teoreticky lze schovávat podle toho kdo se dívá
 </div>
 

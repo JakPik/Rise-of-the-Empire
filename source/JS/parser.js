@@ -11,7 +11,7 @@ function parseMarkdown(md) {
 
   
 
-document.querySelectorAll('.Day .toggle').forEach(item => {
+document.querySelectorAll('.content .toggle').forEach(item => {
   item.addEventListener('click', () => {
     const nested = item.nextElementSibling;
     if (nested) {
@@ -23,6 +23,19 @@ document.querySelectorAll('.Day .toggle').forEach(item => {
     }
   });
 });
+
+/*document.querySelectorAll('.Player_Info .toggle').forEach(item => {
+  item.addEventListener('click', () => {
+    const nested = item.nextElementSibling;
+    if (nested) {
+      nested.style.display = nested.style.display === 'block' ? 'none' : 'block';
+      // Optional: toggle arrow
+      item.textContent = item.textContent.startsWith('▶')
+        ? item.textContent.replace('▶', '▼')
+        : item.textContent.replace('▼', '▶');
+    }
+  });
+});*/
 }
 
 function preprocessCallouts(md) {
