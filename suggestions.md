@@ -22,6 +22,8 @@ session1
 - [ ] do složky lokace přidat obyvatelé - proklik ve filu
 
 - [ ] k npc přidat nějakou ikonku vedle jména která implikuje že  má magickou moc v nějaké formě (např umí kouzlit, měnit se na zvířata nebo něco)
+
+- [ ] když se refrešne stránka tak to skočí na františike quest místo úvodní stránky
 - [x] k npc přidat ikonku že je mrtví v NavBar
 
 - [ ] aby budovy v lokacích fungovali jako seznam s odkazem na část o konkrétní budově - link na file
