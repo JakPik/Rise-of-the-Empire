@@ -1,0 +1,16 @@
+{
+    "setup": {
+        "image": "Images/naoki.jpg",
+        "image_size": [1000, 1000]
+    },
+    "markers": {
+        "mark": {
+            "position": [20, 50],
+            "link": "link to note"
+        },
+        "marker name": {
+            "position": [200, 500],
+            "link": "Hi"
+        }
+    }
+}

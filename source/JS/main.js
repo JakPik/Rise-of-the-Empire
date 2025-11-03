@@ -79,10 +79,15 @@ function loadMarkdownPageLocal(pageId) {
 
 async function loadMarkdownPage(pageId) {
   try {
-    const rest = await fetch(pageId);
-    if (!rest.ok) throw new Error('Failed to fetch: ' + rest.status);
-    const md = await rest.text();
-    parseMarkdown(md);
+    if(pageId.includes(".md")) {
+      const rest = await fetch(pageId);
+      if (!rest.ok) throw new Error('Failed to fetch: ' + rest.status);
+      const md = await rest.text();
+      parseMarkdown(md);
+    }
+    else {
+      startMapBuild(pageId);
+    }
   }
   catch (err) {
     contentEl.innerHTML = '<p>Error loading page: ' + err.message + '</p>';
@@ -127,6 +132,11 @@ function buildNavBar(folder, parentEl, basePath = '') {
     } else {   
         if(basePath == '') {
           buildNavBar(value,parentEl ,`${key}`); // recursive with folder path
+          const a = document.createElement('a');
+          a.href = '#';
+          a.className = 'note-link';
+          const fullPath = `source/json/worldmap.json`; // include subfolder path
+          a.dataset.path = fullPath;
         }
         else {
           const span = document.createElement('span');
