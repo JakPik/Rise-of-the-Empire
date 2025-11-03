@@ -1,5 +1,5 @@
-let idx = randomInt(0,1);
-let max = 2;
+let idx = randomInt(0,8);
+let max = 8;
 
 document.querySelectorAll('.role').forEach(roleBtn => {
       roleBtn.addEventListener('click', () => {
