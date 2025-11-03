@@ -23,19 +23,6 @@ document.querySelectorAll('.content .toggle').forEach(item => {
     }
   });
 });
-
-/*document.querySelectorAll('.Player_Info .toggle').forEach(item => {
-  item.addEventListener('click', () => {
-    const nested = item.nextElementSibling;
-    if (nested) {
-      nested.style.display = nested.style.display === 'block' ? 'none' : 'block';
-      // Optional: toggle arrow
-      item.textContent = item.textContent.startsWith('▶')
-        ? item.textContent.replace('▶', '▼')
-        : item.textContent.replace('▼', '▶');
-    }
-  });
-});*/
 }
 
 function preprocessCallouts(md) {
@@ -181,10 +168,10 @@ function processPlayerInfoTag(_tag, parent) {
 
     const h2 = getHeader('h2', '');
     h2.className = 'toggle';
-    h2.textContent = '▼ ' + title;
+    h2.textContent = '▶ ' + title;
 	const div = document.createElement('div');
     div.className = 'nested';
-	div.style="display: block;"
+	div.style="display: none;"
 
 	for(var key in split) {
       div.appendChild(getAttributeParagraph(split[key]));
@@ -205,7 +192,6 @@ function processDayTag() {
 
   tags.forEach(tag => {
     const rawName = "Day " + tag.dataset['day'];
-    const split = tag.innerHTML.split("</div>");
     const title = rawName || 'Unnamed Event';
 
     const card = document.createElement('div');
@@ -213,13 +199,33 @@ function processDayTag() {
 
 	const h1 = getHeader('h1', '');
     h1.className = 'toggle';
-    h1.textContent = '▼ ' + title;
+    h1.textContent = '▶ ' + title;
 	const div = document.createElement('div');
     div.className = 'nested';
-	div.style="display: block;"
+	div.style="display: none;"
 
 	Array.from(tag.childNodes).forEach(node => {
-        div.appendChild(node.cloneNode(true));
+        if (node.nodeType === Node.ELEMENT_NODE && node.classList.contains('Player_Info')) {
+    // Process Player_Info into structured card
+			div.appendChild(node.cloneNode(true));
+		} 
+		else if (node.nodeType === Node.TEXT_NODE) {
+			const d = node.data;
+			// Clean up and split text content into paragraphs
+			const text = node.data.split(/\n/);
+			if (text.length > 0) {
+			// Split on blank lines or double newlines
+			text.forEach(pText => {
+				const p = document.createElement('p');
+				p.textContent = pText.trim();
+				if (p.textContent.length > 0) div.appendChild(p);
+			});
+			}
+		} 
+		else {
+			// Preserve other element types as-is
+			div.appendChild(node.cloneNode(true));
+		}
     });
     
 	card.appendChild(h1);
