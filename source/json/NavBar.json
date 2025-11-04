@@ -7,23 +7,36 @@
     },
     "NPCs": {
       "Elakdet": {
-        "Aimiakira.md": [],
-        "Akemiakira.md": [],
-        "Akikoishimoto.md": [],
-        "Akiraakira.md": [],
-        "Amaterasuakira.md": ["--DEAD--"],
-        "Keiishimoto.md": [],
-        "Kentammatsuda.md": [],
+        "Aimi Akira.md": [],
+        "Akemi Akira.md": [],
+        "Akiko Ishimoto.md": [],
+        "Akira Akira.md": [],
+        "Amaterasu Akira.md": [
+          "--DEAD--"
+        ],
+        "Kei Ishimoto.md": [],
+        "Kenta Matsuda.md": [],
         "Naoki.md": [],
-        "Osamuokamota.md": [],
-        "Shin_Okamota.md": [],
-        "Stinovyvestec.md": []
+        "Osamu Okamota.md": [],
+        "Shin Okamota.md": [],
+        "Stinovy vestec.md": []
       },
       "Okolí elakdetu": {
+        "Azura.md": [
+          "--LYBA--"
+        ],
         "Carodejka.md": [],
-        "Skelgrond.md": ["--DEAD--"],
-        "Azura.md": ["--LYBA--"]
+        "Skelgrond.md": [
+          "--DEAD--"
+        ]
       }
+    },
+    "Players": {
+      "Algaar.md": [],
+      "Krag.md": [],
+      "Lyba.md": [],
+      "Sadosu.md": [],
+      "Tohru.md": []
     },
     "Quests": {
       "Ztraceny nahrdelnik.md": []
@@ -32,14 +45,8 @@
       "Session 1.md": [],
       "Session 2.md": [],
       "Session 3.md": [],
+      "Session_1": {},
       "test.md": []
-    },
-    "Players":{
-      "Algaar.md": [],
-      "Krag.md": [],
-      "Lyba.md": [],
-      "Sadosu.md": [],
-      "Tohru.md": []
     }
   }
 }

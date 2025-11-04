@@ -8,6 +8,8 @@ function parseMarkdown(md) {
   processQuestTags();
   processDayTag();
   processPlayerInfoTag();
+  processHeadingTags();
+
 
   
 
@@ -23,6 +25,19 @@ document.querySelectorAll('.content .toggle').forEach(item => {
     }
   });
 });
+}
+
+function processHeadingTags() {
+  const tags = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+
+  tags.forEach(tag => {
+    if (!tag.id) { // only set if missing
+    tag.id = tag.textContent
+      .trim()                // remove extra spaces
+      .toLowerCase()         // make lowercase
+      .replace(/\s+/g, '-'); // replace spaces with dashes
+  }
+  });
 }
 
 function preprocessCallouts(md) {
@@ -199,7 +214,7 @@ function processDayTag() {
 
 	const h1 = getHeader('h1', '');
     h1.className = 'toggle';
-    h1.textContent = '▶ ' + title;
+    h1.textContent = ' ' + title;
 	const div = document.createElement('div');
     div.className = 'nested';
 	div.style="display: none;"
@@ -210,7 +225,6 @@ function processDayTag() {
 			div.appendChild(node.cloneNode(true));
 		} 
 		else if (node.nodeType === Node.TEXT_NODE) {
-			const d = node.data;
 			// Clean up and split text content into paragraphs
 			const text = node.data.split(/\n/);
 			if (text.length > 0) {

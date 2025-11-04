@@ -11,8 +11,11 @@ function buildItem(tag, attributeName) {
 function buildItemList(attributeName, content) {
     const div = document.createElement('div');
     div.className = 'item';
-
-    div.appendChild(getHeader('h3', attributeName + ':'));
+    const link = '#' + attributeName.trim()                // remove extra spaces
+                    .toLowerCase()         // make lowercase
+                    .replace(/\s+/g, '-'); // replace spaces with dashes
+                    
+    div.appendChild(getHeader('h3', attributeName + ':', link));
 
     const p = document.createElement('p');
     p.textContent = content;
@@ -20,9 +23,18 @@ function buildItemList(attributeName, content) {
     return div;
 }
 
-function getHeader(header, title) {
-    const tempHeader = document.createElement(header);
-    tempHeader.textContent = title;
+function getHeader(header, title, link) {
+    var tempHeader;
+    if(link && link != undefined) {
+        tempHeader = document.createElement('a');
+        tempHeader.textContent = title;
+        tempHeader.href = link;
+        tempHeader.id = header;
+    }
+    else {
+        tempHeader = document.createElement(header);
+        tempHeader.textContent = title;
+    }
     return tempHeader;
 }
 
