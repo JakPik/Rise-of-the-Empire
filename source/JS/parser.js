@@ -25,6 +25,13 @@ function parseMarkdown(md) {
       }
     });
   });
+
+  document.querySelectorAll('.clickableTask').forEach(item => {
+    item.addEventListener('click', () => {
+      const nested = item.nextElementSibling;
+      loadMarkdownPageLocal(item.href);
+    });
+  });
 }
 
 function processHeadingTags() {
