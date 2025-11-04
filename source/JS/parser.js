@@ -13,18 +13,18 @@ function parseMarkdown(md) {
 
   
 
-document.querySelectorAll('.content .toggle').forEach(item => {
-  item.addEventListener('click', () => {
-    const nested = item.nextElementSibling;
-    if (nested) {
-      nested.style.display = nested.style.display === 'block' ? 'none' : 'block';
-      // Optional: toggle arrow
-      item.textContent = item.textContent.startsWith('▶')
-        ? item.textContent.replace('▶', '▼')
-        : item.textContent.replace('▼', '▶');
-    }
+  document.querySelectorAll('.content .toggle').forEach(item => {
+    item.addEventListener('click', () => {
+      const nested = item.nextElementSibling;
+      if (nested) {
+        nested.style.display = nested.style.display === 'block' ? 'none' : 'block';
+        // Optional: toggle arrow
+        item.textContent = item.textContent.startsWith('▶')
+          ? item.textContent.replace('▶', '▼')
+          : item.textContent.replace('▼', '▶');
+      }
+    });
   });
-});
 }
 
 function processHeadingTags() {
