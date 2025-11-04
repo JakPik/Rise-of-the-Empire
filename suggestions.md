@@ -8,13 +8,13 @@
 - [ ] prázdný tag se nezobrazuje
 - [ ] <del>pro více kampaní?</del>
 
-- [ ] vylepšit strukturu session na něco ve stylu: 
+- [ ] <del>vylepšit strukturu session na něco ve stylu: 
 session1 
     - úvod
     - eventy/questy
         - event 1
         - event 2
-    - ......
+    - ......</del>
 
 - [ ] lokace rozdělit podle kontinentů
 - [ ] nějaká záložka s velkou mapou celého kontinentu která se dá zoomovat scrolováním 
