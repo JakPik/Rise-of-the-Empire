@@ -54,7 +54,7 @@ body {
     width: auto;
     /*background-image: url(../../Images/page_ui/background_1.jpg);*/
     background-size: cover;
-    background-position: 0 -100px;
+   /* background-position: 0 -100px;*/
     background-attachment: fixed;       /* image stays fixed in place */
     overflow: hidden;
     background-repeat: no-repeat;
