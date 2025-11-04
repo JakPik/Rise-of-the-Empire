@@ -1,9 +1,21 @@
 {
   "notes": {
     "Locations": {
-      "Bronzova Vesnice.md": [],
+      "Sword Lands":{
       "Elakdet.md": [],
-      "Zipperdam.md": []
+      "Zipperdam.md": [],
+      "Skelgrond.md": [],
+      "Skelgrondovy Ruiny": []
+      },
+    "Společenství obchodních měst": {
+      },
+    "Eskord": {
+      "Kriegurd.md": [],
+      "Stormhelm.md": [],
+      "Maják Krag.md": [],
+      "Raurorh.md": []
+    }
+
     },
     "NPCs": {
       "Elakdet": {
