@@ -1,4 +1,4 @@
-const PLAYERS = ["--DM--","--ALGAAR--","--KRAG--","--LYBA--","--SADOSU--","--TOHRU--"];
+const PLAYERS = ["DM","ALGAAR","KRAG","LYBA","SADOSU","TOHRU"];
 const PLAYERS_MAP = {
   DM: "DM",
   ALGAAR: "Algaar",
@@ -44,17 +44,24 @@ function spinCarousel(offset) {
 }
 
 function testVisibility(value) {
-    if(value){
-        if(Object.keys(value).length === 0) {
+    var tag = [];
+    if(Array.isArray(value)) {
+      tag = value;
+    }
+    else {
+      tag.push(value.replace(/^--|--$/g, ''));
+    }
+    if(tag){
+        if(Object.keys(tag).length === 0) {
             return false;
         }
-        else if(!value.some(v => PLAYERS.includes(v))) {
+        else if(!tag.some(v => PLAYERS.includes(v))) {
             return false;
         }
-        else if(window.PLAYER_ROLE == "--DM--") {
+        else if(window.PLAYER_ROLE == "DM") {
             return false;
         }
-        else if(value.includes(window.PLAYER_ROLE)) {
+        else if(tag.includes(window.PLAYER_ROLE)) {
             return false;
         }
         else {

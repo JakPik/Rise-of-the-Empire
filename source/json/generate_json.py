@@ -22,7 +22,6 @@ def scan_folder(folder):
                 tags = set(re.findall(r'--(.*?)--', content))
                 for tag in tags:
                     arr.append(f"--{tag}--")
-
             # Add file entry with marker if dead
             if len(arr) > 0:
                 result[item] = arr

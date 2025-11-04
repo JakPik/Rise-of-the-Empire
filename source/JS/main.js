@@ -53,6 +53,8 @@ data-name="Bronzová vesnice"
 data-info="Informace o Bronzové vesnici"
 data-img="bronzova.jpg"
 data-buildings="Hostinec U zlatého lva: vyhlaseny bar, Kovárna, Tržiště"
+data-NPCs="František, Skelgrond, ... "
+data-settlement="Elakdet"
 ></div>
 
 Zatímco slunce klesá k obzoru, osada se hemží činností. Na pobřeží, mezi domy na kůlech a plovoucími plošinami, osadníci zpracovávají svůj denní úlovek z moře. Rybářské sítě, ještě vlhké od slané vody, jsou rozprostřené podél lávek a na hácích visí dlouhé šňůry plné stříbřitých ryb. Vzduch je prosycen vůní mořské soli a čerstvé rybí kůže, která se ve večerním slunci leskne, jakoby byla pokrytá drahokamy.
@@ -85,6 +87,10 @@ jjhafjfjklajfklaj
 `,
   session2: `
 # Úvod
+
+<div class="Image_view"
+data-img="Images/Elakdet.png,Images/elakdet/domy/dum_1.jpg"
+></div>
 
 <div class="Player_Info" id="Sadosu">
 Na pobřeží klidného moře, kde se vlny jemně opírají o dřevěné kůly, na kterých stojí domy osady, se odráží poslední paprsky zapadajícího slunce. Osada je jako spleť plovoucích a pevných staveb, spojených dřevěnými lávkami, které se vinou nad tyrkysovou hladinou.
@@ -321,18 +327,19 @@ document.querySelectorAll('.backLink').forEach(roleBtn => {
 
 window.addEventListener('resize', updateCarousel);
 
-//loadMarkdownPageLocal('session1');
+
 
 const urlParams = new URLSearchParams(window.location.search);
 const playerRole = urlParams.get('role');
 
   // Store role globally if needed
-window.PLAYER_ROLE = playerRole;
+window.PLAYER_ROLE = playerRole.replace(/^--|--$/g, '');
 
 const header = document.getElementById('main_header');
 let tag = window.PLAYER_ROLE;
-header.textContent += " - " + PLAYERS_MAP[window.PLAYER_ROLE.replace(/^--|--$/g, '')];
-//buildNavBar(NavBAE, document.querySelector('.collapsible-list'));
-//setUpEvents();
+header.textContent += " - " + PLAYERS_MAP[window.PLAYER_ROLE];
+loadMarkdownPageLocal('session2');
+buildNavBar(NavBAE, document.querySelector('.collapsible-list'));
+setUpEvents();
 
-start('source/json/NavBar.json');
+//start('source/json/NavBar.json');

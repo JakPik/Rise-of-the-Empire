@@ -151,3 +151,20 @@ function constructBuildingList(tag) {
 
     return tasksList;
 }
+
+function constructNPCList(tag) {
+    const tasksList = document.createElement('ul');
+    const tasksAttr = tag.dataset['NPCs'];
+    const taskArr = tasksAttr ? tasksAttr.split(',').map(item => item.trim()) : [];
+
+    taskArr.forEach(task => {
+        const li = document.createElement('li');
+        li.href = "notes/NPCs/" + tag.dataset['settlement'] + "/" + task + ".md";
+        li.textContent = task;
+        li.className = 'clickableLink';
+        li.style.cursor = 'pointer';
+        tasksList.appendChild(li);
+    });
+
+    return tasksList;
+}

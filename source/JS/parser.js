@@ -26,9 +26,8 @@ function parseMarkdown(md) {
     });
   });
 
-  document.querySelectorAll('.clickableTask').forEach(item => {
+  document.querySelectorAll('.clickableLink').forEach(item => {
     item.addEventListener('click', () => {
-      const nested = item.nextElementSibling;
       loadMarkdownPageLocal(item.href);
     });
   });
@@ -88,7 +87,7 @@ function calloutBlock(kind, lines) {
 }
 
 function processImageViewTags() {
-  const tags = document.querySelectorAll('.Image_View');
+  const tags = document.querySelectorAll('.Image_view');
 
   tags.forEach(tag => {
     const card = document.createElement('div');
@@ -114,6 +113,8 @@ function processLocationTags() {
     card.appendChild(getAttributeParagraph(tag.dataset['info'], 'info_text'));
     card.appendChild(separator());
     card.appendChild(getHeader('h2', 'Budovy'));
+    card.appendChild(constructBuildingList(tag));
+    card.appendChild(getHeader('h2', 'NPCs'));
     card.appendChild(constructBuildingList(tag));
 
     tag.parentNode.replaceChild(card, tag);
@@ -190,33 +191,40 @@ function processPlayerInfoTag(_tag, parent) {
   	const tags = document.querySelectorAll('.Player_Info');
 
   tags.forEach(tag => {
-    const rawName = tag.id;
-    const split = tag.innerHTML.split(/\n/);
-    const title = rawName || 'Unnamed Event';
+    var visible = [];
+    visible.push(tag.id);
+    if(!testVisibility(tag.id.toUpperCase())) {
+      const rawName = tag.id;
+      const split = tag.innerHTML.split(/\n/);
+      const title = rawName || 'Unnamed Event';
 
-    const card = document.createElement('div');
-	card.className = 'Player_Info';
-	card.id = tag.id;
+      const card = document.createElement('div');
+    card.className = 'Player_Info';
+    card.id = tag.id;
 
 
-    const h2 = getHeader('h2', '');
-    h2.className = 'toggle';
-    h2.textContent = '▶ ' + title;
-	const div = document.createElement('div');
-    div.className = 'nested';
-	div.style="display: none;"
+      const h2 = getHeader('h2', '');
+      h2.className = 'toggle';
+      h2.textContent = '▶ ' + title;
+    const div = document.createElement('div');
+      div.className = 'nested';
+    div.style="display: none;"
 
-	for(var key in split) {
-      div.appendChild(getAttributeParagraph(split[key]));
+    for(var key in split) {
+        div.appendChild(getAttributeParagraph(split[key]));
+      }
+      card.appendChild(h2);
+    card.appendChild(div);
+    if(parent != undefined) {
+      parent.appendChild(card);
     }
-    card.appendChild(h2);
-	card.appendChild(div);
-	if(parent != undefined) {
-		parent.appendChild(card);
-	}
-	else {
-    tag.parentNode.replaceChild(card, tag);
-	}
+    else {
+      tag.parentNode.replaceChild(card, tag);
+    }
+  }
+  else {
+    tag.remove();
+  }
   });
 }
 
