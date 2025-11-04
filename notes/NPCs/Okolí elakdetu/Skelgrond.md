@@ -7,6 +7,6 @@ data-age="?"
 data-location="okolí Elakdetu"
 data-info="Informace o postavě"
 data-description="Na první pohled sice charismatický, ale příliš slabý na to aby byl ještě schopen nějakého boje."
-data-tasks="Seznam úkolů"
+data-tasks="Ztraceny nahrdelník"
 data-img="Images/npc/Skelgrond.jpg"
 ></div>

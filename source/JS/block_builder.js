@@ -127,7 +127,10 @@ function constructTaskList(tag) {
 
     taskArr.forEach(task => {
         const li = document.createElement('li');
-        li.textContent = task;
+        const a = document.createElement('a');
+        a.href = "notes/Quests/" + task + ".md";
+        a.textContent = task;
+        li.appendChild(a);
         tasksList.appendChild(li);
     });
 
