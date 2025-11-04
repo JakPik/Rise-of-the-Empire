@@ -7,5 +7,5 @@ data-location="Elakdet"
 data-info="Informace o postavě"
 data-description="Okouzlující muž, výmečný ve všech směrech"
 data-tasks="Seznam úkolů"
-data-img="Images/Kentamatsuda.jpg"
+data-img="Images/npc/Kentamatsuda.jpg"
 ></div>

@@ -7,5 +7,5 @@ data-location="Elakdet"
 data-info="Informace o postavě"
 data-description="Chraplavý hlas, často kašle"
 data-tasks="Seznam úkolů"
-data-img="Images/stinovyvestec.jpg"
+data-img="Images/npc/stinovyvestec.jpg"
 ></div>

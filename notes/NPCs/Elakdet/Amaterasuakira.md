@@ -8,5 +8,5 @@ data-location="Elakdet"
 data-info="Informace o postavě"
 data-description="Překrásná dívka s rudými vlasy, prodlouženýma zakulacenýma ušima, azurově modrýma očima"
 data-tasks="Seznam úkolů"
-data-img="Images/Amaterasuakira.jpg"
+data-img="Images/npc/Amaterasuakira.jpg"
 ></div>

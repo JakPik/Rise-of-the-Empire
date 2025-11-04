@@ -7,5 +7,5 @@ data-location="Elakdet"
 data-info="Informace o postavě"
 data-description="Popis postavy"
 data-tasks="Seznam úkolů"
-data-img="Images/naoki.jpg"
+data-img="Images/npc/naoki.jpg"
 ></div>

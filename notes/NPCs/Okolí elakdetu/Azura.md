@@ -8,5 +8,5 @@ data-location="okolí Elakdetu"
 data-info="Informace o postavě"
 data-description="Starší však stále krásná víla tvořená azurovou barvou připomínající oceán. Její tělo je humanoidního vzrůstu tvořené vodouz s lekníny a vodnímy rotlinami na mnoha místech. "
 data-tasks="Seznam úkolů"
-data-img="Images/Azura.jpg"
+data-img="Images/npc/Azura.jpg"
 ></div>

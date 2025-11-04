@@ -7,5 +7,5 @@ data-location="Elakdet"
 data-info="Informace o postavě"
 data-description="Žena, starší začínají se jí objevovat šediny, štíhle postavy podepsala se na ní práce, dlouhé vlasy spletené do copu."
 data-tasks="Seznam úkolů"
-data-img="Images/Aimiakira.jpg"
+data-img="Images/npc/Aimiakira.jpg"
 ></div>
