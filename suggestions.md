@@ -30,4 +30,4 @@ session1
 
 - [ ] aby budovy v lokacích fungovali jako seznam s odkazem na část o konkrétní budově - link na file
 
-- [možnost utajovat pouze některé informace na stránce]
+- [] možnost utajovat pouze některé informace na stránce
