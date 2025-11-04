@@ -9,7 +9,7 @@ function parseMarkdown(md) {
   processDayTag();
   processPlayerInfoTag();
   processHeadingTags();
-
+  processImageViewTags();
 
   
 
@@ -78,6 +78,17 @@ function calloutBlock(kind, lines) {
 		<hr>
     	${body}
   		</div>`;
+}
+
+function processImageViewTags() {
+  const tags = document.querySelectorAll('.Image_View');
+
+  tags.forEach(tag => {
+    const card = document.createElement('div');
+    card.appendChild(getImage(tag));
+
+    tag.parentNode.replaceChild(card, tag);
+  });
 }
 
 function processLocationTags() {
