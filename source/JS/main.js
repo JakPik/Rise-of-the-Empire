@@ -321,12 +321,7 @@ document.querySelectorAll('.backLink').forEach(roleBtn => {
 
 window.addEventListener('resize', updateCarousel);
 
-
-
-
-// Load default note
-//loadMarkdownPage('session1');
-loadMarkdownPageLocal('session1');
+//loadMarkdownPageLocal('session1');
 
 const urlParams = new URLSearchParams(window.location.search);
 const playerRole = urlParams.get('role');
@@ -337,7 +332,7 @@ window.PLAYER_ROLE = playerRole;
 const header = document.getElementById('main_header');
 let tag = window.PLAYER_ROLE;
 header.textContent += " - " + PLAYERS_MAP[window.PLAYER_ROLE.replace(/^--|--$/g, '')];
-buildNavBar(NavBAE, document.querySelector('.collapsible-list'));
-setUpEvents();
+//buildNavBar(NavBAE, document.querySelector('.collapsible-list'));
+//setUpEvents();
 
-//start('source/json/NavBar.json');
+start('source/json/NavBar.json');
