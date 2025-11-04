@@ -29,3 +29,5 @@ session1
 - [ ] ůvodní stránka má při fullscreenu trochu posunutý panel s výběrem postav
 
 - [ ] aby budovy v lokacích fungovali jako seznam s odkazem na část o konkrétní budově - link na file
+
+- [možnost utajovat pouze některé informace na stránce]
