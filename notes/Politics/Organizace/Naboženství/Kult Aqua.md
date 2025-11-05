@@ -1,0 +1,7 @@
+* Aqua - bohyně vody a stvořitelka světa (rituální očištění)
+* Phira - Bohyně ohně a zkázy, sestra leafy a pravá ruka Aqui (festival ohně)
+* Leafa - Bohyně přírody úrody a měsíce jedna z nejbyžších pomocnic Aqui (festival skliznového měsíce)
+* Svalrog - bůh síly, válečníků, výtězství (festival bojovníků)
+* Astraea - bohyně hvězd, měsíce a vesmíru (někteří věří že Astraea je jenom přestrojení Aqui) (festivalskliznového měsíce)
+* Languš - bůh jídla, slavností a veselí ()
+* Aetherus - bůh ničeho, přetvářek, zrady (festival masek)
