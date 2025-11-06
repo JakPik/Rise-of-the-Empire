@@ -89,5 +89,27 @@
   <!-- Původní JS -->
   <script src="source/JS/player_select.js"></script>
 
+  <style>
+    /* Styl pro tlačítko přehrávání */
+    #playButton {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      border: 2px solid white;
+      border-radius: 10px;
+      cursor: pointer;
+      z-index: 1000;
+      transition: background 0.3s;
+    }
+
+    #playButton:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  </style>
+  
 </body>
 </html>
