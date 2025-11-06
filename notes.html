@@ -66,50 +66,7 @@
   <script src="source/JS/block_builder.js"></script> 
   <script src="source/JS/main.js"></script>
 
-  <!-- 🎵 Hudba na pozadí -->
-  <audio id="bgMusic" loop>
-    <source src="audio/03. The Hero of Baldur s Gate.mp3" type="audio/mpeg">
-    Váš prohlížeč nepodporuje přehrávání audia.
-  </audio>
 
-  <!-- ▶️ Tlačítko pro spuštění -->
-  <button id="playButton">▶️ Přehrát hudbu</button>
-
-  <!-- 🎧 Skript pro přehrávání -->
-  <script>
-    const button = document.getElementById('playButton');
-    const music = document.getElementById('bgMusic');
-
-    button.addEventListener('click', () => {
-      music.play();
-      button.style.display = 'none';
-    });
-  </script>
-
-  <!-- Původní JS -->
-  <script src="source/JS/player_select.js"></script>
-
-  <style>
-    /* Styl pro tlačítko přehrávání */
-    #playButton {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      padding: 10px 20px;
-      font-size: 1.2em;
-      background: rgba(0, 0, 0, 0.6);
-      color: white;
-      border: 2px solid white;
-      border-radius: 10px;
-      cursor: pointer;
-      z-index: 1000;
-      transition: background 0.3s;
-    }
-
-    #playButton:hover {
-      background: rgba(255, 255, 255, 0.2);
-    }
-  </style>
   
 </body>
 </html>
