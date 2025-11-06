@@ -349,8 +349,8 @@ window.PLAYER_ROLE = playerRole.replace(/^--|--$/g, '');
 const header = document.getElementById('main_header');
 let tag = window.PLAYER_ROLE;
 header.textContent += " - " + PLAYERS_MAP[window.PLAYER_ROLE];
-loadMarkdownPageLocal('session1');
-buildNavBar(NavBAE, document.querySelector('.collapsible-list'));
-setUpEvents();
+//loadMarkdownPageLocal('session1');
+//buildNavBar(NavBAE, document.querySelector('.collapsible-list'));
+//setUpEvents();
 
-//start('source/json/NavBar.json');
+start('source/json/NavBar.json');
