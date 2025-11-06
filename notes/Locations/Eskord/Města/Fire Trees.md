@@ -1,14 +1,16 @@
+# Fire Trees
+
 Město nacházející se nedaleko ohromné sopky Oroth získalo svůj název díky častým pořárům způsobených sopkou. Město propojuje západní a východní pobřeží díky čemuž přes něj proudí nespočet obchodníků. Zároven se zde nachází i lomy a doly které těží kamení z orothských hor (menší část dolů se nachází i na jižní straně).
 
-- Obchodované komodity:
+- **Obchodované komodity**:
     - Látky z misthawsu 
     - Orothská ruda
     - Ocelárny (Frigidity Black’s Metalworks)
-- Zajímavé budovy
+- **Zajímavé budovy**:
 	- Kostel – zasvěcen Ignavithovi, dračímu bohu ohně a sopky
 	- Knihovna – malá, obsahující informace převážně o hornictví
 	- Hrádek – Obývaný městskou radou, ne příliš velký.
--	Obchody
+- **Obchody a místa**:
 	- Dragon's Roost – Hospoda, kterou provozuje Tyrath zrozený z červeného draka. Pokoje jsou vlhké a je tam průvan.
 	- Lock and Key – Zámečnictví provozované Kireth Micys, a drakorozenou ženou.
 	- The Sturdy Sheath – Obchod se zbraněmi provozovaný drakorozeným Myolxil Faeryax, který dokáže vyrobit pochvu na zakázku za nějaké zlato navíc.

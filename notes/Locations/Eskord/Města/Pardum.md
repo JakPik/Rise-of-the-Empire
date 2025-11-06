@@ -1,9 +1,10 @@
-Pardum
+# Pardum
+
 Kamenná vesnice na hraně útesu. Větry tu nikdy neutichají.
 
-- Obchod: 
+- **Obchodované komodity**:
     -sůl
     -rybí tuk
     - kamenné sochy.
-- Zajímavá místa: 
+- **Zajímavé budovy**:
     - Chrám větrů, kde mniši poslouchají píseň bouří

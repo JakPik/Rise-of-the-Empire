@@ -1,12 +1,14 @@
+# Stormhelm
+
 Rozsáhlé město rozkládající se na ústí řeky do moře. Je centrem obchodu a politiky celé říše. V přístavu kotví lodě z celého známého světa, od severních rybářských člunů po zámořské karavely. Stormhelm je znám svými vysokými věžemi z bílého kamene, které se lesknou ve slunečním svitu jako hroty kopí.
 Kovárny zde již začínají experimentovat se železem, ale bronz zůstává běžným kovem pro vojsko i řemeslníky.
 
-- Obchodované komodity:
+- **Obchodované komodity**:
     - Ryby a mořské plody
     - Železná ruda z Ironhaaru
     - Bronz a kamenivo z Fire trees
 
-- Zajímavé budovy:
+- **Zajímavé budovy**:
     - Palác Stormů – sídlo krále Eskordu, obklopený mořským příkopem naplněným slanou vodou.
     - Velká loděnice – místo, kde se staví válečné i obchodní lodě.
     - Chrámy – především chrám bohů vody a větru kvůli mořeplavbě

@@ -1,9 +1,10 @@
-Saril
+# Saril
+
 Klidná vesnice u vinic na jihu. Obyvatelé jsou známí jako zruční výrobci vín a bylinkových lektvarů.
 
-- Obchod: 
+- **Obchodované komodity**:
     - víno
     - byliny
     - léčivé masti.
-- Zajímavá místa:
+- **Zajímavé budovy**:
     - Hospoda The Sweet Barrel.
