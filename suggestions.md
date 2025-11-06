@@ -34,3 +34,5 @@ session1
 - [ ] možnost utajovat pouze některé informace na stránce
 
 - [ ] eastereggy
+
+- [ ] nakonfigurovat Git Large File Storage
