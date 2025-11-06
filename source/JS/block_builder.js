@@ -50,7 +50,7 @@ function getAttributeParagraph(content, className) {
 
 function getImage(tag) {
     const div = document.createElement('div');
-    div.appendChild(buildModal());
+    //div.appendChild(buildModal());
     const images = tag.dataset['img'].split(',').map(item => item.trim());
     if (images.length > 1) {
         div.appendChild(buildCarousel(images));
@@ -78,6 +78,7 @@ function buildModal() {
     const img = document.createElement('img');
     img.className = 'modal-content';
     img.id = 'modalImage';
+    img.alt = 'modalImage';
     modal.appendChild(img);
     return modal;
 }
@@ -93,11 +94,11 @@ function buildCarousel(images) {
     const buttonPrev = document.createElement('button');
     buttonPrev.className = 'prev';
     buttonPrev.textContent = '<';
-    buttonPrev.onclick = () => { spinCarousel(-1); };
+    buttonPrev.onclick = () => { spinCarousel(-1, carousel); };
     const buttonNext = document.createElement('button');
     buttonNext.className = 'next';
     buttonNext.textContent = '>';
-    buttonNext.onclick = () => { spinCarousel(1); };
+    buttonNext.onclick = () => { spinCarousel(1, carousel); };
     const imgContainer = document.createElement('div');
     imgContainer.className = 'carousel-track';
     for(let i = 0; i < num; i++) {
@@ -110,7 +111,8 @@ function buildCarousel(images) {
 
     imgContainer.children[0].onload = () => {
             const width = +imgContainer.children[0].width / ( +imgContainer.children[0].height / 300);
-            document.getElementsByClassName('carousel')[0].style.width = width + 'px';
+            imgContainer.style.width = width + 'px';
+            //document.getElementsByClassName('carousel')[0].style.width = width + 'px';
         };
     return div;
 }

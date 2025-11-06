@@ -5,6 +5,8 @@ import re
 # Folder to scan
 NOTES_DIR = "notes"
 
+PLAYERS = ["DM","ALGAAR","KRAG","LYBA","SADOSU","TOHRU"];
+
 def scan_folder(folder):
     result = {}
     for item in os.listdir(folder):
@@ -21,7 +23,10 @@ def scan_folder(folder):
 
                 tags = set(re.findall(r'--(.*?)--', content))
                 for tag in tags:
-                    arr.append(f"--{tag}--")
+                    if PLAYERS.__contains__(tag):
+                        arr.append(tag)
+                    else:
+                        arr.append(f"--{tag}--")
             # Add file entry with marker if dead
             if len(arr) > 0:
                 result[item] = arr

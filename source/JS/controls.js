@@ -20,27 +20,26 @@ function closeImage() {
   document.getElementById("imageModal").style.display = "none";
 }
 
-function updateCarousel() {
-  const ref = document.getElementsByClassName('carousel')[0];
-  const track = document.getElementsByClassName('carousel-track')[0];
-  const curIdx = +ref.dataset.currentIndex;
+function updateCarousel(carousel) {
+  
+  const track = carousel.getElementsByClassName('carousel-track')[0];
+  const curIdx = +carousel.dataset.currentIndex;
   let width = 2;
   for(let i = 0; i < curIdx; i++) {
     width += track.children[i].clientWidth;
     width += 3;
   }
   
-  ref.style.width = track.children[curIdx].clientWidth + 'px';
+  carousel.style.width = track.children[curIdx].clientWidth + 'px';
   track.style.transform = `translateX(-${width}px)`;
 }
 
-function spinCarousel(offset) {
-    const ref = document.getElementsByClassName('carousel')[0];
-    const totalSlides = +ref.dataset.slides;
-    let currentIndex = +ref.dataset.currentIndex;
+function spinCarousel(offset, carousel) {
+    const totalSlides = +carousel.dataset.slides;
+    let currentIndex = +carousel.dataset.currentIndex;
     let num = (currentIndex + offset + totalSlides) % totalSlides;
-    ref.dataset.currentIndex = num;
-    updateCarousel();
+    carousel.dataset.currentIndex = num;
+    updateCarousel(carousel);
 }
 
 function testVisibility(value) {

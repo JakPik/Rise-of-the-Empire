@@ -3,6 +3,7 @@ let foundTags = [];
 function parseMarkdown(md) {
   const parsed = preprocessCallouts(md);
   contentEl.innerHTML = marked.parse(parsed);
+  contentEl.append(buildModal());
   processNPCTags();
   processLocationTags();
   processQuestTags();
@@ -91,6 +92,7 @@ function processImageViewTags() {
 
   tags.forEach(tag => {
     const card = document.createElement('div');
+    card.className = 'Image_div';
     card.appendChild(getImage(tag));
 
     tag.parentNode.replaceChild(card, tag);

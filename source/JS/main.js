@@ -31,7 +31,7 @@ data-location="Bronzová vesnice (může být odkaz)"
 data-info="Zajímamvé informace of Františkovy"
 data-description="Popis Františka, jak vypadá, co má za charakteristcké vlastnosti, např. jizva pod okem"
 data-tasks="Seznam úkolů, hodně ukolu"
-data-img="Images/naoki.jpg"
+data-img="Images/elakdet/domy/dum_1.jpg, Images/elakdet/domy/dum_2.jpg"
 ></div>
 
 ---
@@ -64,6 +64,10 @@ Nedaleko kovárny, kde sálá žár z pece a zvuk kladiva se nese večerním vzd
 Zvuky, které se začínají šířit od brány osady, přitahují jejich pozornost. Dav osadníků se shromažďuje, hlasy jsou plné očekávání a vzrušení. Krag se narovná, jeho obrovská postava vrhá dlouhý stín na zem, zatímco Kenta už také odložil své nástroje. Očima si vymění mlčenlivé porozumění – je čas zjistit, kdo způsobil tento rozruch.
 Setřou si krev z rukou, krag si přehodí kožešinu přes rameno, a oba se mlčky vydávají směrem k bráně, kde se osadníci tlačí kolem neznámého příchozího, který narušil klidný večer v této osadě.
 
+<div class="Image_view"
+data-img="Images/elakdet/domy/dum_1.jpg, Images/elakdet/domy/dum_2.jpg"
+></div>
+
 Jak slunce začalo zapadat za vzdálené hory, nebe se barvilo do odstínů zlata, růžové a purpurové. Bylo to, jako by se svět chystal ponořit do kouzelného snu. Každý paprsek slunce, který se odrážel od křišťálově čistých řek a jezer, jako by šeptal tajemství starých časů a přísliby nových zázraků.
 Ve stínech lesa, kde se větve stromů skláněly jako ochranitelská křídla nad vesnicí, se zjevil druid. Jeho postava byla vysoká a majestátná, s dračími šupinami, které se blyštily jako drahokamy v posledních paprscích denního světla. Jeho oči, hluboké jako temné jezero, hleděly přímo před sebe s klidnou odhodlaností.
 Byl vyslancem vládce, pověřený důležitým úkolem. Úkolem, při jehož plnění již urazil dlouhou cestu. 
@@ -78,6 +82,9 @@ Zastavil se před vesnicí a jeho hlas, hluboký a melodický, zazněl jako hudb
 
 ## Hostinec U zlatého lva
 velmi zlouhavý text Ah, I see! You want to change the background behind the Leaflet map container itself, not the map tiles. That’s purely CSS for the container or the page. Leaflet maps sit inside a (e.g., #map), so you can style what’s behind it.
+<div class="Image_view"
+data-img="Images/elakdet/domy/dum_1.jpg"
+></div>
 
 ## Tržiště
 fnsajkfaksjfkajf
@@ -89,8 +96,11 @@ jjhafjfjklajfklaj
 # Úvod
 
 <div class="Image_view"
-data-img="Images/Elakdet.png,Images/elakdet/domy/dum_1.jpg"
+data-img="Images/elakdet/domy/dum_1.jpg, Images/elakdet/domy/dum_2.jpg"
 ></div>
+
+jdkfjka
+kfjakjf
 
 <div class="Player_Info" id="Sadosu">
 Na pobřeží klidného moře, kde se vlny jemně opírají o dřevěné kůly, na kterých stojí domy osady, se odráží poslední paprsky zapadajícího slunce. Osada je jako spleť plovoucích a pevných staveb, spojených dřevěnými lávkami, které se vinou nad tyrkysovou hladinou.
@@ -161,29 +171,30 @@ Ráno jsme došli na okraj bažiny a připravily rituál. Poté co byly se svým
 const NavBAE = {
   "notes": {
     "Locations": {
-      "Bronzova Vesnice.md": [],
-      "Elakdet.md": [],
-      "Zipperdam.md": []
+      "Sword Lands": {
+        "Elakdet.md": [],
+        "Zipperdam.md": []
+      }
     },
     "NPCs": {
       "Elakdet": {
-        "Aimiakira.md": [],
-        "Akemiakira.md": [],
-        "Akikoishimoto.md": [],
-        "Akiraakira.md": [],
-        "Amaterasuakira.md": [
+        "Aimi Akira.md": [],
+        "Akemi Akira.md": [],
+        "Akiko Ishimoto.md": [],
+        "Akira Akira.md": [],
+        "Amaterasu Akira.md": [
           "--DEAD--"
         ],
-        "Keiishimoto.md": [],
-        "Kentammatsuda.md": [],
+        "Kei Ishimoto.md": [],
+        "Kenta Matsuda.md": [],
         "Naoki.md": [],
-        "Osamuokamota.md": [],
-        "Shin_Okamota.md": [],
-        "Stinovyvestec.md": []
+        "Osamu Okamota.md": [],
+        "Shin Okamota.md": [],
+        "Stinovy vestec.md": []
       },
       "Okolí elakdetu": {
         "Azura.md": [
-          "--LYBA--"
+          "LYBA"
         ],
         "Carodejka.md": [],
         "Skelgrond.md": [
@@ -338,7 +349,7 @@ window.PLAYER_ROLE = playerRole.replace(/^--|--$/g, '');
 const header = document.getElementById('main_header');
 let tag = window.PLAYER_ROLE;
 header.textContent += " - " + PLAYERS_MAP[window.PLAYER_ROLE];
-loadMarkdownPageLocal('session2');
+loadMarkdownPageLocal('session1');
 buildNavBar(NavBAE, document.querySelector('.collapsible-list'));
 setUpEvents();
 
