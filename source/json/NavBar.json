@@ -100,11 +100,21 @@
       }
     },
     "Players": {
-      "Algaar.md": [],
+      "Algaar.md": [
+        "----",
+        "--|:--",
+        "---:|:--",
+        "--:|:--"
+      ],
       "Krag.md": [],
       "Lyba.md": [],
       "Sadosu.md": [],
-      "Tohru.md": []
+      "Tohru.md": [
+        "----",
+        "--|:--",
+        "---:|:--",
+        "--:|:--"
+      ]
     },
     "Politics": {
       "Organizace": {
@@ -132,9 +142,7 @@
     "Sessions": {
       "Session 1.md": [],
       "Session 2.md": [],
-      "Session 3.md": [],
-      "Session_1": {},
-      "test.md": []
+      "Session 3.md": []
     }
   }
 }
