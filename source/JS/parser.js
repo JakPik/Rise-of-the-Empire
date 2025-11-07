@@ -50,6 +50,7 @@ function processHeadingTags() {
 }
 
 function preprocessCallouts(md) {
+  foundTags = [];
   md = md.replace(
     /^>\s*\[!(\w+)\]\s*\n((?:>\s?.*\n?)*)/gm,
     (_, kind, content) => {
@@ -125,6 +126,17 @@ function processLocationTags() {
   });
 }
 
+function addIcons() {
+  const div = document.createElement('div');
+  div.className = 'icon_bar';
+  for(let tag of foundTags) {
+    var cleanTag = tag.replace(/--/g, '');
+    cleanTag = cleanTag.toLowerCase();
+    div.appendChild(BuildImage("Images/icons/" + cleanTag + ".jpg", "30px"));
+  }
+  return div
+}
+
 function processNPCTags() {
   const tags = document.querySelectorAll('.NPC');
 
@@ -137,8 +149,11 @@ function processNPCTags() {
     const header = document.createElement('div');
     header.className = 'display';
     const article = document.createElement('article');
-    article.appendChild(getHeader('h1', title));
-
+    const block = document.createElement('div');
+    block.className = 'npc_block';
+    block.appendChild(getHeader('h1', title));
+    block.appendChild(addIcons());
+    article.appendChild(block);
     article.appendChild(buildItem(tag, 'race'));
     article.appendChild(buildItem(tag, 'age'));
     article.appendChild(buildItem(tag, 'profession'));
