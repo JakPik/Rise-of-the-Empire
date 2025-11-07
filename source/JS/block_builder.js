@@ -48,23 +48,24 @@ function getAttributeParagraph(content, className) {
     return p;
 }
 
-function getImage(tag) {
+function getImage(tag, height) {
     const div = document.createElement('div');
     //div.appendChild(buildModal());
     const images = tag.dataset['img'].split(',').map(item => item.trim());
     if (images.length > 1) {
-        div.appendChild(buildCarousel(images));
+        div.appendChild(buildCarousel(images, height));
     }
     else {
-        div.appendChild(BuildImage(images[0]));
+        div.appendChild(BuildImage(images[0], height));
     }
     return div;
 }
 
-function BuildImage(src) {
+function BuildImage(src, height) {
     const img = document.createElement('img');
     img.src = src;
     img.alt = src;
+    img.style.height = height==0 ? 300 : height + 'px';
     img.className = 'zoomable';
     img.onclick = openImage;
     return img;
@@ -83,7 +84,7 @@ function buildModal() {
     return modal;
 }
 
-function buildCarousel(images) {
+function buildCarousel(images, height) {
     const div = document.createElement('div');
     div.className = 'container';
     const carousel = document.createElement('div');
@@ -102,7 +103,7 @@ function buildCarousel(images) {
     const imgContainer = document.createElement('div');
     imgContainer.className = 'carousel-track';
     for(let i = 0; i < num; i++) {
-        imgContainer.appendChild(BuildImage(images[i]));
+        imgContainer.appendChild(BuildImage(images[i], height));
     }
     div.appendChild(buttonPrev);
     carousel.appendChild(imgContainer);
@@ -110,7 +111,12 @@ function buildCarousel(images) {
     div.appendChild(buttonNext);
 
     imgContainer.children[0].onload = () => {
-            const width = +imgContainer.children[0].width / ( +imgContainer.children[0].height / 300);
+            var h = 300;
+            if(height != undefined) {
+                h = height.trim().endsWith("px") ? +height.trim().slice(0, -2) : 300;
+                h = h==0 ? 300 : h;
+            }
+            const width = +imgContainer.children[0].width / ( +imgContainer.children[0].height / +h);
             imgContainer.style.width = width + 'px';
             //document.getElementsByClassName('carousel')[0].style.width = width + 'px';
         };

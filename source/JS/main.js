@@ -91,11 +91,15 @@ fnsajkfaksjfkajf
 
 ## Kovárna
 jjhafjfjklajfklaj
+
+<div class="Image_view" style="height: 0px;"
+data-img="Images/elakdet/domy/dum_1.jpg, Images/elakdet/domy/dum_2.jpg"
+></div>
 `,
   session2: `
 # Úvod
 
-<div class="Image_view"
+<div class="Image_view" style="height: 100px;"
 data-img="Images/elakdet/domy/dum_1.jpg, Images/elakdet/domy/dum_2.jpg"
 ></div>
 
@@ -165,6 +169,106 @@ Další den jsme se vydali do nedalekých bažin. Cesta byla dlouhá a nezáživ
 Ráno jsme došli na okraj bažiny a připravily rituál. Poté co byly se svým podivným rituálem spokojeni a bažina přijala oběť tak jsme šli hledat kovy do bažin.
 </div>
 
+<div class="Image_view" style="height: 200px;"
+data-img="Images/elakdet/domy/dum_1.jpg, Images/elakdet/domy/dum_2.jpg"
+></div>
+`,
+session3: `
+<div class="Character_Sheet">
+
+## Basic Information
+**Name:** Aeryn Valeth  
+**Race:** High Elf  
+**Class & Level:** Wizard (Evocation) 3  
+**Background:** Sage (Researcher)  
+**Alignment:** Neutral Good  
+**Player Name:** —  
+**Experience Points:** 900  
+
+---
+
+## Ability Scores
+| Ability | Score | Modifier | Save |
+|----------|:-----:|:---------:|:----:|
+| Strength | 8  | −1 | −1 |
+| Dexterity | 14 | +2 | +2 |
+| Constitution | 12 | +1 | +1 |
+| Intelligence | 17 | +3 | +6 |
+| Wisdom | 13 | +1 | +1 |
+| Charisma | 10 | +0 | +0 |
+
+**Inspiration:** —  
+**Proficiency Bonus:** +2  
+
+---
+
+## Combat Stats
+- **Armor Class (AC):** 12 (Mage Armor → 15)  
+- **Initiative:** +2  
+- **Speed:** 30 ft.  
+- **Hit Points:** 18 (3d6 + 3)  
+- **Hit Dice:** 3d6  
+
+---
+
+## Proficiencies
+**Saving Throws:** Intelligence, Wisdom  
+**Skills:** Arcana (+5), History (+5), Investigation (+5), Insight (+3)  
+**Languages:** Common, Elvish, Draconic, Celestial  
+**Tools:** None  
+
+---
+
+## Attacks & Spellcasting
+| Name | Attack Bonus | Damage/Type | Range |
+|------|:-------------:|:------------:|:------:|
+| Quarterstaff | +1 | 1d6−1 bludgeoning | Melee |
+| Fire Bolt (cantrip) | +5 | 1d10 fire | 120 ft |
+| Ray of Frost (cantrip) | +5 | 1d8 cold, −10 ft speed | 60 ft |
+
+---
+
+## Spellcasting
+**Spellcasting Ability:** Intelligence (+5 attack, DC 13)  
+**Spell Slots:** 1st (4), 2nd (2)  
+
+## Features & Traits
+**Race (High Elf):**
+- Darkvision (60 ft)
+- Keen Senses (Perception proficiency)
+- Fey Ancestry (advantage vs. charm, immune to magical sleep)
+- Trance (4-hour meditation)
+- Extra Cantrip (Wizard list)
+
+**Class (Wizard – Evocation):**
+- Arcane Recovery (recover spell slots on short rest)
+- Sculpt Spells (safe zones within evocations)
+
+**Background (Sage):**
+- Feature: Researcher (finds information through scholarly contacts)
+
+---
+
+## Equipment
+- Quarterstaff  
+- Spellbook  
+- Component pouch  
+- Scholar’s pack  
+- 10 gp  
+
+---
+
+## Spellbook
+**Cantrips:** Fire Bolt, Ray of Frost, Mage Hand, Prestidigitation  
+**1st Level:** Mage Armor, Shield, Magic Missile, Detect Magic, Identify  
+**2nd Level:** Scorching Ray, Mirror Image, Misty Step  
+
+---
+
+## Notes
+- Keeps a detailed journal of every new spell she studies.  
+- Has a small silver ring from her mentor — faintly glows when near ley lines.
+</div>
 `
 };
 
@@ -349,7 +453,7 @@ window.PLAYER_ROLE = playerRole.replace(/^--|--$/g, '');
 const header = document.getElementById('main_header');
 let tag = window.PLAYER_ROLE;
 header.textContent += " - " + PLAYERS_MAP[window.PLAYER_ROLE];
-//loadMarkdownPageLocal('session1');
+//loadMarkdownPageLocal('session2');
 //buildNavBar(NavBAE, document.querySelector('.collapsible-list'));
 //setUpEvents();
 

@@ -1,6 +1,5 @@
 # Rise-of-the-Empire
-Repo pro verzování poznámek a jejich vizualizaci
-
+web: https://jakpik.github.io/Rise-of-the-Empire/
 ## Použití
 Pro vytvoření poznámky, záznamu z kampaně, či NPC a dalších... Stačí vytvořit soubor s koncovkou .md v příslušné složce.
 Všechny poznámky lze najít ve složce notes.
@@ -28,6 +27,25 @@ Tagy efektu:
 - --DEAD-- => ✝
 
 ## Předlohy formátovaných bloků
+### Obrázek volně v .md
+``` html
+<div class="Image_view" style="height: 200px;"
+data-img="Images/Elakdet.png,Images/elakdet/domy/dum_11.jpg"
+></div>
+```
+### Player box
+``` html
+<div class="Player_Info" id="Jmeno hrace">
+Odstavec 1
+Odstavec 2
+</div>
+```
+### Day tag
+``` html
+<div class="Day" data-day="1">
+    text / jiné tagy
+</div>
+```
 ### Lokace
 ``` html
 <div class="Location"

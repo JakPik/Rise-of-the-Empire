@@ -1,4 +1,5 @@
 let foundTags = [];
+const startDate = [3003, 5, 16];
 
 function parseMarkdown(md) {
   const parsed = preprocessCallouts(md);
@@ -11,6 +12,7 @@ function parseMarkdown(md) {
   processPlayerInfoTag();
   processHeadingTags();
   processImageViewTags();
+  processCharacterSheet()
 
   
 
@@ -93,7 +95,7 @@ function processImageViewTags() {
   tags.forEach(tag => {
     const card = document.createElement('div');
     card.className = 'Image_div';
-    card.appendChild(getImage(tag));
+    card.appendChild(getImage(tag, tag.style.height || '300px'));
 
     tag.parentNode.replaceChild(card, tag);
   });
@@ -230,11 +232,18 @@ function processPlayerInfoTag(_tag, parent) {
   });
 }
 
+function dateParser(dateStr) {
+  var day = (startDate[2] + +dateStr) % 30 + 1;
+  var month = ((startDate[2] + +dateStr) / 30 + startDate[1]) % 12 + 1;
+  var year = ((startDate[2] + +dateStr) / 30 + startDate[1]) / 12 + startDate[0];
+  return `${day}.${Math.floor(month)}`;
+}
+
 function processDayTag() {
   const tags = document.querySelectorAll('.Day');
 
   tags.forEach(tag => {
-    const rawName = "Day " + tag.dataset['day'];
+    const rawName = dateParser(tag.dataset['day']);
     const title = rawName || 'Unnamed Event';
 
     const card = document.createElement('div');
@@ -268,6 +277,32 @@ function processDayTag() {
 			// Preserve other element types as-is
 			div.appendChild(node.cloneNode(true));
 		}
+    });
+    
+	card.appendChild(h1);
+	card.appendChild(div);
+
+    tag.parentNode.replaceChild(card, tag);
+  });
+}
+
+function processCharacterSheet() {
+  const tags = document.querySelectorAll('.Character_Sheet');
+
+  tags.forEach(tag => {
+
+  const card = document.createElement('div');
+  card.className = "Character_Sheet";
+
+	const h1 = getHeader('h1', '');
+    h1.className = 'toggle';
+    h1.textContent = '▶ Character Sheet';
+	const div = document.createElement('div');
+    div.className = 'nested';
+	div.style="display: none;"
+
+	Array.from(tag.childNodes).forEach(node => {
+			div.appendChild(node.cloneNode(true));
     });
     
 	card.appendChild(h1);

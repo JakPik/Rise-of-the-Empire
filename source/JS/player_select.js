@@ -23,3 +23,11 @@ function updateBackground() {
 function randomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+const button = document.getElementById('playButton');
+    const music = document.getElementById('bgMusic');
+
+    button.addEventListener('click', () => {
+      music.play();
+      button.style.display = 'none';
+    });

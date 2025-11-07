@@ -27,14 +27,12 @@ Jak vstoupil do vesnice, vítr se zlehka zvedl a šuměl v korunách stromů, ja
 Zastavil se před vesnicí a jeho hlas, hluboký a melodický, zazněl jako hudba starodávných lesů.
 </div>
 
+---
+
 <div class="Day" data-day="1">
 Jak slunce zapadalo, vyděl jsem před sebou brány Elakdetu. Malé rybářské vesnice a sním se i část mého úkolu blížila ke konci.  
 I když mě neznámo trochu děsí vešel jsem do vesnice sebevědomě. Velmi rychle se kolem mě udělal hlouček
 Skrz hlouček se ke mně dostal vůdce vesnice, Shin Okamota, jeho pozvání k němu domu mi trochu ulevilo, protože to znamenalo že se dostanu dál od shluku vesničanů. U Shina doma jsem předal zprávu se kterou jsem byl vyslán. Pochopitelně se jim moc nelíbila a řekli mi že budu muset zůstat, než se rozhodnou.
-<div class="Player_Info" id="Algaar">
-Např nějaká moje specifická poznámka, teoreticky lze schovávat podle toho kdo se dívá
-</div>
-
 Osama, Shinův syn, mě odvedl do domu kde budu moci v klidu přespat. Jelikož má přítomnost vyvolala takový rozruch rozhodl jsem se jít spát.
 </div>
 
