@@ -18,12 +18,12 @@ V tu mě z mého zadumání probere Culmika. Přiběhla s úsměvem na tváři. 
 
 ## Basic Information
 **Name:** Algaar Thornwood  
-**Race:** Dragonborn
-**Class & Level:** Druid (Circle of the Moon) 5
-**Background:** ??? 
-**Alignment:** Chaotic Neutral 
-**Player Name:** —
-**Experience Points:** ???
+**Race:** Dragonborn  
+**Class & Level:** Druid (Circle of the Moon) 5  
+**Background:** ???  
+**Alignment:** Chaotic Neutral  
+**Player Name:** —  
+**Experience Points:** ???  
 
 ---
 
@@ -53,8 +53,8 @@ V tu mě z mého zadumání probere Culmika. Přiběhla s úsměvem na tváři. 
 
 ## Proficiencies
 **Saving Throws:** Intelligence, Wisdom  
-**Skills:** Animal Handling (+5), Athletics (+1), Nature (+4), Survival (+5)
-**Languages:** Common, Draconic, Druidic, Elvish 
+**Skills:** Animal Handling (+5), Athletics (+1), Nature (+4), Survival (+5)  
+**Languages:** Common, Draconic, Druidic, Elvish  
 **Tools:** Herbalism Kit, Woodcarver's Tools 
 
 ---
