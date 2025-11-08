@@ -1,6 +1,7 @@
 var layers = [];
 
 function buildMap(data) {
+    layers = [];
     const map = L.map('map', {
         crs: L.CRS.Simple, // Use simple Cartesian coordinates for custom maps
         zoom: -3,

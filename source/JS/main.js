@@ -333,7 +333,8 @@ async function loadMarkdownPage(pageId) {
       parseMarkdown(md);
     }
     else {
-      startMapBuild(pageId);
+      contentEl.innerHTML = '<div id="map"></div>';
+      buildMap('source/json/worldmap.json');
     }
   }
   catch (err) {
