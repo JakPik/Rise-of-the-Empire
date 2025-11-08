@@ -1,12 +1,12 @@
 let foundTags = [];
 const startDate = [3003, 5, 16];
 
-function parseMarkdown(md) {
+function parseMarkdown(md, pageId) {
   const parsed = preprocessCallouts(md);
   contentEl.innerHTML = marked.parse(parsed);
   contentEl.append(buildModal());
   processNPCTags();
-  processLocationTags(md);
+  processLocationTags(pageId);
   processQuestTags();
   processDayTag();
   processPlayerInfoTag();

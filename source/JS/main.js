@@ -330,7 +330,7 @@ async function loadMarkdownPage(pageId) {
       const rest = await fetch(pageId);
       if (!rest.ok) throw new Error('Failed to fetch: ' + rest.status);
       const md = await rest.text();
-      parseMarkdown(md);
+      parseMarkdown(md, pageId);
     }
     else {
       contentEl.innerHTML = '<div id="map"></div>';
