@@ -8,5 +8,5 @@ data-location="okolí elakdetu"
 data-info="Informace o postavě"
 data-description="Někdy mladá žena, jindy stařena."
 data-tasks="Seznam úkolů"
-data-img="Images/npc/Carodejka.jpg"
+data-img="Images/npc/Carodejka.jpg,Images/npc/Carodejka2.jpg"
 ></div>
