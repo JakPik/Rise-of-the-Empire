@@ -6,22 +6,7 @@ const contentEl = document.getElementById('content');
 
 const markdownPages = {
   session1: `
-<div class="Day" data-day="1">
-  line 1
-  <div class="Player_Info" id="Algaar">
-      This is test Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem assumenda excepturi eum fuga iure cupiditate enim architecto quaerat odit eveniet illo provident, repellat nobis facere explicabo nulla ipsum deleniti temporibus?
-      1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit recusandae excepturi soluta, nobis iste facere dignissimos exercitationem quam consectetur incidunt tempora optio. Et eaque alias ullam? Obcaecati id officia alias.
-      2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut doloremque non in necessitatibus minima, dicta similique iste molestiae soluta totam aliquam corporis officia alias ut minus nesciunt, impedit officiis? Similique.
-    </div>
-    line 2
-    <div class="Player_Info" id="Tohru">
-      This is test Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem assumenda excepturi eum fuga iure cupiditate enim architecto quaerat odit eveniet illo provident, repellat nobis facere explicabo nulla ipsum deleniti temporibus?
-      1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit recusandae excepturi soluta, nobis iste facere dignissimos exercitationem quam consectetur incidunt tempora optio. Et eaque alias ullam? Obcaecati id officia alias.
-      2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut doloremque non in necessitatibus minima, dicta similique iste molestiae soluta totam aliquam corporis officia alias ut minus nesciunt, impedit officiis? Similique.
-    </div>
-    line 3
-</div>
-
+  --MAGIC--, --WARRIOR--, --DEAD--, --CRAFTSMAN--, --CURSED--, --NOBLE--, --ROGUE--, --DIVINE--, --GUARD--, --HEALER--, --MERCHANT--, --MISSING--, --SCHOLAR--, --UNDEAD--
 <div class="NPC"
 data-name="Františike"
 data-race="člověk"
@@ -453,7 +438,7 @@ window.PLAYER_ROLE = playerRole.replace(/^--|--$/g, '');
 const header = document.getElementById('main_header');
 let tag = window.PLAYER_ROLE;
 header.textContent += " - " + PLAYERS_MAP[window.PLAYER_ROLE];
-//loadMarkdownPageLocal('session2');
+//loadMarkdownPageLocal('session1');
 //buildNavBar(NavBAE, document.querySelector('.collapsible-list'));
 //setUpEvents();
 

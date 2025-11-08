@@ -22,7 +22,22 @@ session1
 - [x] do složky lokace přidat obyvatelé - proklik ve filu
 
 - [ ] k npc přidat nějakou ikonku vedle jména která implikuje že  má magickou moc v nějaké formě (např umí kouzlit, měnit se na zvířata nebo něco)
-    - 
+
+List of icons:
+- Dead
+- Magical
+- Cursed / poisoned → skull + green tint, or snake symbol
+- Missing / absent → silhouette with question mark
+- Warrior / fighter → sword or crossed weapons
+- Rogue / stealthy → hooded figure, dagger, or mask
+- Healer / cleric → staff or glowing hand
+- Scholar / wise → book or quill
+- Merchant / trader → coin pouch or scales
+- Craftsman / builder → hammer or anvil
+- Noble / ruler → crown or scepter
+- Guard / soldier → shield or spear
+- Undead
+- God
 
 - [ ] když se refrešne stránka tak to skočí na františike quest místo úvodní stránky
 - [x] k npc přidat ikonku že je mrtví v NavBar
