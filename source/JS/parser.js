@@ -31,7 +31,7 @@ function parseMarkdown(md) {
 
   document.querySelectorAll('.clickableLink').forEach(item => {
     item.addEventListener('click', () => {
-      loadMarkdownPageLocal(item.href);
+      loadMarkdownPage(item.href);
     });
   });
 }

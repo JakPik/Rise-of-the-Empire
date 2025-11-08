@@ -9,7 +9,6 @@ function buildMap(data) {
         zoomSnap: 0.5,
         zoomDelta: 0.5,
     });
-    const test = data['setup']['image_size'];
     const bounds = [[0,0],data['setup']['image_size']]; // map bounds
     const image = L.imageOverlay(data['setup']['image'], bounds).addTo(map);
     map.fitBounds(bounds);
