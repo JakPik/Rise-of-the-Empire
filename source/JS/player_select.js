@@ -1,5 +1,5 @@
-let idx = randomInt(0,1);
-let max = 2;
+let idx = randomInt(0,24);
+let max = 25;
 
 document.querySelectorAll('.role').forEach(roleBtn => {
       roleBtn.addEventListener('click', () => {
@@ -23,3 +23,11 @@ function updateBackground() {
 function randomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+const button = document.getElementById('playButton');
+    const music = document.getElementById('bgMusic');
+
+    button.addEventListener('click', () => {
+      music.play();
+      button.style.display = 'none';
+    });

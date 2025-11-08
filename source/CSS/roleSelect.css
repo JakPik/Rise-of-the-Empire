@@ -50,11 +50,11 @@ header h1 {
 body {
 	padding: 0;
 	margin: 0;
-	max-height: 100vh;
+/*	max-height: 100vh;*/
     width: auto;
     /*background-image: url(../../Images/page_ui/background_1.jpg);*/
     background-size: cover;
-    background-position: 0 -100px;
+   /* background-position: 0 -100px;*/
     background-attachment: fixed;       /* image stays fixed in place */
     overflow: hidden;
     background-repeat: no-repeat;
@@ -74,3 +74,22 @@ body {
 .box h1 {
     text-align: center;
 }
+
+#playButton {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      font-size: 1.2em;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      border: 2px solid white;
+      border-radius: 10px;
+      cursor: pointer;
+      z-index: 1000;
+      transition: background 0.3s;
+    }
+
+    #playButton:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }

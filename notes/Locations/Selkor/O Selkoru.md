@@ -1,0 +1,2 @@
+Skelkoru dominují na severu i jihu masivní hory mezi kterými jsou otevřené zvlněné pláně s bujnou trávou a stuhovitými lesy, které obklopují malé bažiny, potulující se různými stádovými šelmami, jako jsou  Abeiran-endemic scathebeasts 
+Jedná se o místo, kde vládnou trpaslíci, a proto je většina měst budována po obvodu hor či přímo v nich. Vládne zde trpasličí velekrál. Uprostřed selkoru se nachází obrovské jezero, které je díky jeho poloze prakticky nevyužíváno.

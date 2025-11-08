@@ -20,41 +20,47 @@ function closeImage() {
   document.getElementById("imageModal").style.display = "none";
 }
 
-function updateCarousel() {
-  const ref = document.getElementsByClassName('carousel')[0];
-  const track = document.getElementsByClassName('carousel-track')[0];
-  const curIdx = +ref.dataset.currentIndex;
+function updateCarousel(carousel) {
+  
+  const track = carousel.getElementsByClassName('carousel-track')[0];
+  const curIdx = +carousel.dataset.currentIndex;
   let width = 2;
   for(let i = 0; i < curIdx; i++) {
     width += track.children[i].clientWidth;
     width += 3;
   }
   
-  ref.style.width = track.children[curIdx].clientWidth + 'px';
+  carousel.style.width = track.children[curIdx].clientWidth + 'px';
   track.style.transform = `translateX(-${width}px)`;
 }
 
-function spinCarousel(offset) {
-    const ref = document.getElementsByClassName('carousel')[0];
-    const totalSlides = +ref.dataset.slides;
-    let currentIndex = +ref.dataset.currentIndex;
+function spinCarousel(offset, carousel) {
+    const totalSlides = +carousel.dataset.slides;
+    let currentIndex = +carousel.dataset.currentIndex;
     let num = (currentIndex + offset + totalSlides) % totalSlides;
-    ref.dataset.currentIndex = num;
-    updateCarousel();
+    carousel.dataset.currentIndex = num;
+    updateCarousel(carousel);
 }
 
 function testVisibility(value) {
-    if(value){
-        if(Object.keys(value).length === 0) {
+    var tag = [];
+    if(Array.isArray(value)) {
+      tag = value;
+    }
+    else {
+      tag.push(value.replace(/^--|--$/g, ''));
+    }
+    if(tag){
+        if(Object.keys(tag).length === 0) {
             return false;
         }
-        else if(!value.some(v => PLAYERS.includes(v))) {
+        else if(!tag.some(v => PLAYERS.includes(v))) {
             return false;
         }
         else if(window.PLAYER_ROLE == "DM") {
             return false;
         }
-        else if(value.includes(window.PLAYER_ROLE)) {
+        else if(tag.includes(window.PLAYER_ROLE)) {
             return false;
         }
         else {

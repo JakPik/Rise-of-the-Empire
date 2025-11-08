@@ -33,6 +33,45 @@
     text-transform: capitalize;
 }
 
+#content a#h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    width:fit-content;
+    padding: 0 15px;
+    border-bottom: solid 1px #000000;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    text-transform: capitalize;
+    color: rgb(107, 72, 24);
+    font-weight: 100;
+    font-weight: bold;
+}
+
+#content a#h2 {
+    font-size: 20px;
+    color: rgb(83, 56, 19);
+    display: inline;
+    width:fit-content;
+    margin: 0;
+    margin-top: 5px;
+    margin-right: 5px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+#content a#h3 {
+    font-size: 15px;
+    color: rgb(62, 40, 8);
+    display: inline;
+    width:fit-content;
+    margin: 0;
+    margin-top: 5px;
+    margin-right: 5px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: bold;
+}
+
 #content p {
     font-size: 15px;
     width:fit-content;
@@ -146,20 +185,87 @@ button:hover { background: rgba(0, 0, 0, 0.3); }
     width: auto;
 }
 
-#info h1 {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
-    width:fit-content;
-    border: none;
-    color: darkgreen;
-    margin: 0;
-    padding: 0;
-    text-transform: capitalize;
+#content .Image_div {
+    float: right;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  width: fit-content;
 }
 
-#info {
-    border-left: 6px solid green;
-    background-color: lightgreen;
-    border-radius: 15px;
-    padding: 5px;
+#content .Character_Sheet {
+    padding: 15px;
+    margin: 10px 0;
 }
+
+table {
+    border-collapse: collapse; /* important for clean grid lines */
+}
+
+td, th {
+    padding-left: 5px;
+    padding-right: 5px;
+    border: #000000 2px solid;
+}
+
+th {
+    border-bottom: #000000 3px solid;
+    background-color: #00000010;
+}
+
+.icon_bar img {
+    display: inline-flex;
+    flex-wrap: wrap;
+    max-height: 45px;
+    border: 2px solid #00000080;
+    border-radius: 10px;
+    cursor: zoom-in;
+    margin: 0;
+}
+
+.npc_block, .icon_bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon_container {
+  position: relative; /* Important for positioning the tooltip */
+  display: inline-block;
+}
+
+/* Tooltip styling */
+.icon_tooltip {
+  visibility: hidden;
+  opacity: 0;
+  background-color: #00000044;
+  color: #fff;
+  text-align: center;
+  padding: 5px 8px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 110%; /* Position above image */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  transition: opacity 0.5s;
+  z-index: 1;
+}
+
+/* Tooltip arrow */
+.icon_tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #00000044 transparent transparent transparent;
+}
+
+/* Show tooltip on hover */
+.icon_container:hover .icon_tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+

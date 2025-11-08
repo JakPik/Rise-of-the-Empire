@@ -11,8 +11,11 @@ function buildItem(tag, attributeName) {
 function buildItemList(attributeName, content) {
     const div = document.createElement('div');
     div.className = 'item';
-
-    div.appendChild(getHeader('h3', attributeName + ':'));
+    const link = '#' + attributeName.trim()                // remove extra spaces
+                    .toLowerCase()         // make lowercase
+                    .replace(/\s+/g, '-'); // replace spaces with dashes
+                    
+    div.appendChild(getHeader('h3', attributeName + ':', link));
 
     const p = document.createElement('p');
     p.textContent = content;
@@ -20,9 +23,18 @@ function buildItemList(attributeName, content) {
     return div;
 }
 
-function getHeader(header, title) {
-    const tempHeader = document.createElement(header);
-    tempHeader.textContent = title;
+function getHeader(header, title, link) {
+    var tempHeader;
+    if(link && link != undefined) {
+        tempHeader = document.createElement('a');
+        tempHeader.textContent = title;
+        tempHeader.href = link;
+        tempHeader.id = header;
+    }
+    else {
+        tempHeader = document.createElement(header);
+        tempHeader.textContent = title;
+    }
     return tempHeader;
 }
 
@@ -36,23 +48,24 @@ function getAttributeParagraph(content, className) {
     return p;
 }
 
-function getImage(tag) {
+function getImage(tag, height) {
     const div = document.createElement('div');
-    div.appendChild(buildModal());
+    //div.appendChild(buildModal());
     const images = tag.dataset['img'].split(',').map(item => item.trim());
     if (images.length > 1) {
-        div.appendChild(buildCarousel(images));
+        div.appendChild(buildCarousel(images, height));
     }
     else {
-        div.appendChild(BuildImage(images[0]));
+        div.appendChild(BuildImage(images[0], height));
     }
     return div;
 }
 
-function BuildImage(src) {
+function BuildImage(src, height) {
     const img = document.createElement('img');
     img.src = src;
     img.alt = src;
+    img.style.height = height==0 ? 300 : height + 'px';
     img.className = 'zoomable';
     img.onclick = openImage;
     return img;
@@ -66,11 +79,12 @@ function buildModal() {
     const img = document.createElement('img');
     img.className = 'modal-content';
     img.id = 'modalImage';
+    img.alt = 'modalImage';
     modal.appendChild(img);
     return modal;
 }
 
-function buildCarousel(images) {
+function buildCarousel(images, height) {
     const div = document.createElement('div');
     div.className = 'container';
     const carousel = document.createElement('div');
@@ -81,15 +95,15 @@ function buildCarousel(images) {
     const buttonPrev = document.createElement('button');
     buttonPrev.className = 'prev';
     buttonPrev.textContent = '<';
-    buttonPrev.onclick = () => { spinCarousel(-1); };
+    buttonPrev.onclick = () => { spinCarousel(-1, carousel); };
     const buttonNext = document.createElement('button');
     buttonNext.className = 'next';
     buttonNext.textContent = '>';
-    buttonNext.onclick = () => { spinCarousel(1); };
+    buttonNext.onclick = () => { spinCarousel(1, carousel); };
     const imgContainer = document.createElement('div');
     imgContainer.className = 'carousel-track';
     for(let i = 0; i < num; i++) {
-        imgContainer.appendChild(BuildImage(images[i]));
+        imgContainer.appendChild(BuildImage(images[i], height));
     }
     div.appendChild(buttonPrev);
     carousel.appendChild(imgContainer);
@@ -97,8 +111,14 @@ function buildCarousel(images) {
     div.appendChild(buttonNext);
 
     imgContainer.children[0].onload = () => {
-            const width = +imgContainer.children[0].width / ( +imgContainer.children[0].height / 300);
-            document.getElementsByClassName('carousel')[0].style.width = width + 'px';
+            var h = 300;
+            if(height != undefined) {
+                h = height.trim().endsWith("px") ? +height.trim().slice(0, -2) : 300;
+                h = h==0 ? 300 : h;
+            }
+            const width = +imgContainer.children[0].width / ( +imgContainer.children[0].height / +h);
+            imgContainer.style.width = width + 'px';
+            //document.getElementsByClassName('carousel')[0].style.width = width + 'px';
         };
     return div;
 }
@@ -115,7 +135,10 @@ function constructTaskList(tag) {
 
     taskArr.forEach(task => {
         const li = document.createElement('li');
+        li.href = "notes/Quests/" + task + ".md";
         li.textContent = task;
+        li.className = 'clickableTask';
+        li.style.cursor = 'pointer';
         tasksList.appendChild(li);
     });
 
@@ -131,6 +154,23 @@ function constructBuildingList(tag) {
         const li = document.createElement('li');
         const pair = task.split(':').map(item => item.trim());
         li.appendChild(buildItemList(pair[0], pair[1]));
+        tasksList.appendChild(li);
+    });
+
+    return tasksList;
+}
+
+function constructNPCList(tag) {
+    const tasksList = document.createElement('ul');
+    const tasksAttr = tag.dataset['NPCs'];
+    const taskArr = tasksAttr ? tasksAttr.split(',').map(item => item.trim()) : [];
+
+    taskArr.forEach(task => {
+        const li = document.createElement('li');
+        li.href = "notes/NPCs/" + tag.dataset['settlement'] + "/" + task + ".md";
+        li.textContent = task;
+        li.className = 'clickableLink';
+        li.style.cursor = 'pointer';
         tasksList.appendChild(li);
     });
 

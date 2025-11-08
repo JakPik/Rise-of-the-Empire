@@ -1,38 +1,148 @@
 {
   "notes": {
     "Locations": {
-      "Bronzova Vesnice.md": [],
-      "Elakdet.md": [],
-      "Zipperdam.md": []
+      "Eskord": {
+        "Města": {
+          "Argul.md": [],
+          "Belphins hold.md": [],
+          "Fire Trees.md": [],
+          "Hull.md": [],
+          "Ironhaar.md": [],
+          "Kriegurd.md": [],
+          "Maják Krag.md": [],
+          "Misthaws.md": [],
+          "Nornglast.md": [],
+          "Pardum.md": [],
+          "Raurorh.md": [],
+          "Saril.md": [],
+          "Severní luz.md": [],
+          "Stormhelm.md": []
+        },
+        "O Eskordu.md": [],
+        "Příroda": {
+          "Oroth.md": [],
+          "Severní vřesoviště.md": [],
+          "Storské jeskině.md": [],
+          "Velký průchod.md": [],
+          "Velký strom.md": []
+        }
+      },
+      "Fimbrul": {
+        "O Fimbrulu.md": []
+      },
+      "Gontal": {
+        "O Gontalu.md": []
+      },
+      "Selkor": {
+        "O Selkoru.md": []
+      },
+      "Společenství obchodních měst": {
+        "Města": {
+          "Harglast.md": [],
+          "Imdolphyn.md": [],
+          "Rameko.md": [],
+          "Sambrail.md": [],
+          "Tarmalune.md": []
+        },
+        "O SOM.md": []
+      },
+      "Sword Lands": {
+        "Města": {
+          "Aldreth.md": [],
+          "Elakdet.md": [],
+          "Fanedown.md": [],
+          "Greida.md": [],
+          "Harimmon.md": [],
+          "Kivar.md": [],
+          "Kovolot.md": [],
+          "Krour.md": [],
+          "Rost.md": [],
+          "Strobad.md": [],
+          "Strund.md": [],
+          "Ulark.md": [],
+          "Zipperdam.md": []
+        },
+        "O Sword Lands.md": [],
+        "Příroda": {
+          "Dlouhá bažina.md": [],
+          "Tantulp-Sundarrske hory.md": [],
+          "Velká rostská věž.md": [],
+          "Velká stardurská věž.md": [],
+          "Zapomenuté pobřeží.md": [],
+          "Zřícené brány Harrimonu.md": []
+        }
+      }
     },
     "NPCs": {
       "Elakdet": {
-        "Aimiakira.md": [],
-        "Akemiakira.md": [],
-        "Akikoishimoto.md": [],
-        "Akiraakira.md": [],
-        "Amaterasuakira.md": ["--DEAD--"],
-        "Keiishimoto.md": [],
-        "Kentammatsuda.md": [],
+        "Aimi Akira.md": [],
+        "Akemi Akira.md": [],
+        "Akiko Ishimoto.md": [],
+        "Akira Akira.md": [],
+        "Amaterasu Akira.md": [
+          "--DEAD--"
+        ],
+        "Kei Ishimoto.md": [],
+        "Kenta Matsuda.md": [],
         "Naoki.md": [],
-        "Osamuokamota.md": [],
-        "Shin_Okamota.md": [],
-        "Stinovyvestec.md": []
+        "Osamu Okamota.md": [],
+        "Shin Okamota.md": [],
+        "Stinovy vestec.md": []
       },
       "Okolí elakdetu": {
+        "Azura.md": [
+          "LYBA"
+        ],
         "Carodejka.md": [],
-        "Skelgrond.md": ["--DEAD--"],
-        "Azura.md": []
+        "Skelgrond.md": [
+          "--DEAD--"
+        ]
+      }
+    },
+    "Players": {
+      "Algaar.md": [
+        "----",
+        "--|:--",
+        "---:|:--",
+        "--:|:--"
+      ],
+      "Krag.md": [],
+      "Lyba.md": [],
+      "Sadosu.md": [],
+      "Tohru.md": [
+        "----",
+        "--|:--",
+        "---:|:--",
+        "--:|:--"
+      ]
+    },
+    "Politics": {
+      "Organizace": {
+        "Naboženství": {
+          "Dračí.md": [],
+          "Druidizmus.md": [],
+          "Kult Aqua.md": []
+        }
+      },
+      "Vlády": {
+        "Fimbrul.md": [],
+        "Gontal.md": [],
+        "Selkor.md": [],
+        "Společenství obchodních měst.md": [],
+        "Sword Lands.md": []
       }
     },
     "Quests": {
+      "Kovářova těžba.md": [],
+      "Kámen z hvězd.md": [],
+      "Mizející rybáři.md": [],
+      "Rozhovor s neživým Druidem.md": [],
       "Ztraceny nahrdelnik.md": []
     },
     "Sessions": {
       "Session 1.md": [],
       "Session 2.md": [],
-      "Session 3.md": [],
-      "test.md": []
+      "Session 3.md": []
     }
   }
 }
