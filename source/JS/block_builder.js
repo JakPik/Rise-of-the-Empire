@@ -167,7 +167,7 @@ function constructNPCList(tag, md) {
     const path = md.split('/');
     taskArr.forEach(task => {
         const li = document.createElement('li');
-        li.href = path[0] + "/NPCs/" + path[2] + "/" + path[4] +  "/" + task + ".md";
+        li.href = path[0] + "/NPCs/" + path[2] + "/" + path[4].replace('.md', '') +  "/" + task + ".md";
         li.textContent = task;
         li.className = 'clickableLink';
         li.style.cursor = 'pointer';
