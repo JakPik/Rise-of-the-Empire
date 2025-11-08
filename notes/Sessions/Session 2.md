@@ -1,3 +1,7 @@
+# Úvod
+
+Minule jsme začali v malebné vesničce Elakdet, kde si někteří všimli že se nedaleko vesnice vyskytuje nějaké nebezpečné stvoření, možná žralok nebo něco podobného. Poté jste se rozhodli pomoci místnímu kováři Akirovi s jeho nedostatkem kovů, ten vás poslal pátrán do bažin, a přitom se nezapomněl zmínit o jakémsi rituálu. Při namáhavém shánění informací o rituálu jste neopomněli činnosti jakožto uzavřít smlouvu s čarodějkou, rozzlobit místního kněze a ukrást starodávnou báseň k rituálu od Karima kterému jste zároveň poslali velice zajímavý totem. Cesta do bažiny proběhla poklidně ale příprava rituálu to pro vás byla ta pravá výzva, nakonec se však i rituál povedl a byli jste požehnáni božstvem bažiny. V bažině jste se setkaly s mnohým nástrahami, mezi které patřili vybuchující gejzíry a roje nepřátelského hmyzu. Nicméně jste všechny nástrahy překonali a na některých nepřátelích si i pochutnali. A nyní i s bohatým úlovkem nocujete v zříceninách na kraji bažiny a sbíráte síly na cestu zpět do Elakdetu kde jsou již v plném proudu přípravy na festival ohně.
+
 <div class="Day" data-day="6">
 Po přiměřeném odpočinku jsme se probudili v rujnách. Mý společníci se rozhodli, že potřebují ještě navštívit babku v kopečku nedaleko Elakdetu.
 Cesta probíhala hladce, do doby než jsme narazili na opuštěný vozik uprostřed cesty. Známky po přepadení byli evidentní. Při prohledávání místa nás přebadli bandité, tedy jak jsme se dozvěděli od Tohrua tak to byl Karim a jeho lidi.

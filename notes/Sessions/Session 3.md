@@ -1,3 +1,7 @@
+# Úvod
+
+Posledních pár dní bylo poněkud chaotických, ale aspoň se nikdo nenudil. Jak už to, tak bývá, tak i špatné věci začínají něčím dobrým a v našem případě to bylo oslavou, oslavou naší milé bohyně ohně. Oslava byla veselá a plná spousty her ve kterých se dalo soutěžit. V průběhu oslav vás však vyrušil kámen z hvězd. Co však byl zač? Možná že dar od bohů, možná že řešení ohnivých duchů, možná že náboženská ikona. No ať už byl cokoliv tak jedno je jisté teď je to zbraň, zbraň, kterou požehnala samotná bohyně zkázy. Poté jste se vydali zaplavat k nedalekému druidovy, druidovy, který vám zemřel během oběda a část z vás se kvůli tomu málem utopila. Nakonec jste se všichni sešli ve vesnici a s předzvěstí války očekáváte další den.
+
 <div class="Day" data-day="9">
 Probouzím se, chlad a nejistota předchozího dne stále přetrvává. Děje se toho moc, nevím jak dál. Můj jedinný úkol, který mi byl svěřen pokulhává a vše co se může v Elakdetu skazit se skazí.
 Potřebuji se uklidnit a tak mířim ke kamenité zřícené věži. Panuje tu klid a odrazy slunce od mořské hladiny mi připomínají moji domovinu, kde stíny vrhané korunami stromů kolem naši vesnice vyrhají totžné světelné mapy.
