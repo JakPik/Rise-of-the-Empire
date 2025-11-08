@@ -334,7 +334,11 @@ async function loadMarkdownPage(pageId) {
     }
     else {
       contentEl.innerHTML = '<div id="map"></div>';
-      buildMap('source/json/worldmap.json');
+      const rest = await fetch(pageId)
+      .then(res => res.json())
+      .then(data => {
+      buildMap(data);
+      });
     }
   }
   catch (err) {
