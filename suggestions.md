@@ -1,10 +1,10 @@
 - [x] více obrázků na jednu záložku
 - [x] zvětšování obrázků 
 - [x] složková struktura pro obrázky
-- [ ] zobrazování map ???
+- [x] zobrazování map ???
 - [x] Full path k obrázkům
 - [x] tagy - visibilita
-- [ ] mp4 player in session note
+- [ ] mp4/mp3 player in session note
 - [ ] prázdný tag se nezobrazuje
 - [ ] <del>pro více kampaní?</del>
 
@@ -16,12 +16,12 @@ session1
         - event 2
     - ......</del>
 
-- [ ] lokace rozdělit podle kontinentů
-- [ ] nějaká záložka s velkou mapou celého kontinentu která se dá zoomovat scrolováním 
+- [x] lokace rozdělit podle kontinentů
+- [x] nějaká záložka s velkou mapou celého kontinentu která se dá zoomovat scrolováním 
 
 - [x] do složky lokace přidat obyvatelé - proklik ve filu
 
-- [ ] k npc přidat nějakou ikonku vedle jména která implikuje že  má magickou moc v nějaké formě (např umí kouzlit, měnit se na zvířata nebo něco)
+- [x] k npc přidat nějakou ikonku vedle jména která implikuje že  má magickou moc v nějaké formě (např umí kouzlit, měnit se na zvířata nebo něco)
 
 List of icons:
 - Dead
@@ -39,14 +39,14 @@ List of icons:
 - Undead
 - God
 
-- [ ] když se refrešne stránka tak to skočí na františike quest místo úvodní stránky
+- [x] když se refrešne stránka tak to skočí na františike quest místo úvodní stránky
 - [x] k npc přidat ikonku že je mrtví v NavBar
 
 - [x] ůvodní stránka má při fullscreenu trochu posunutý panel s výběrem postav
 
 - [x] aby budovy v lokacích fungovali jako seznam s odkazem na část o konkrétní budově - link na file
 
-- [ ] možnost utajovat pouze některé informace na stránce
+- [x] možnost utajovat pouze některé informace na stránce
 
 - [ ] eastereggy
 
