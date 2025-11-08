@@ -354,6 +354,7 @@ async function start(pageId) {
     a.className = 'note-link';
     const fullPath = `source/json/worldmap.json`; // include subfolder path
     a.dataset.path = fullPath;
+    a.textContent = "World Map";
     li.appendChild(a);
     ul.appendChild(li);
     buildNavBar(data, ul);
