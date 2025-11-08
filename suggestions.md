@@ -51,3 +51,16 @@ List of icons:
 - [ ] eastereggy
 
 - [ ] nakonfigurovat Git Large File Storage
+  
+``` json
+    "markers": {
+        "mark1": {
+            "position": [-3, 20, 50],
+            "link": "link/to/note.md"
+        },
+        "mark2": {
+            "position": [-3, 200, 500],
+            "link": "Hi"
+        }
+    }
+```
