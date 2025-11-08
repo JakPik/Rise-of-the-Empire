@@ -1,0 +1,16 @@
+{
+    "setup": {
+        "image": "Images/svet.jpg",
+        "image_size": [5504, 8192]
+    },
+    "markers": {
+        "mark1": {
+            "position": [-3, 20, 50],
+            "link": "link/to/note.md"
+        },
+        "mark2": {
+            "position": [-3, 200, 500],
+            "link": "Hi"
+        }
+    }
+}

@@ -326,10 +326,20 @@ function loadMarkdownPageLocal(pageId) {
 
 async function loadMarkdownPage(pageId) {
   try {
-    const rest = await fetch(pageId);
-    if (!rest.ok) throw new Error('Failed to fetch: ' + rest.status);
-    const md = await rest.text();
-    parseMarkdown(md);
+    if(pageId.includes(".md")) {
+      const rest = await fetch(pageId);
+      if (!rest.ok) throw new Error('Failed to fetch: ' + rest.status);
+      const md = await rest.text();
+      parseMarkdown(md);
+    }
+    else {
+      contentEl.innerHTML = '<div id="map"></div>';
+      const rest = await fetch(pageId)
+      .then(res => res.json())
+      .then(data => {
+      buildMap(data);
+      });
+    }
   }
   catch (err) {
     contentEl.innerHTML = '<p>Error loading page: ' + err.message + '</p>';
@@ -341,7 +351,17 @@ async function start(pageId) {
     const rest = await fetch(pageId)
   .then(res => res.json())
   .then(data => {
-    buildNavBar(data, document.querySelector('.collapsible-list'));
+    const ul = document.querySelector('.collapsible-list');
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = '#';
+    a.className = 'note-link';
+    const fullPath = `source/json/worldmap.json`; // include subfolder path
+    a.dataset.path = fullPath;
+    a.textContent = "World Map";
+    li.appendChild(a);
+    ul.appendChild(li);
+    buildNavBar(data, ul);
   });
   }
   catch (err) {
@@ -374,6 +394,7 @@ function buildNavBar(folder, parentEl, basePath = '') {
     } else {   
         if(basePath == '') {
           buildNavBar(value,parentEl ,`${key}`); // recursive with folder path
+          
         }
         else {
           const span = document.createElement('span');
@@ -438,8 +459,18 @@ window.PLAYER_ROLE = playerRole.replace(/^--|--$/g, '');
 const header = document.getElementById('main_header');
 let tag = window.PLAYER_ROLE;
 header.textContent += " - " + PLAYERS_MAP[window.PLAYER_ROLE];
-//loadMarkdownPageLocal('session1');
-//buildNavBar(NavBAE, document.querySelector('.collapsible-list'));
-//setUpEvents();
+/*loadMarkdownPageLocal('session1');
+const ul = document.querySelector('.collapsible-list');
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = '#';
+    a.className = 'note-link';
+    const fullPath = `source/json/worldmap.json`; // include subfolder path
+    a.dataset.path = fullPath;
+    a.textContent = "World Map";
+    li.appendChild(a);
+    ul.appendChild(li);
+buildNavBar(NavBAE, document.querySelector('.collapsible-list'));
+setUpEvents();*/
 
 start('source/json/NavBar.json');
