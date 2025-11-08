@@ -1,3 +1,4 @@
+--MAGIC----SCHOLAR--
 <div class="NPC"
 data-name="Naoki"
 data-race="Halfling"

@@ -1,3 +1,5 @@
+--CURSED----MAGIC--
+
 # Algaar Thornwood
 
 <div class="Image_view"

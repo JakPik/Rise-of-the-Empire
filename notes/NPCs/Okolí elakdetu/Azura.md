@@ -1,4 +1,4 @@
---LYBA--
+--LYBA----MAGIC--
 <div class="NPC"
 data-name="Azura"
 data-race="Naiad"

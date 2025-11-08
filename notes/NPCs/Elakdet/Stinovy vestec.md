@@ -1,3 +1,4 @@
+--SCHOLAR----MAGIC--
 <div class="NPC"
 data-name="Stínový věštec"
 data-race="Halfling"

@@ -1,3 +1,4 @@
+--GUARD----CRAFTSMAN--
 <div class="NPC"
 data-name="Akira Akira"
 data-race="Halfelf"
