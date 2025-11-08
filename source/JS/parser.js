@@ -29,11 +29,11 @@ function parseMarkdown(md, pageId) {
     });
   });
 
-  /*document.querySelectorAll('.clickableLink').forEach(item => {
+  document.querySelectorAll('.clickableLink').forEach(item => {
     item.addEventListener('click', () => {
       loadMarkdownPage(item.href);
     });
-  });*/
+  });
 }
 
 function processHeadingTags() {
