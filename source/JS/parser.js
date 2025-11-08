@@ -131,8 +131,20 @@ function addIcons() {
   div.className = 'icon_bar';
   for(let tag of foundTags) {
     var cleanTag = tag.replace(/--/g, '');
+    if(PLAYERS.includes(cleanTag.toUpperCase())) {
+      continue;
+    }
     cleanTag = cleanTag.toLowerCase();
-    div.appendChild(BuildImage("Images/icons/" + cleanTag + ".jpg", "30px"));
+    const container = document.createElement('div');
+    container.className = 'icon_container';
+    container.appendChild(BuildImage("Images/icons/" + cleanTag + ".jpg", "30px"));
+    const tooltip = document.createElement('span');
+    tooltip.className = 'icon_tooltip';
+    tooltip.textContent = cleanTag.charAt(0).toUpperCase() + cleanTag.slice(1);
+    container.appendChild(tooltip);
+    div.appendChild(container);
+    //
+    //div.appendChild(BuildImage("Images/icons/" + cleanTag + ".jpg", "30px"));
   }
   return div
 }
