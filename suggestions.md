@@ -17,11 +17,11 @@ session1
     - ......</del>
 
 - [ ] lokace rozdělit podle kontinentů
-- [ ] nějaká záložka s velkou mapou celého kontinentu která se dá zoomovat scrolováním 
+- [x] nějaká záložka s velkou mapou celého kontinentu která se dá zoomovat scrolováním 
 
 - [x] do složky lokace přidat obyvatelé - proklik ve filu
 
-- [ ] k npc přidat nějakou ikonku vedle jména která implikuje že  má magickou moc v nějaké formě (např umí kouzlit, měnit se na zvířata nebo něco)
+- [x] k npc přidat nějakou ikonku vedle jména která implikuje že  má magickou moc v nějaké formě (např umí kouzlit, měnit se na zvířata nebo něco)
 
 List of icons:
 - Dead
