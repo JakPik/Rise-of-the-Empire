@@ -160,17 +160,18 @@ function constructBuildingList(tag) {
     return tasksList;
 }
 
-function constructNPCList(tag) {
+function constructNPCList(tag, md) {
     const tasksList = document.createElement('ul');
     const tasksAttr = tag.dataset['NPCs'];
     const taskArr = tasksAttr ? tasksAttr.split(',').map(item => item.trim()) : [];
-
+    const path = md.split('/');
     taskArr.forEach(task => {
         const li = document.createElement('li');
-        li.href = "notes/NPCs/" + tag.dataset['settlement'] + "/" + task + ".md";
-        li.textContent = task;
-        li.className = 'clickableLink';
-        li.style.cursor = 'pointer';
+        const a = document.createElement('a');
+        a.textContent = task;
+        a.id = task;
+        a.href = path[0] + "/NPCs/" + path[2] + "/" + path[4] +  "/" + task + ".md";
+        li.appendChild(a);
         tasksList.appendChild(li);
     });
 

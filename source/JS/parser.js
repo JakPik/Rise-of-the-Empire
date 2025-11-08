@@ -6,7 +6,7 @@ function parseMarkdown(md) {
   contentEl.innerHTML = marked.parse(parsed);
   contentEl.append(buildModal());
   processNPCTags();
-  processLocationTags();
+  processLocationTags(md);
   processQuestTags();
   processDayTag();
   processPlayerInfoTag();
@@ -102,7 +102,7 @@ function processImageViewTags() {
   });
 }
 
-function processLocationTags() {
+function processLocationTags(md) {
   const tags = document.querySelectorAll('.Location');
 
   tags.forEach(tag => {
@@ -120,7 +120,7 @@ function processLocationTags() {
     card.appendChild(getHeader('h2', 'Budovy'));
     card.appendChild(constructBuildingList(tag));
     card.appendChild(getHeader('h2', 'NPCs'));
-    card.appendChild(constructBuildingList(tag));
+    card.appendChild(constructNPCList(tag, md));
 
     tag.parentNode.replaceChild(card, tag);
   });
