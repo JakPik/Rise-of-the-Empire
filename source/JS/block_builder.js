@@ -162,7 +162,7 @@ function constructBuildingList(tag) {
 
 function constructNPCList(tag, md) {
     const tasksList = document.createElement('ul');
-    const tasksAttr = tag.dataset['NPCs'];
+    const tasksAttr = tag.dataset['npc'];
     const taskArr = tasksAttr ? tasksAttr.split(',').map(item => item.trim()) : [];
     const path = md.split('/');
     taskArr.forEach(task => {
