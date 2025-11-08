@@ -24,7 +24,64 @@ v určitých místech lze přidávat obrázky v takovém případě je nutné je
 ### Viditelnost a efekty
 Lze přidávat tagy viditelnosti, např. --LYBA-- <br>
 Tagy efektu:
-- --DEAD-- => ✝
+<table>
+  <tr>
+    <td><img src="Images/icons/dead.png" width="80"></td>
+    <td><strong>--DEAD--</strong><br>Pro postavy, které zemřeli</td>
+  </tr>
+  <tr>
+    <td><img src="Images/icons/craftsman.png" width="80"></td>
+    <td><strong>--CRAFTSMAN--</strong><br>Řemeslnící</td>
+  </tr>
+  <tr>
+    <td><img src="Images/icons/cursed.png" width="80"></td>
+    <td><strong>--CURSED--</strong><br>Prokletí jakéhokoliv typu</td>
+  </tr>
+  <tr>
+    <td><img src="Images/icons/divine.png" width="80"></td>
+    <td><strong>--DIVINE--</strong><br>Bohové, polobohové, božské bytosti</td>
+  </tr>
+  <tr>
+    <td><img src="Images/icons/guard.png" width="80"></td>
+    <td><strong>--GUARD--</strong><br>Strážní, vojáci</td>
+  </tr>
+  <tr>
+    <td><img src="Images/icons/healer.png" width="80"></td>
+    <td><strong>--HEALER--</strong><br>Léčitelé</td>
+  </tr>
+  <tr>
+    <td><img src="Images/icons/magic.png" width="80"></td>
+    <td><strong>--MAGIC--</strong><br>Pro postavy s magickými schopnostmi</td>
+  </tr>
+  <tr>
+    <td><img src="Images/icons/merchant.png" width="80"></td>
+    <td><strong>--MERCHANT--</strong><br>Obchodníci</td>
+  </tr>
+  <tr>
+    <td><img src="Images/icons/missing.png" width="80"></td>
+    <td><strong>--MISSING--</strong><br>Ztracené postavy</td>
+  </tr>
+  <tr>
+    <td><img src="Images/icons/noble.png" width="80"></td>
+    <td><strong>--NOBLE--</strong><br>Šlechtici, výše postavení obyvatelé</td>
+  </tr>
+  <tr>
+    <td><img src="Images/icons/rogue.png" width="80"></td>
+    <td><strong>--ROGUE--</strong><br></td>
+  </tr>
+  <tr>
+    <td><img src="Images/icons/scholar.png" width="80"></td>
+    <td><strong>--SCHOLAR--</strong><br>Učenec, vzdělaná osoba</td>
+  </tr>
+  <tr>
+    <td><img src="Images/icons/undead.png" width="80"></td>
+    <td><strong>--UNDEAD--</strong><br></td>
+  </tr>
+  <tr>
+    <td><img src="Images/icons/warrior.png" width="80"></td>
+    <td><strong>--WARRIOR--</strong><br>Válečník</td>
+  </tr>
+</table>
 
 ## Předlohy formátovaných bloků
 ### Obrázek volně v .md

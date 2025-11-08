@@ -6,7 +6,7 @@ function parseMarkdown(md) {
   contentEl.innerHTML = marked.parse(parsed);
   contentEl.append(buildModal());
   processNPCTags();
-  processLocationTags();
+  processLocationTags(md);
   processQuestTags();
   processDayTag();
   processPlayerInfoTag();
@@ -102,7 +102,7 @@ function processImageViewTags() {
   });
 }
 
-function processLocationTags() {
+function processLocationTags(md) {
   const tags = document.querySelectorAll('.Location');
 
   tags.forEach(tag => {
@@ -120,7 +120,7 @@ function processLocationTags() {
     card.appendChild(getHeader('h2', 'Budovy'));
     card.appendChild(constructBuildingList(tag));
     card.appendChild(getHeader('h2', 'NPCs'));
-    card.appendChild(constructBuildingList(tag));
+    card.appendChild(constructNPCList(tag, md));
 
     tag.parentNode.replaceChild(card, tag);
   });
@@ -137,7 +137,7 @@ function addIcons() {
     cleanTag = cleanTag.toLowerCase();
     const container = document.createElement('div');
     container.className = 'icon_container';
-    container.appendChild(BuildImage("Images/icons/" + cleanTag + ".jpg", "30px"));
+    container.appendChild(BuildImage("Images/icons/" + cleanTag + ".png", "30px"));
     const tooltip = document.createElement('span');
     tooltip.className = 'icon_tooltip';
     tooltip.textContent = cleanTag.charAt(0).toUpperCase() + cleanTag.slice(1);
