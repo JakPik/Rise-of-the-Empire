@@ -346,7 +346,16 @@ async function start(pageId) {
     const rest = await fetch(pageId)
   .then(res => res.json())
   .then(data => {
-    buildNavBar(data, document.querySelector('.collapsible-list'));
+    const ul = document.querySelector('.collapsible-list');
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = '#';
+    a.className = 'note-link';
+    const fullPath = `source/json/worldmap.json`; // include subfolder path
+    a.dataset.path = fullPath;
+    li.appendChild(a);
+    ul.appendChild(li);
+    buildNavBar(data, ul);
   });
   }
   catch (err) {
@@ -379,11 +388,7 @@ function buildNavBar(folder, parentEl, basePath = '') {
     } else {   
         if(basePath == '') {
           buildNavBar(value,parentEl ,`${key}`); // recursive with folder path
-          const a = document.createElement('a');
-          a.href = '#';
-          a.className = 'note-link';
-          const fullPath = `source/json/worldmap.json`; // include subfolder path
-          a.dataset.path = fullPath;
+          
         }
         else {
           const span = document.createElement('span');
@@ -448,8 +453,18 @@ window.PLAYER_ROLE = playerRole.replace(/^--|--$/g, '');
 const header = document.getElementById('main_header');
 let tag = window.PLAYER_ROLE;
 header.textContent += " - " + PLAYERS_MAP[window.PLAYER_ROLE];
-loadMarkdownPageLocal('session1');
+/*loadMarkdownPageLocal('session1');
+const ul = document.querySelector('.collapsible-list');
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = '#';
+    a.className = 'note-link';
+    const fullPath = `source/json/worldmap.json`; // include subfolder path
+    a.dataset.path = fullPath;
+    a.textContent = "World Map";
+    li.appendChild(a);
+    ul.appendChild(li);
 buildNavBar(NavBAE, document.querySelector('.collapsible-list'));
-setUpEvents();
+setUpEvents();*/
 
-//start('source/json/NavBar.json');
+start('source/json/NavBar.json');

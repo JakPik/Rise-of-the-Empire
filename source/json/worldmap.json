@@ -1,15 +1,15 @@
 {
     "setup": {
-        "image": "Images/naoki.jpg",
-        "image_size": [1000, 1000]
+        "image": "Images/svet.jpg",
+        "image_size": [5504, 8192]
     },
     "markers": {
-        "mark": {
-            "position": [20, 50],
-            "link": "link to note"
+        "mark1": {
+            "position": [-3, 20, 50],
+            "link": "link/to/note.md"
         },
-        "marker name": {
-            "position": [200, 500],
+        "mark2": {
+            "position": [-3, 200, 500],
             "link": "Hi"
         }
     }
