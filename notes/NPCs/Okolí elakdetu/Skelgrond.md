@@ -1,4 +1,4 @@
---DEAD--
+--DEAD----MAGIC----HEALER----SCHOLAR--
 <div class="NPC"
 data-name="Skelgrond"
 data-race="Člověk"

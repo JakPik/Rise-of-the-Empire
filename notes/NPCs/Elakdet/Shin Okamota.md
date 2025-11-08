@@ -1,3 +1,4 @@
+--NOBLE----WARRIOR--
 <div class="NPC"
 data-name="Shin Okamota"
 data-race="Člověk"
@@ -6,6 +7,6 @@ data-age="44"
 data-location="Elakdet"
 data-info="Informace o postavě"
 data-description="Arijec, lehce při těle"
-data-tasks="Seznam úkolů"
+data-tasks="Mizející rybáři"
 data-img="Images/npc/shinokamota.jpg"
 ></div>

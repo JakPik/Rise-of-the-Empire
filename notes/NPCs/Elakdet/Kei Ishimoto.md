@@ -1,3 +1,4 @@
+--MAGIC--
 <div class="NPC"
 data-name="Kei Ishimoto"
 data-race="Člověk"

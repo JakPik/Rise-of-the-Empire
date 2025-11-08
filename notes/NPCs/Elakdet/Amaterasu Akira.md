@@ -1,4 +1,4 @@
---DEAD--
+--UNDEAD--
 <div class="NPC"
 data-name="Amaterasu Akira"
 data-race="Halfelf"

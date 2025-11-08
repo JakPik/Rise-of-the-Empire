@@ -1,3 +1,4 @@
+--WARRIOR----MISSING--
 <div class="NPC"
 data-name="Kenta Matsuda"
 data-race="Půlelf"

@@ -1,3 +1,4 @@
+--WARRIOR--
 <div class="NPC"
 data-name="Osamu Okamota"
 data-race="Člověk"

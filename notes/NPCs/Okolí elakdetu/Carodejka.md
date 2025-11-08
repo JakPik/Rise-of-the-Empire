@@ -1,3 +1,4 @@
+--MAGIC--
 <div class="NPC"
 data-name="Carodejka"
 data-race="Půlelf"
