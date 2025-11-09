@@ -1,3 +1,16 @@
+--ALGAR----MAGIC----SCHOLAR--
+<div class="NPC"
+data-name="Kharan z Kořenových plání "
+data-race="Dragonborn"
+data-profession="Druid"
+data-age="?"
+data-location="Kriegurd"
+data-info="Prapalův sližebník, velice moudrý a mocný."
+data-description=""
+data-tasks="Seznam úkolů"
+data-img="Images/npc/kharan.png"
+></div>
+
 ## Kharan z Kořenových plání  
 *Dragonborn druid (level 11)
 
@@ -48,7 +61,3 @@ Pak se odmlčel. A ty sis všiml, že do dřeva na své holi vyryl malý symbol:
 ---
 
 > *„Tohle si pamatuj,“ řekl ti naposledy toho večera, „někdy stačí, že něco *nejde dál*. To je také léčba.“*
-
-<div class="Image_view"
-data-img="Images/npc/kharan.png"
-></div>
