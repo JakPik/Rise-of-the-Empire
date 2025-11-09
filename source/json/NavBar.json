@@ -98,6 +98,11 @@
         "Skelgrond.md": [
           "--DEAD--"
         ]
+      },
+      "Kriegurd":{
+        "Prapal.md": [],
+        "Culmika.md": [],
+        "Kharan.md": []
       }
     },
     "Players": {
@@ -131,7 +136,8 @@
         "Selkor.md": [],
         "Společenství obchodních měst.md": [],
         "Sword Lands.md": []
-      }
+      },
+      "Světové události.md":[]
     },
     "Quests": {
       "Kovářova těžba.md": [],
@@ -144,6 +150,11 @@
       "Session 1.md": [],
       "Session 2.md": [],
       "Session 3.md": []
+    },
+    "Monster manual:"{
+      " Vlkodlak.md": [],
+      " Spirit Shadow.md": [],
+      " Želešák.md": []
     }
   }
 }
