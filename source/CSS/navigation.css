@@ -89,7 +89,7 @@ ul {
     border-left: #000000 solid;
     color: rgb(208, 181, 145);
     overflow-y: auto;
-    overflow-x: auto;
+    max-height: 90vh;
 }
 
 .Nav_Body a {
