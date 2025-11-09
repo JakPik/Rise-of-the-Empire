@@ -89,6 +89,7 @@ ul {
     border-left: #000000 solid;
     color: rgb(208, 181, 145);
     overflow-y: auto;
+    overflow-x: auto;
 }
 
 .Nav_Body a {
