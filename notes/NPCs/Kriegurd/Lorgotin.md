@@ -1,5 +1,4 @@
---ALGAR----Healer----Warior--
-
+--ALGAAR----Healer----Warrior--
 <div class="NPC"
 data-name="Lorgotin"
 data-race="Half-Elf"

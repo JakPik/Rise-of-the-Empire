@@ -1,4 +1,4 @@
---ALGAR----MAGIC----SCHOLAR--
+--ALGAAR----MAGIC----SCHOLAR--
 <div class="NPC"
 data-name="Kharan z Kořenových plání "
 data-race="Dragonborn"

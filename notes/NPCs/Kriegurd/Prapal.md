@@ -1,7 +1,6 @@
---ALGAR----MAGIC----SCHOLAR----NOBLE----HEALER--
-
+--ALGAAR----MAGIC----SCHOLAR----NOBLE----HEALER--
 <div class="NPC"
-data-name="Kharan z Kořenových plání "
+data-name="Prapal Thornwood "
 data-race="Dragonborn"
 data-profession="Hierophant, Druid"
 data-age="?"
