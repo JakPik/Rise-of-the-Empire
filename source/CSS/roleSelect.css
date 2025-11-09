@@ -1,4 +1,4 @@
-#main_box main {
+main {
       font-family: sans-serif;
       display: flex;
       flex-direction: column;
@@ -9,7 +9,7 @@
       color: #fff;
       
     }
-#main_box .role {
+.role {
     margin: 0.5em;
     padding: 1em 2em;
     border: 2px solid #888;
@@ -19,25 +19,25 @@
     text-align: center;
     transition: 0.2s;
 }
-#main_box .role:hover {
+.role:hover {
     background: #333333b0;
     box-shadow: 0 0 30px #7fd1f7ab;
 }
-#main_box .header_block {
+.header_block {
     color: rgb(228, 54, 54);
     border-bottom: 2px solid #000000a0;
     background-color: #000000d0;
     backdrop-filter: blur(6px); 
 }
 
-#main_box header h1 {
+header h1 {
 	margin: 0;
 	font-size: 35px;
 	padding: 5px;
 	padding-left: 15px;
 }
 
-#main_box #logo {
+#logo {
 	display: block;
 	float: left;
 	margin: 0;
@@ -47,7 +47,7 @@
 	border: transparent;
 }
 
-#main_box body {
+body {
 	padding: 0;
 	margin: 0;
 /*	max-height: 100vh;*/
@@ -62,7 +62,7 @@
     transition: background  1.5s ease;
 }
 
-#main_box .box {
+.box {
     margin: 0;
     background-color: #000000a0;
     border-radius: 50px;
@@ -71,11 +71,11 @@
     backdrop-filter: blur(3px); 
 }
 
-#main_box .box h1 {
+.box h1 {
     text-align: center;
 }
 
-#main_box #playButton {
+#playButton {
       position: fixed;
       bottom: 20px;
       right: 20px;
@@ -90,14 +90,6 @@
       transition: background 0.3s;
     }
 
-#main_box #playButton:hover {
+#playButton:hover {
       background: rgba(255, 255, 255, 0.2);
     }
-
-#subscription {
-    display: block;
-}
-
-#main_box {
-    display: none;
-}
