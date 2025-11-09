@@ -117,10 +117,17 @@ function processLocationTags(md) {
     }
     card.appendChild(getAttributeParagraph(tag.dataset['info'], 'info_text'));
     card.appendChild(separator());
-    card.appendChild(getHeader('h2', 'Budovy'));
-    card.appendChild(constructBuildingList(tag));
-    card.appendChild(getHeader('h2', 'NPCs'));
-    card.appendChild(constructNPCList(tag, md));
+    const div = document.createElement('div');
+    div.className = 'column_block';
+    const building = document.createElement('div');
+    const NPC = document.createElement('div');
+    building.appendChild(getHeader('h2', 'Budovy'));
+    building.appendChild(constructBuildingList(tag));
+    NPC.appendChild(getHeader('h2', 'NPCs'));
+    NPC.appendChild(constructNPCList(tag, md));
+    div.appendChild(building);
+    div.appendChild(NPC);
+    card.appendChild(div);
 
     tag.parentNode.replaceChild(card, tag);
   });

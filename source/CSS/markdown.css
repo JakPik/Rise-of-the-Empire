@@ -269,3 +269,7 @@ th {
   opacity: 1;
 }
 
+.column_block {
+    display: flex;
+    gap: 20px;
+}
