@@ -5,7 +5,9 @@ import re
 # Folder to scan
 NOTES_DIR = "notes"
 
-PLAYERS = ["DM","ALGAAR","KRAG","LYBA","SADOSU","TOHRU"];
+PLAYERS = ["DM","ALGAAR","KRAG","LYBA","SADOSU","TOHRU"]
+FORBIDEN_TAGS = ["", ":|:", "|:", ":|", "-:|:"]
+STATUS_TAGS = ["CRAFTSMAN", "CURSED", "DIVINE", "GUARD", "HEALER", "MAGIC", "MERCHANT", "MISSING", "NOBLE", "ROGUE", "SCHOLAR", "UNDEAD", "WARRIOR"]
 
 def scan_folder(folder):
     result = {}
@@ -23,6 +25,12 @@ def scan_folder(folder):
 
                 tags = set(re.findall(r'--(.*?)--', content))
                 for tag in tags:
+                    tag = tag.upper()
+                    if tag == "ALGAR":
+                        tag = "ALGAAR"
+                        is_dead = True
+                    if FORBIDEN_TAGS.__contains__(tag) or STATUS_TAGS.__contains__(tag):
+                        continue
                     if PLAYERS.__contains__(tag):
                         arr.append(tag)
                     else:
