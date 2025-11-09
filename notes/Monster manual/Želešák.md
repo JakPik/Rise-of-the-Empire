@@ -1,12 +1,12 @@
 # Okřídlený králík z Mečových zemí
 
 <div class="Image_view"
-data-img="Images/monster/zelesak.jpg"
+data-img="Images/monster/zeleska.jpg"
 ></div>
 
-**Běžné názvy:** mečový zajíc, křídlokrálík, vzdušný hlodavec, želešák (lidově)
-**Prostředí:** travnaté stepi a zalesněné stráně Mečových zemí
-**Velikost:** zhruba jako běžný králík, ale s rozpětím křídel asi 60 cm
+**Běžné názvy:** mečový zajíc, křídlokrálík, vzdušný hlodavec, želešák (lidově) <br>
+**Prostředí:** travnaté stepi a zalesněné stráně Mečových zemí <br>
+**Velikost:** zhruba jako běžný králík, ale s rozpětím křídel asi 60 cm <br>
 **Chování:** plaché, rychlé, nečekaně inteligentní
 
 **Popis**
