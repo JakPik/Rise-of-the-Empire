@@ -1,11 +1,5 @@
 # Tohru
-Tohru považuje své _učení_ za nepřetržité. Každý nevěstinec, každý dům radovánek, každý přeplněný chrám zasvěcený bohyni lásky a plodnosti, je pro něj "kapitolou ve Velké knize lidské Přirozenosti." Tvrdí, že pochopit lidskou touhu a slabost je klíčem k opravdovému mistrovství Ki.
-
-- __Pravidelný Host__ : Navštěvuje ta nejluxusnější i nejšpinavější nevěstince v každém navštíveném městě, kde proslul jako velkorysý, ale tichý a uctivý host.
-
-- __Osvícení Noci__ : Věří, že neřest je jen další projev energie světa. Rád se oddává vínu, jídlu a sexuálním radovánkám, protože tím údajně "pročišťuje své Ki skrze pozemské potěšení".
-
-- __V boji__ : Je to sice cynik a požitkář, ale jeho trénink je nepopiratelný. Bije s přesností a silou, kterou získal tvrdým tréninkem. Jeho pohyby jsou rychlé a efektivní, bez ohledu na to, jakou kocovinu zrovna léčí.
+Tohru následuje ve stopách svého mistra Sakamota. Jeho hlavním cílem je teď pomoct svému lidu a zajistit mu bezpečí, i když poslední dobou začíná pochybovat o schopnosti těch, co vesnici vedou. Po traumatických událostech posledních dní se mu udržovat klid a duševní rovnováhu moc nedaří. Noční můry mu pravidelně připomínají, že nikdo není v bezpečí. A to ani Tohruovi nejbližší...
 
 <div class="Image_view"
 data-img="Images/Players/Tohru.jpg"
@@ -14,94 +8,95 @@ data-img="Images/Players/Tohru.jpg"
 # Character Sheet
 
 ## Basic Information
-**Name:** Aeryn Valeth  
-**Race:** High Elf  
-**Class & Level:** Wizard (Evocation) 3  
-**Background:** Sage (Researcher)  
-**Alignment:** Neutral Good  
-**Player Name:** —  
-**Experience Points:** 900  
+**Name:** Tohru  
+**Race:** Wood Elf  
+**Class & Level:** Monk 6  
+**Background:** Fisher  
+**Alignment:** Lawful Neutral  
+**Player Name:** Štěpán
+**Experience Points:** 14000 
 
 ---
 
 ## Ability Scores
 | Ability | Score | Modifier | Save |
 |----------|:-----:|:---------:|:----:|
-| Strength | 8  | −1 | −1 |
-| Dexterity | 14 | +2 | +2 |
-| Constitution | 12 | +1 | +1 |
-| Intelligence | 17 | +3 | +6 |
-| Wisdom | 13 | +1 | +1 |
-| Charisma | 10 | +0 | +0 |
+| Strength | 9  | −1 | +2 |
+| Dexterity | 20 | +5 | +8 |
+| Constitution | 14 | +2 | +2 |
+| Intelligence | 10 | +0 | +0 |
+| Wisdom | 16 | +3 | +3 |
+| Charisma | 13 | +1 | +1 |
 
 **Inspiration:** —  
-**Proficiency Bonus:** +2  
+**Proficiency Bonus:** +3  
 
 ---
 
 ## Combat Stats
-- **Armor Class (AC):** 12 (Mage Armor → 15)  
-- **Initiative:** +2  
-- **Speed:** 30 ft.  
-- **Hit Points:** 18 (3d6 + 3)  
-- **Hit Dice:** 3d6  
+- **Armor Class (AC):** 18  
+- **Initiative:** +10  
+- **Speed:** 50 ft.  
+- **Hit Points:** 45  
+- **Hit Dice:** 6d8+2  
 
 ---
 
 ## Proficiencies
-**Saving Throws:** Intelligence, Wisdom  
-**Skills:** Arcana (+5), History (+5), Investigation (+5), Insight (+3)  
-**Languages:** Common, Elvish, Draconic, Celestial  
-**Tools:** None  
+**Saving Throws:** Strength, Deterity  
+**Skills:** Acrobatic (+8), History (+3), Perception (+6), Stealth (+8), Survival (+6)  
+**Languages:** Common, Elvish, Sylvan  
+**Tools:** Flute  
 
 ---
 
 ## Attacks & Spellcasting
 | Name | Attack Bonus | Damage/Type | Range |
 |------|:-------------:|:------------:|:------:|
-| Quarterstaff | +1 | 1d6−1 bludgeoning | Melee |
-| Fire Bolt (cantrip) | +5 | 1d10 fire | 120 ft |
-| Ray of Frost (cantrip) | +5 | 1d8 cold, −10 ft speed | 60 ft |
+| Unarmed | +8 | 1d6+5 bludgeoning | Melee |
+| Quarterstaff | +8 | 1d6(8)+5 bludgeoning | Melee |
+| Dart | +8 | 1d6+5 piercing | 20/60 ft |
 
 ---
 
-## Spellcasting
-**Spellcasting Ability:** Intelligence (+5 attack, DC 13)  
-**Spell Slots:** 1st (4), 2nd (2)  
-
 ## Features & Traits
-**Race (High Elf):**
+**Race (Wood Elf):**
 - Darkvision (60 ft)
 - Keen Senses (Perception proficiency)
 - Fey Ancestry (advantage vs. charm, immune to magical sleep)
 - Trance (4-hour meditation)
-- Extra Cantrip (Wizard list)
+- Mask of The Wild
 
-**Class (Wizard – Evocation):**
-- Arcane Recovery (recover spell slots on short rest)
-- Sculpt Spells (safe zones within evocations)
-
-**Background (Sage):**
-- Feature: Researcher (finds information through scholarly contacts)
+**Class (Monk - Open Hand):**
+- Martial Arts: d6
+- Unarmored Defense (AC=10+DEX+WIS)
+- Unarmored Movement (+15 ft)
+- Slow Fall (-30 fall damage)
+- Ki: 6/rest | Save DC: 14
+- Deflect Missiles: 1d10+11
+- Way of The Open Hand
+- Extra Attack (2 attacks per 1 action)
+- Stunning Strike (1ki)
+- Ki Empowered Strike (Magical Attacks)
+- Wholeness of Body (+18hp/Long rest)
+  
+**Background (Fisher):**
+- Feature: Harvester (Can feed up to 11 people when near sea.)
 
 ---
 
 ## Equipment
 - Quarterstaff  
-- Spellbook  
-- Component pouch  
-- Scholar’s pack  
-- 10 gp  
-
----
-
-## Spellbook
-**Cantrips:** Fire Bolt, Ray of Frost, Mage Hand, Prestidigitation  
-**1st Level:** Mage Armor, Shield, Magic Missile, Detect Magic, Identify  
-**2nd Level:** Scorching Ray, Mirror Image, Misty Step  
+- Traveler's clothes
+- Ring from Amaterasu (Werewolf as a Favored Enemy & Foe)
+- Flute
+- Mess kit
+- Tinderbox
+- 8 Torches
+- 50 ft of hempen rope
+- Bottle of healing potion (3x pot. of healing)
 
 ---
 
 ## Notes
-- Keeps a detailed journal of every new spell she studies.  
-- Has a small silver ring from her mentor — faintly glows when near ley lines.
+- Is haunted by nightmares because of Amaterasu's death.
