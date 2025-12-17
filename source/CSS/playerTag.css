@@ -25,6 +25,8 @@
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
+    color: white;
+    background-image: linear-gradient(45deg, #043100ad 0%, #086200a6 100%), url(../../Images/page_ui/paper.jpg);
 }
 
 #Krag .nested {
@@ -43,6 +45,8 @@
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
+    color: white;
+    background-image: linear-gradient(45deg, #30bdffad 0%, #0a00ffa6 100%), url(../../Images/page_ui/paper.jpg);
 }
 
 #Lyba .nested {
@@ -53,6 +57,7 @@
 #Lyba .toggle {
   cursor: pointer;
   user-select: none;   /* prevents text selection */
+  color: #003c58;
 }
 
 #Sadosu {
@@ -61,6 +66,7 @@
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
+    
 }
 
 #Sadosu .nested {
@@ -79,6 +85,8 @@
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 5px;
+    color: white;
+    background-image: linear-gradient(45deg, #043100ad 0%, #086200a6 100%), url(../../Images/page_ui/paper.jpg);
 }
 
 #Tohru .nested {
