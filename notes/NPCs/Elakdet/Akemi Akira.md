@@ -1,4 +1,4 @@
---CRAFTSMAN----WARRIOR--
+--CRAFTSMAN----WARRIOR----DEAD--
 <div class="NPC"
 data-name="Akemi Akira"
 data-race="Elf"
