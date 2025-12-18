@@ -80,11 +80,17 @@
     },
     "NPCs": {
       "Elakdet": {
-        "Aimi Akira.md": [],
-        "Akemi Akira.md": [],
+        "Aimi Akira.md": [
+          "--DEAD--"
+        ],
+        "Akemi Akira.md": [
+          "--DEAD--"
+        ],
         "Akiko Ishimoto.md": [],
         "Akira Akira.md": [],
-        "Amaterasu Akira.md": [],
+        "Amaterasu Akira.md": [
+          "--DEAD--"
+        ],
         "Haruto Okamota.md": [],
         "Kei Ishimoto.md": [],
         "Kenta Matsuda.md": [],
@@ -118,7 +124,12 @@
       }
     },
     "Players": {
-      "Algaar.md": [],
+      "Algaar": {
+        "Algaar.md": [],
+        "Myšlenky_Cíle.md": [
+          "ALGAAR"
+        ]
+      },
       "Krag.md": [],
       "Lyba.md": [],
       "Sadosu.md": [],
