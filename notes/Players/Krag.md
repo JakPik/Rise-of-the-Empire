@@ -2,7 +2,7 @@
 Backstory + info co ostatní o tobě vědí
 
 <div class="Image_view"
-data-img="Images/Players/krag.png"
+data-img="Images/players/krag.png"
 ></div>
 
 # Character Sheet
