@@ -1,4 +1,4 @@
---CURSED----MAGIC--
+--CURSED-- --MAGIC--
 
 # Algaar Thornwood
 

@@ -5,7 +5,7 @@ import re
 # Folder to scan
 NOTES_DIR = "notes"
 
-PLAYERS = ["DM","ALGAAR","KRAG","LYBA","SADOSU","TOHRU"]
+PLAYERS = ["DM","ALGAAR","KRAG","LYBA","SADOSU","RAAL","TOHRU"]
 FORBIDEN_TAGS = ["", ":|:", "|:", ":|", "-:|:"]
 STATUS_TAGS = ["CRAFTSMAN", "CURSED", "DIVINE", "GUARD", "HEALER", "MAGIC", "MERCHANT", "MISSING", "NOBLE", "ROGUE", "SCHOLAR", "UNDEAD", "WARRIOR"]
 
