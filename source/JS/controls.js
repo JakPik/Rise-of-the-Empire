@@ -1,9 +1,10 @@
-const PLAYERS = ["DM","ALGAAR","KRAG","LYBA","SADOSU","TOHRU"];
+const PLAYERS = ["DM","ALGAAR","KRAG","LYBA","RAAL","SADOSU","TOHRU"];
 const PLAYERS_MAP = {
   DM: "DM",
   ALGAAR: "Algaar",
   KRAG: "Krag",
   LYBA: "Lyba",
+  RAAL: "Raal",
   SADOSU: "Sadosu",
   TOHRU: "Tohru"
 };
