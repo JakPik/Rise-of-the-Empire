@@ -8,25 +8,25 @@ data-img="Images/Players/Tohru.jpg"
 # Character Sheet
 
 ## Basic Information
-**Name:** Tohru  
-**Race:** Wood Elf  
-**Class & Level:** Monk 6  
-**Background:** Fisher  
-**Alignment:** Lawful Neutral  
-**Player Name:** Štěpán
-**Experience Points:** 14000 
+**Name:** Lyba
+**Race:** Water Genasi  
+**Class & Level:** Rogue 6  - Sea Assailant
+**Background:** - - - 
+**Alignment:**  - - -  
+**Player Name:** Janek
+**Experience Points:** - - -
 
 ---
 
 ## Ability Scores
 | Ability | Score | Modifier | Save |
 |----------|:-----:|:---------:|:----:|
-| Strength | 9  | −1 | +2 |
-| Dexterity | 20 | +5 | +8 |
-| Constitution | 14 | +2 | +2 |
-| Intelligence | 10 | +0 | +0 |
+| Strength |  12 | +1 | +1 |
+| Dexterity | 16 | +3 | +6 |
+| Constitution | 16 | +3 | +3 |
+| Intelligence | 14 | +2 | +3 |
 | Wisdom | 16 | +3 | +3 |
-| Charisma | 13 | +1 | +1 |
+| Charisma | 14 | +2 | +2 |
 
 **Inspiration:** —  
 **Proficiency Bonus:** +3  
@@ -34,69 +34,57 @@ data-img="Images/Players/Tohru.jpg"
 ---
 
 ## Combat Stats
-- **Armor Class (AC):** 18  
-- **Initiative:** +10  
-- **Speed:** 50 ft.  
-- **Hit Points:** 45  
-- **Hit Dice:** 6d8+2  
+- **Armor Class (AC):** 14  
+- **Initiative:** +3  
+- **Speed:** 30 ft. (60 ft. in water)  
+- **Hit Points:** 43  
+- **Hit Dice:** 5d8  
 
 ---
 
 ## Proficiencies
-**Saving Throws:** Strength, Deterity  
-**Skills:** Acrobatic (+8), History (+3), Perception (+6), Stealth (+8), Survival (+6)  
-**Languages:** Common, Elvish, Sylvan  
-**Tools:** Flute  
+**Saving Throws:** Deterity, Inteligence  
+**Skills:** Acrobatic (+6), Stealth (+9), Insight (+6) Perception (+9) 
+**Languages:** Common 
+**Tools:** - - - 
 
 ---
 
 ## Attacks & Spellcasting
 | Name | Attack Bonus | Damage/Type | Range |
 |------|:-------------:|:------------:|:------:|
-| Unarmed | +8 | 1d6+5 bludgeoning | Melee |
-| Quarterstaff | +8 | 1d6(8)+5 bludgeoning | Melee |
-| Dart | +8 | 1d6+5 piercing | 20/60 ft |
+| Unarmed | +3 | 2 bludgeoning | Melee |
+| Dagger | +6 | 1d4+2 piercing | Melee / 20/60 ft |
+| Shortsword | +6 | 1d6+2 piercing | Melee |
 
 ---
 
 ## Features & Traits
-**Race (Wood Elf):**
+**Race (Water Genasi):**
 - Darkvision (60 ft)
-- Keen Senses (Perception proficiency)
-- Fey Ancestry (advantage vs. charm, immune to magical sleep)
-- Trance (4-hour meditation)
-- Mask of The Wild
+- Amphibious
+- Acid resistance
+- Acid Splash
 
-**Class (Monk - Open Hand):**
-- Martial Arts: d6
-- Unarmored Defense (AC=10+DEX+WIS)
-- Unarmored Movement (+15 ft)
-- Slow Fall (-30 fall damage)
-- Ki: 6/rest | Save DC: 14
-- Deflect Missiles: 1d10+11
-- Way of The Open Hand
-- Extra Attack (2 attacks per 1 action)
-- Stunning Strike (1ki)
-- Ki Empowered Strike (Magical Attacks)
-- Wholeness of Body (+18hp/Long rest)
+**Class (Rogue - Sea Assailant):**
+- Sneak Attack 3d6
+- Attacks from water and in water without disadvatage
+- Shape Water
+- Create or Destroy water (once per LR)
   
-**Background (Fisher):**
-- Feature: Harvester (Can feed up to 11 people when near sea.)
+**Background (---):**
+
 
 ---
 
 ## Equipment
-- Quarterstaff  
-- Traveler's clothes
-- Ring from Amaterasu (Werewolf as a Favored Enemy & Foe)
-- Flute
-- Mess kit
-- Tinderbox
-- 8 Torches
-- 50 ft of hempen rope
-- Bottle of healing potion (3x pot. of healing)
+- Light armor 
 
 ---
 
 ## Notes
-- Is haunted by nightmares because of Amaterasu's death.
+- Když creature in the 30 ft. radius gets damage (type piercing, shlashing, bludgeoning) and it is dark, wis savinf throw DC 18, if falied roll a D10
+    - 1-4 running away at max speed
+    - 5 Running in random direction
+    - 6-9 Attacking nearest creature
+    - 10 Attacking nearest hostile creature
