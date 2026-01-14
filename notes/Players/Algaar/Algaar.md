@@ -1,4 +1,4 @@
---CURSED----MAGIC--
+--CURSED-- --MAGIC--
 
 # Algaar Thornwood
 
@@ -21,18 +21,18 @@ V tu mě z mého zadumání probere Culmika. Přiběhla s úsměvem na tváři. 
 ## Basic Information
 **Name:** Algaar Thornwood  
 **Race:** Dragonborn  
-**Class & Level:** Druid (Circle of the Moon) 5  
+**Class & Level:** Druid (Circle of the Moon) 6
 **Background:** ???  
-**Alignment:** Chaotic Neutral  
+**Alignment:** Chaotic Neutral
 **Player Name:** —  
-**Experience Points:** ???  
+**Experience Points:** ???
 
 ---
 
 ## Ability Scores
 | Ability | Score | Modifier | Save |
 |----------|:-----:|:---------:|:----:|
-| Strength | 7  | -2 | −2 |
+| Strength | 15  | +2 | +2 |
 | Dexterity | 13 | +1 | +1 |
 | Constitution | 14 | +2 | +2 |
 | Intelligence | 13 | +1 | +4 |
@@ -48,8 +48,8 @@ V tu mě z mého zadumání probere Culmika. Přiběhla s úsměvem na tváři. 
 - **Armor Class (AC):** 11 (Barkskin → 17)  
 - **Initiative:** +1
 - **Speed:** 30 ft.  
-- **Hit Points:** 38 (5d8 + 2)  
-- **Hit Dice:** 5d8  
+- **Hit Points:** 45 (6d8 + 2)  
+- **Hit Dice:** 6d8  
 
 ---
 
@@ -65,8 +65,14 @@ V tu mě z mého zadumání probere Culmika. Přiběhla s úsměvem na tváři. 
 | Name | Attack Bonus | Damage/Type | Range |
 |------|:-------------:|:------------:|:------:|
 | Quarterstaff | +1 | 1d6−1 bludgeoning | Melee |
-| Fire Bolt (cantrip) | +5 | 1d10 fire | 120 ft |
-| Ray of Frost (cantrip) | +5 | 1d8 cold, −10 ft speed | 60 ft |
+
+## Cantrips
+- Control Flames
+- Druidcraft
+- Elementalism
+- Message
+- Poison Spray
+- Cure Wounds - 1 použití na 1st level jako cantrip
 
 ---
 
@@ -75,19 +81,16 @@ V tu mě z mého zadumání probere Culmika. Přiběhla s úsměvem na tváři. 
 **Spell Slots:** 1st (4), 2nd (3), 3rd (2)  
 
 ## Features & Traits
-**Race (High Elf):**
-- Darkvision (60 ft)
-- Keen Senses (Perception proficiency)
-- Fey Ancestry (advantage vs. charm, immune to magical sleep)
-- Trance (4-hour meditation)
-- Extra Cantrip (Wizard list)
+**Race (Dragonborn):**
+- Primal Strike
+- Draconic Ancestry - Green Dragon - poison
+- Magic Initiate
+  - **Two Cantrips**. You learn two cantrips of your choice from the Druid spell list. Int., Wis., or Cha. is your spellcasting ability for this feat's spells.
+- **Level 1 Spell**. Choose a level 1 spell from the Druid spell list. You always have that spell prepared. You can cast it once without a spell slot, and you regain the ability to cast it in that way when you finish a Long Rest. You can also cast the spell using any spell slots you have.
+ - **Spell Change**. Whenever you gain a new level, you can replace one of the spells you chose for this feat with a different spell of the same level from the chosen spell list.
 
-**Class (Wizard – Evocation):**
-- Arcane Recovery (recover spell slots on short rest)
-- Sculpt Spells (safe zones within evocations)
-
-**Background (Sage):**
-- Feature: Researcher (finds information through scholarly contacts)
+**Class (Druid – Circle of the Moon):**
+- Wild Shape transformation - CR = LV / 3 zaokrouhleno dolu
 
 ---
 
@@ -100,14 +103,8 @@ V tu mě z mého zadumání probere Culmika. Přiběhla s úsměvem na tváři. 
 - mess Kit
 - Rope, Hempen (50 feet)
 - Waterskin 2l
+- 1 velká láhev - 3x 2d4+2 heal.
 - Cu: 3, Au: 2
-
----
-
-## Spellbook
-**Cantrips:** Fire Bolt, Ray of Frost, Mage Hand, Prestidigitation  
-**1st Level:** Mage Armor, Shield, Magic Missile, Detect Magic, Identify  
-**2nd Level:** Scorching Ray, Mirror Image, Misty Step  
 
 ---
 

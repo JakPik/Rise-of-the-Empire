@@ -77,7 +77,6 @@
     width:fit-content;
     margin: 0;
     margin-top: 5px;
-    text-transform: capitalize;
 }
 
 hr {
@@ -269,3 +268,7 @@ th {
   opacity: 1;
 }
 
+.column_block {
+    display: flex;
+    gap: 20px;
+}

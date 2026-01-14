@@ -5,7 +5,7 @@
 - [x] Full path k obrázkům
 - [x] tagy - visibilita
 - [ ] mp4/mp3 player in session note
-- [ ] prázdný tag se nezobrazuje
+- [ ] <del>prázdný tag se nezobrazuje</del>
 - [ ] <del>pro více kampaní?</del>
 
 - [ ] <del>vylepšit strukturu session na něco ve stylu: 

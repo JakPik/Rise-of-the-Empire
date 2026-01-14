@@ -73,22 +73,45 @@
         }
       }
     },
+    "Monster manual": {
+      "Spirit Shadow.md": [],
+      "Vlkodlak.md": [],
+      "Želešák.md": []
+    },
     "NPCs": {
       "Elakdet": {
-        "Aimi Akira.md": [],
-        "Akemi Akira.md": [],
+        "Aimi Akira.md": [
+          "--DEAD--"
+        ],
+        "Akemi Akira.md": [
+          "--DEAD--"
+        ],
         "Akiko Ishimoto.md": [],
         "Akira Akira.md": [],
         "Amaterasu Akira.md": [
           "--DEAD--"
         ],
+        "Haruto Okamota.md": [],
         "Kei Ishimoto.md": [],
         "Kenta Matsuda.md": [],
         "Naoki.md": [],
         "Osamu Okamota.md": [],
         "Shin Okamota.md": [],
-        "Haruto Okamota.md": [],
         "Stinovy vestec.md": []
+      },
+      "Kriegurd": {
+        "Culmika.md": [
+          "ALGAAR"
+        ],
+        "Kharan.md": [
+          "ALGAAR"
+        ],
+        "Lorgotin.md": [
+          "ALGAAR"
+        ],
+        "Prapal.md": [
+          "ALGAAR"
+        ]
       },
       "Okolí elakdetu": {
         "Azura.md": [
@@ -98,30 +121,20 @@
         "Skelgrond.md": [
           "--DEAD--"
         ]
-      },
-      "Kriegurd": {
-        "Prapal.md": [],
-        "Culmika.md": [],
-        "Kharan.md": [],
-        "Lorgotin.md": []
       }
     },
     "Players": {
-      "Algaar.md": [
-        "----",
-        "--|:--",
-        "---:|:--",
-        "--:|:--"
-      ],
+      "Algaar": {
+        "Algaar.md": [],
+        "Myšlenky_Cíle.md": [
+          "ALGAAR"
+        ]
+      },
       "Krag.md": [],
       "Lyba.md": [],
+      "Raal.md": [],
       "Sadosu.md": [],
-      "Tohru.md": [
-        "----",
-        "--|:--",
-        "---:|:--",
-        "--:|:--"
-      ]
+      "Tohru.md": []
     },
     "Politics": {
       "Organizace": {
@@ -131,31 +144,29 @@
           "Kult Aqua.md": []
         }
       },
+      "Světové události.md": [],
       "Vlády": {
         "Fimbrul.md": [],
         "Gontal.md": [],
         "Selkor.md": [],
         "Společenství obchodních měst.md": [],
         "Sword Lands.md": []
-      },
-      "Světové události.md": []
+      }
     },
     "Quests": {
       "Kovářova těžba.md": [],
       "Kámen z hvězd.md": [],
       "Mizející rybáři.md": [],
       "Rozhovor s neživým Druidem.md": [],
-      "Zpráva.md": []
+      "Zpráva.md": [
+        "ALGAAR"
+      ]
     },
     "Sessions": {
       "Session 1.md": [],
       "Session 2.md": [],
-      "Session 3.md": []
-    },
-    "Monster manual": {
-      "Vlkodlak.md": [],
-      "Spirit Shadow.md": [],
-      "Želešák.md": []
+      "Session 3.md": [],
+      "Session 4.md": []
     }
   }
 }

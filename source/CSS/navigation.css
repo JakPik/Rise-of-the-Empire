@@ -89,6 +89,10 @@ ul {
     border-left: #000000 solid;
     color: rgb(208, 181, 145);
     overflow-y: auto;
+    max-height: 99vh;
+    scrollbar-color: #ffffff30 transparent;
+    scrollbar-arrow-color: transparent transparent;
+    
 }
 
 .Nav_Body a {
