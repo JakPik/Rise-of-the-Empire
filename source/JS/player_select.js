@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function() {
             roles: [
                 { id: '--DM--', name: 'Game Master' },
                 { id: '--HENRY--', name: 'Henry Bastle' }, 
-                { id: '--MELORIA--', name: 'Meloria' }
+                { id: '--MELORIA--', name: 'Meloria' },
                 { id: '--JACHYM--', name: 'Jáchym Podolský' }
  
             ]
@@ -52,7 +52,7 @@ document.addEventListener("DOMContentLoaded", function() {
             title: 'Red City of Faith',
             roles: [
                 { id: '--DM--', name: 'Game Master' },
-                { id: '--JOZA--', name: 'Józa' }
+                { id: '--JOZA--', name: 'Józa' },
                 { id: '--GOLIATH--', name: 'Goliath' }
             ]
         }
