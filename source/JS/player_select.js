@@ -1,63 +1,110 @@
-let idx = randomInt(0,24);
+// Pomocné funkce pro rotující pozadí
+function randomInt(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
 let max = 25;
-
-document.querySelectorAll('.role').forEach(roleBtn => {
-      roleBtn.addEventListener('click', () => {
-        const role = roleBtn.dataset.role;
-        // redirect to your main page with role as query param
-        window.location.href = `notes.html?role=${encodeURIComponent(role)}`;
-      });
-    });
-
-updateBackground();
-setInterval(() => {
-  idx = (idx + 1) % max;
-  updateBackground();
-}, 10000);
+let idx = randomInt(0, 24);
 
 function updateBackground() {
     const ref = 'Images/page_ui/background_' + idx + '.jpg';
     document.body.style.backgroundImage = `url(${ref})`;
 }
 
-function randomInt(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-const button = document.getElementById('playButton');
-    const music = document.getElementById('bgMusic');
-
-    button.addEventListener('click', () => {
-      music.play();
-      button.style.display = 'none';
-    });
-
-
+// Vše spustíme, až když je stránka plně načtená
 document.addEventListener("DOMContentLoaded", function() {
+    
+    // --- 1. SPUŠTĚNÍ ROTUJÍCÍHO POZADÍ ---
+    updateBackground();
+    setInterval(() => {
+      idx = (idx + 1) % max;
+      updateBackground();
+    }, 10000);
+
+
+    // --- 2. DYNAMICKÝ VÝBĚR POSTAV PODLE KAMPANĚ ---
+    const currentCampaign = localStorage.getItem('selectedCampaign') || 'rise';
+
+    // Zde si doplň své postavy pro nové kampaně
+    const campaignData = {
+        'rise': {
+            title: 'Rise of the Empire',
+            roles: [
+                { id: '--DM--', name: 'Game Master' },
+                { id: '--ALGAAR--', name: 'Algaar' },
+                { id: '--KRAG--', name: 'Krag' },
+                { id: '--LYBA--', name: 'Lyba' },
+                { id: '--RAAL--', name: 'Raal' },
+                { id: '--TOHRU--', name: 'Tohru' }
+            ]
+        },
+        'neverwitch': {
+            title: 'Neverwitch all along',
+            roles: [
+                { id: '--DM--', name: 'Game Master' },
+                { id: '--HARRY--', name: 'Harry' }, 
+                { id: '--RON--', name: 'Ron' }
+            ]
+        },
+        'redcity': {
+            title: 'Red City of Faith',
+            roles: [
+                { id: '--DM--', name: 'Game Master' },
+                { id: '--KNĚZ--', name: 'Kněz' }
+            ]
+        }
+    };
+
+    const currentData = campaignData[currentCampaign] || campaignData['rise'];
+
+    // Přepis nadpisu (Pokud jsi přidal id="campaign-title" do HTML)
+    const titleElement = document.getElementById('campaign-title');
+    if (titleElement) {
+        titleElement.textContent = currentData.title;
+    }
+
+    // Vygenerování tlačítek s rolemi
+    const rolesContainer = document.getElementById('roles');
+    if (rolesContainer) {
+        rolesContainer.innerHTML = ''; // Vyčistíme původní "natvrdo" napsaná tlačítka
+
+        currentData.roles.forEach(roleInfo => {
+            const roleDiv = document.createElement('div');
+            roleDiv.className = 'role';
+            roleDiv.dataset.role = roleInfo.id;
+            roleDiv.textContent = roleInfo.name;
+
+            // Co se stane po kliknutí na konkrétního hráče
+            roleDiv.addEventListener('click', () => {
+                window.location.href = `notes.html?role=${encodeURIComponent(roleInfo.id)}`;
+            });
+
+            rolesContainer.appendChild(roleDiv);
+        });
+    }
+
+
+    // --- 3. HUDBA NA POZADÍ ---
     const bgMusic = document.getElementById("bgMusic");
     const playButton = document.getElementById("playButton");
 
-    // Pro jistotu nastavíme hlasitost (0.0 až 1.0)
-    bgMusic.volume = 0.5; 
+    if (bgMusic) {
+        bgMusic.volume = 0.5; 
 
-    // Pokus o automatické spuštění hudby ihned po načtení
-    bgMusic.play().then(() => {
-        // Pokud se to povede (prohlížeč to nezablokuje), skryjeme tlačítko Play
-        if (playButton) {
-            playButton.style.display = "none";
-        }
-        console.log("Hudba hraje epicky na pozadí!");
-    }).catch((error) => {
-        // Prohlížeč zablokoval autoplay kvůli chybějící interakci
-        console.log("Prohlížeč zablokoval automatické přehrávání. Uživatel musí kliknout na tlačítko.");
-        // Tlačítko zůstane viditelné
-    });
+        // Pokus o automatické spuštění
+        bgMusic.play().then(() => {
+            if (playButton) playButton.style.display = "none";
+            console.log("Hudba hraje epicky na pozadí!");
+        }).catch((error) => {
+            console.log("Prohlížeč zablokoval automatické přehrávání. Uživatel musí kliknout na tlačítko.");
+        });
+    }
 
-    // Původní funkčnost tlačítka, kdyby automatické spuštění selhalo
+    // Tlačítko pro manuální spuštění
     if (playButton) {
         playButton.addEventListener("click", function() {
-            bgMusic.play();
-            playButton.style.display = "none"; // Po manuálním spuštění tlačítko zmizí
+            if (bgMusic) bgMusic.play();
+            playButton.style.display = "none";
         });
     }
 });
