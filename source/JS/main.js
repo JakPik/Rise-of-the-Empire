@@ -473,4 +473,23 @@ const ul = document.querySelector('.collapsible-list');
 buildNavBar(NavBAE, document.querySelector('.collapsible-list'));
 setUpEvents();*/
 
-start('source/json/NavBar.json');
+// --- DYNAMICKÉ NAČÍTÁNÍ MENU PODLE KAMPANĚ ---
+
+// Zjistíme, jakou kampaň si hráč vybral (pokud přijde napřímo, hodí se 'rise' jako výchozí)
+const currentCampaign = localStorage.getItem('selectedCampaign') || 'rise';
+
+let navFileToLoad = '';
+
+// Přiřazení správného JSON souboru podle vybrané kampaně
+if (currentCampaign === 'rise') {
+    navFileToLoad = 'source/json/NavBar.json'; // Nechal jsem tvůj původní název
+} else if (currentCampaign === 'neverwitch') {
+    navFileToLoad = 'source/json/NavBar_Neverw.json';
+} else if (currentCampaign === 'redcity') {
+    navFileToLoad = 'source/json/NavBar_Red_City.json';
+} else {
+    navFileToLoad = 'source/json/NavBar.json'; // Pojistka, kdyby něco selhalo
+}
+
+// Spustíme generování stránky se správným souborem
+start(navFileToLoad);

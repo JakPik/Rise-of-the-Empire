@@ -7,21 +7,21 @@
   <link rel="stylesheet" href="source/CSS/campaignSelect.css" />
 </head>
 <body>
-  <main>
+<main>
     <div class="campaign-grid">
-      <a href="role_select.html" class="campaign-card" id="camp1">
+      <a href="#" onclick="selectCampaign('rise', 'role_select.html')" class="campaign-card" id="camp1">
         <div class="card-overlay">
           <h2>Rise of the Empire</h2>
         </div>
       </a>
 
-      <a href="#" class="campaign-card" id="camp2">
+      <a href="#" onclick="selectCampaign('neverwitch', 'role_select.html')" class="campaign-card" id="camp2">
         <div class="card-overlay">
           <h2>Neverwitch all along</h2>
         </div>
       </a>
 
-      <a href="#" class="campaign-card" id="camp3">
+      <a href="#" onclick="selectCampaign('redcity', 'role_select.html')" class="campaign-card" id="camp3">
         <div class="card-overlay">
           <h2>Red City of Faith</h2>
         </div>
@@ -35,5 +35,14 @@
       </div>
     </div>
   </main>
+
+  <script>
+    function selectCampaign(campaignId, targetUrl) {
+      // Uložíme ID kampaně do paměti prohlížeče
+      localStorage.setItem('selectedCampaign', campaignId);
+      // Přesměrujeme na další stránku
+      window.location.href = targetUrl;
+    }
+  </script>
 </body>
 </html>
