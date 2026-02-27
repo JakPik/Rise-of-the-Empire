@@ -31,3 +31,33 @@ const button = document.getElementById('playButton');
       music.play();
       button.style.display = 'none';
     });
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const bgMusic = document.getElementById("bgMusic");
+    const playButton = document.getElementById("playButton");
+
+    // Pro jistotu nastavíme hlasitost (0.0 až 1.0)
+    bgMusic.volume = 0.5; 
+
+    // Pokus o automatické spuštění hudby ihned po načtení
+    bgMusic.play().then(() => {
+        // Pokud se to povede (prohlížeč to nezablokuje), skryjeme tlačítko Play
+        if (playButton) {
+            playButton.style.display = "none";
+        }
+        console.log("Hudba hraje epicky na pozadí!");
+    }).catch((error) => {
+        // Prohlížeč zablokoval autoplay kvůli chybějící interakci
+        console.log("Prohlížeč zablokoval automatické přehrávání. Uživatel musí kliknout na tlačítko.");
+        // Tlačítko zůstane viditelné
+    });
+
+    // Původní funkčnost tlačítka, kdyby automatické spuštění selhalo
+    if (playButton) {
+        playButton.addEventListener("click", function() {
+            bgMusic.play();
+            playButton.style.display = "none"; // Po manuálním spuštění tlačítko zmizí
+        });
+    }
+});

@@ -1,0 +1,103 @@
+/* Základní styly pro reset a dokonalé vycentrování */
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #000; /* Úplně černé pozadí dá kartám více vyniknout */
+    color: white;
+    display: flex;
+    align-items: center;    /* Vystředí grid vertikálně */
+    justify-content: center; /* Vystředí grid horizontálně */
+    min-height: 100vh;
+    overflow: hidden; /* Skryje posuvníky, pokud by se karty nevešly na menší monitor */
+}
+
+/* Obal pro celý grid - zrušen okraj (margin), protože centrujeme přes body */
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* Velká mřížka pro kampaně (2x2) */
+.campaign-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px; /* Větší mezery mezi velkými kartami */
+    width: 95vw;
+    max-width: 1400px; /* Výrazně zvětšeno z 800px na 1400px */
+    height: 90vh; /* Roztáhne se téměř na celou výšku obrazovky */
+}
+
+/* Jednotlivé karty kampaní */
+.campaign-card {
+    position: relative;
+    border-radius: 16px; /* Trochu kulatější rohy pro obří karty */
+    overflow: hidden;
+    text-decoration: none;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 3px solid #222;
+}
+
+/* Efekt po najetí myší */
+.campaign-card:not(.disabled):hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(255, 69, 0, 0.7); 
+    border-color: #ff4500;
+    z-index: 10;
+}
+
+/* Tmavý překryv, aby byl text lépe čitelný */
+.card-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+}
+
+.campaign-card:not(.disabled):hover .card-overlay {
+    background: rgba(0, 0, 0, 0.1); /* Pozadí se po najetí ještě více odhalí */
+}
+
+/* Nadpisy kampaní */
+.campaign-card h2 {
+    text-align: center;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 1); /* Silnější stín pro lepší čitelnost */
+    font-size: 3rem; /* Zvětšené písmo (bylo 1.8rem) */
+    padding: 0 20px;
+    letter-spacing: 2px;
+}
+
+/* Styly pro neaktivní kampaň (West Marches) */
+.disabled {
+    cursor: not-allowed;
+    filter: grayscale(80%);
+}
+
+.badge {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    background: #c0392b;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    z-index: 2;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.6);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* ==== CESTY K OBRÁZKŮM POZADÍ */
+#camp1 { background-image: url('../../Images/page_ui/rise_of_empire_bg.jpg'); } 
+#camp2 { background-image: url('../../Images/page_ui/neverwitch_bg.jpg'); }
+#camp3 { background-image: url('../../Images/page_ui/red_city_bg.jpg'); }
+#camp4 { background-image: url('../../Images/page_ui/west_marches_bg.jpg'); }

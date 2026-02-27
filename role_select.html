@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Role Selection</title>
+  <link rel="stylesheet" href="source/CSS/roleSelect.css" />
+  <link rel="stylesheet" href="source/CSS/predplatne.css" />
+</head>
+<body>
+  
+
+
+      <header>
+    <div class="header_block">
+    <img src="Images/page_ui/dungeons-and-dragons.png" alt="D&D Logo" id="logo"/>
+      <h1>Rise of the Empire</h1>
+    </div>
+  </header>
+  <main>
+  <div class="box">
+    <h1>Kdo jsi?</h1>
+
+    <div id="roles">
+      <div class="role" data-role="--DM--">Game Master</div>
+      <div class="role" data-role="--ALGAAR--">Algaar</div>
+      <div class="role" data-role="--KRAG--">Krag</div>
+      <div class="role" data-role="--LYBA--">Lyba</div>
+      <div class="role" data-role="--RAAL--">Raal</div>
+      <div class="role" data-role="--TOHRU--">Tohru</div>
+    </div>
+  </div>
+  <!-- 🎵 Hudba na pozadí -->
+  <audio id="bgMusic" loop>
+    <source src="audio/03. The Hero of Baldur s Gate.mp3" type="audio/mpeg">
+    Váš prohlížeč nepodporuje přehrávání audia.
+  </audio>
+  <audio id="milion-audio" src="audio/milion.mp3" preload="auto"></audio>
+
+  <!-- ▶️ Tlačítko pro spuštění -->
+  <button id="playButton">▶️ Přehrát hudbu</button>
+  </main>
+
+  <script src="source/JS/predplatne.js"></script>
+  <script src="source/JS/player_select.js"></script>
+</body>
+</html>
