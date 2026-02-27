@@ -42,15 +42,18 @@ document.addEventListener("DOMContentLoaded", function() {
             title: 'Neverwitch all along',
             roles: [
                 { id: '--DM--', name: 'Game Master' },
-                { id: '--HARRY--', name: 'Harry' }, 
-                { id: '--RON--', name: 'Ron' }
+                { id: '--HENRY--', name: 'Henry Bastle' }, 
+                { id: '--MELORIA--', name: 'Meloria' }
+                { id: '--JACHYM--', name: 'Jáchym Podolský' }
+ 
             ]
         },
         'redcity': {
             title: 'Red City of Faith',
             roles: [
                 { id: '--DM--', name: 'Game Master' },
-                { id: '--KNĚZ--', name: 'Kněz' }
+                { id: '--JOZA--', name: 'Józa' }
+                { id: '--GOLIATH--', name: 'Goliath' }
             ]
         }
     };
