@@ -486,7 +486,7 @@ if (currentCampaign === 'rise') {
 } else if (currentCampaign === 'neverwitch') {
     navFileToLoad = 'source/json/NavBar_Neverw.json';
 } else if (currentCampaign === 'redcity') {
-    navFileToLoad = 'source/json/NavBar_Red_City.json';
+    navFileToLoad = 'source/json/NavBarRedCity.json';
 } else {
     navFileToLoad = 'source/json/NavBar.json'; // Pojistka, kdyby něco selhalo
 }
