@@ -484,7 +484,7 @@ let navFileToLoad = '';
 if (currentCampaign === 'rise') {
     navFileToLoad = 'source/json/NavBar.json'; // Nechal jsem tvůj původní název
 } else if (currentCampaign === 'neverwitch') {
-    navFileToLoad = 'source/json/NavBar_Neverw.json';
+    navFileToLoad = 'source/json/NavBarNeverw.json';
 } else if (currentCampaign === 'redcity') {
     navFileToLoad = 'source/json/NavBarRedCity.json';
 } else {
