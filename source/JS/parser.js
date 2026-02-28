@@ -1,5 +1,5 @@
 let foundTags = [];
-const startDate = [3003, 5, 16];
+const START_DATE = [3003, 5, 16];
 
 function parseMarkdown(md, pageId) {
   const parsed = preprocessCallouts(md);
@@ -267,9 +267,9 @@ function processPlayerInfoTag(_tag, parent) {
 }
 
 function dateParser(dateStr) {
-  var day = (startDate[2] + +dateStr) % 30 + 1;
-  var month = ((startDate[2] + +dateStr) / 30 + startDate[1]) % 12 + 1;
-  var year = ((startDate[2] + +dateStr) / 30 + startDate[1]) / 12 + startDate[0];
+  var day = (START_DATE[2] + +dateStr) % 30 + 1;
+  var month = ((START_DATE[2] + +dateStr) / 30 + START_DATE[1]) % 12 + 1;
+  var year = ((START_DATE[2] + +dateStr) / 30 + START_DATE[1]) / 12 + START_DATE[0];
   return `${day}.${Math.floor(month)}`;
 }
 
