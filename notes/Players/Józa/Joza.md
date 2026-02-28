@@ -1,6 +1,6 @@
 --CURSED-- --MAGIC--
 
-# Algaar Thornwood
+# Józa
 
 <div class="Image_view"
 data-img="Images/players/Joza.png"
