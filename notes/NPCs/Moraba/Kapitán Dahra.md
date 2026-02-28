@@ -8,5 +8,5 @@ data-location="Moraba"
 data-info=" Princův mentor, princ mu věří svým životem"
 data-description=""
 data-tasks=""
-data-img="Images/npc/"
+data-img="Images/npc/Dahra.jpg"
 ></div>

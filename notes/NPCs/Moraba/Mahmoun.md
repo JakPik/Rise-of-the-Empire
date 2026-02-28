@@ -8,5 +8,5 @@ data-location="Moraba"
 data-info=" Mladý pobočník prince Arshama; děsí se příběh, ale slepě následuje prince"
 data-description=""
 data-tasks=""
-data-img="Images/npc/"
+data-img="Images/npc/Mahmoun.jpg"
 ></div>

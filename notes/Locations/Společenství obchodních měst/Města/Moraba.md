@@ -16,3 +16,8 @@ Opevněné čtvercové vojenské město sloužící převážně pro bezpečný 
         - Morabská čajovna v lepší části města
         - Zaměřuje se především na Karkade, Marmaraya a Chvojníkový čaj, nicméně se zde dají sehnat i oplatky a pokrmy s masem
         - Majitel Narim, podnikavý a rád si vyměnuje historky
+
+    - U štíra
+        - Morabská levnější ale stále bezpečná taverna
+        - K snídani mají pštrosí vajíčka
+        - Vede jí mladá elfka

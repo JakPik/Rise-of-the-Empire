@@ -8,5 +8,5 @@ data-location="Moraba"
 data-info=" součást královi osobní gardy"
 data-description=""
 data-tasks=""
-data-img="Images/npc/"
+data-img="Images/npc/JavedMasha.jpg"
 ></div>

@@ -8,5 +8,5 @@ data-location="Moraba"
 data-info=" Pověrčivý veterán; raději by se neúčastnil ale princ si ho osobně vyžádal má děti + vnoučata"
 data-description=""
 data-tasks=""
-data-img="Images/npc/"
+data-img="Images/npc/Hakim.jpg"
 ></div>

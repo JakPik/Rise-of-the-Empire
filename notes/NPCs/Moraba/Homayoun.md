@@ -8,5 +8,5 @@ data-location="Moraba"
 data-info=" Válečník svou zručnost prokázal v mnoha turnajích; připojil se jako nájemný šermíř; chvástavý; touží po slávě"
 data-description=""
 data-tasks=""
-data-img="Images/npc/"
+data-img="Images/npc/Homayoun.jpg"
 ></div>
