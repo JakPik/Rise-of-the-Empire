@@ -1,1 +1,5 @@
-Toto společenství není tvořeno jedním ale dvěma vládci, prvním je muž a sídlí na východním pobřeží, zatímco druhým je žena a sídlí na západním pobřeží. Tito vládci jsou na sobě částečně závislí jelikož na jejich vládu dohlíží specielní rada která zaručuje že jeden nebude příliš utlačovat toho druhého. Nicméně se často stává že některé zákony se uplatnují pouze v půlce říše. Tento rozkol v zákonech je částečně způsoben tím, které státy s danou částí sídlí.
+# Společenství obchodních měst
+
+- **Vládní struktura**
+
+Jedná se o jakousi koalici městských států, každému městu vládne Král/Královna kteří poté zasedají v takzvaném konciliu kterému předsedají dva hlavní vládci na západním pobřeží je to první direktorka (vždy žena) a na východním to je první syndik (vždy muž). Jelikož tito vládci jsou na sobě částečně nezávislí často se stává že  některé zákony se uplatnují pouze v půlce říše. Tento rozkol v zákonech je částečně způsoben tím, které státy (kultura a politický vliv) s danou částí sídlí.
