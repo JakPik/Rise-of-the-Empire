@@ -450,15 +450,58 @@ window.addEventListener('resize', updateCarousel);
 
 
 
+// --- DYNAMICKÝ NADPIS: KAMPAŇ A HRÁČ ---
+
 const urlParams = new URLSearchParams(window.location.search);
-const playerRole = urlParams.get('role');
+// Pojistka, kdyby někdo otevřel stránku bez vybrané role
+const playerRoleRaw = urlParams.get('role') || '--DM--'; 
+window.PLAYER_ROLE = playerRoleRaw.replace(/^--|--$/g, '');
+
+// 1. Zjistíme kampaň z paměti a určíme její správný název
+const currentCampaignTitle = localStorage.getItem('selectedCampaign') || 'rise';
+const CAMPAIGN_NAMES = {
+    'rise': 'Rise of the Empire',
+    'neverwitch': 'Neverwitch all along',
+    'redcity': 'Red City of Faith'
+};
+const finalCampaignName = CAMPAIGN_NAMES[currentCampaignTitle] || 'Rise of the Empire';
+
+// 2. Rozšířený slovník všech hráčů (aby to nepsalo undefined)
+const PLAYERS_MAP = {
+    "DM": "Game Master",
+    // Rise of the Empire
+    "ALGAAR": "Algaar",
+    "KRAG": "Krag",
+    "LYBA": "Lyba",
+    "RAAL": "Raal",
+    "TOHRU": "Tohru",
+    // Neverwitch
+    "HENRY": "Henry Bastle",
+    "MELORIA": "Meloria",
+    "JACHYM": "Jáchym Podolský",
+    // Red City
+    "JOZA": "Józa",
+    "GOLIATH": "Goliath"
+};
+
+// 3. Složíme a přepíšeme hlavní nadpis
+const header = document.getElementById('main_header');
+// Pokud postavu ve slovníku náhodou nenajde, napíše aspoň její ID, místo "undefined"
+const playerName = PLAYERS_MAP[window.PLAYER_ROLE] || window.PLAYER_ROLE; 
+
+if (header) {
+    header.textContent = finalCampaignName + " - " + playerName;
+}
+
+//const urlParams = new URLSearchParams(window.location.search);
+//const playerRole = urlParams.get('role');
 
   // Store role globally if needed
-window.PLAYER_ROLE = playerRole.replace(/^--|--$/g, '');
+//window.PLAYER_ROLE = playerRole.replace(/^--|--$/g, '');
 
-const header = document.getElementById('main_header');
-let tag = window.PLAYER_ROLE;
-header.textContent += " - " + PLAYERS_MAP[window.PLAYER_ROLE];
+//const header = document.getElementById('main_header');
+//let tag = window.PLAYER_ROLE;
+//header.textContent += " - " + PLAYERS_MAP[window.PLAYER_ROLE];
 /*loadMarkdownPageLocal('session1');
 const ul = document.querySelector('.collapsible-list');
     const li = document.createElement('li');
