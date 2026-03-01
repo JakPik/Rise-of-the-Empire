@@ -21,3 +21,9 @@ const PLAYERS_REDCITY = {
   JOZA: "Józa",
   GOLIATH: "Goliath"
 };
+
+const CAMPAIGNS = {
+  RISE: "Rise of the Empire",
+  NEVERWITCH: "Neverwitch all along",
+  REDCITY: "Red City of Faith"
+};
