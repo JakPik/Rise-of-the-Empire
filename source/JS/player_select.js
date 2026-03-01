@@ -1,28 +1,42 @@
-// Pomocné funkce pro rotující pozadí
+const max = 25;
+let idx = randomInt(0, 24);
+
 function randomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
-
-let max = 25;
-let idx = randomInt(0, 24);
 
 function updateBackground() {
     const ref = 'Images/page_ui/background_' + idx + '.jpg';
     document.body.style.backgroundImage = `url(${ref})`;
 }
 
-// Vše spustíme, až když je stránka plně načtená
-document.addEventListener("DOMContentLoaded", function() {
-    
-    // --- 1. SPUŠTĚNÍ ROTUJÍCÍHO POZADÍ ---
-    updateBackground();
-    setInterval(() => {
-      idx = (idx + 1) % max;
-      updateBackground();
-    }, 10000);
+function roleSelectConstructor(dictonary, title) {
+    const titleElement = document.getElementById('campaign-title');
+    const rolesContainer = document.getElementById('roles');
 
+    if (titleElement) {
+        titleElement.textContent = CAMPAIGNS[title] || 'Campaign';
+    }
 
-    // --- 2. DYNAMICKÝ VÝBĚR POSTAV PODLE KAMPANĚ ---
+    if (rolesContainer) {
+        rolesContainer.innerHTML = ''; // Vyčistíme původní "natvrdo" napsaná tlačítka
+
+        for (const roleId in dictonary) {
+            const roleDiv = document.createElement('div');
+            roleDiv.className = 'role';
+            roleDiv.textContent = dictonary[roleId] || "Unknown Player";
+
+            // Co se stane po kliknutí na konkrétního hráče
+            roleDiv.addEventListener('click', () => {
+                window.location.href = `notes.html?role=${encodeURIComponent(roleId)}`;
+            });
+
+            rolesContainer.appendChild(roleDiv);
+        };
+    }
+}
+
+function loadRoleSelect() {
     const currentCampaign = localStorage.getItem('selectedCampaign');
 
     switch (currentCampaign) {
@@ -38,6 +52,20 @@ document.addEventListener("DOMContentLoaded", function() {
     default:
         break;
     }
+}
+
+// Vše spustíme, až když je stránka plně načtená
+document.addEventListener("DOMContentLoaded", function() {
+    
+    // --- 1. SPUŠTĚNÍ ROTUJÍCÍHO POZADÍ ---
+    updateBackground();
+    setInterval(() => {
+      idx = (idx + 1) % max;
+      updateBackground();
+    }, 10000);
+
+    // --- 2. DYNAMICKÝ VÝBĚR POSTAV PODLE KAMPANĚ ---
+    loadRoleSelect();
     
     // --- 3. HUDBA NA POZADÍ ---
     const bgMusic = document.getElementById("bgMusic");
@@ -64,27 +92,3 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-function roleSelectConstructor(dictonary, title) {
-    const titleElement = document.getElementById('campaign-title');
-    if (titleElement) {
-        titleElement.textContent = CAMPAIGNS[title] || 'Campaign';
-    }
-
-    const rolesContainer = document.getElementById('roles');
-    if (rolesContainer) {
-        rolesContainer.innerHTML = ''; // Vyčistíme původní "natvrdo" napsaná tlačítka
-
-        dictonary.forEach(roleInfo => {
-            const roleDiv = document.createElement('div');
-            roleDiv.className = 'role';
-            roleDiv.textContent = dictonary[roleInfo.id] || "Unknown Player";
-
-            // Co se stane po kliknutí na konkrétního hráče
-            roleDiv.addEventListener('click', () => {
-                window.location.href = `notes.html?role=${encodeURIComponent(roleInfo.id)}`;
-            });
-
-            rolesContainer.appendChild(roleDiv);
-        });
-    }
-}
