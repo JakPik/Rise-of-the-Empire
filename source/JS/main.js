@@ -155,7 +155,7 @@ function init() {
       break;
     case 'NEVERWITCH':
       header.textContent += " - " + testGetValue(PLAYERS_NEVERWITCH, window.PLAYER_ROLE);
-      navFileToLoad = 'source/json/NavBarNeverw.json';
+      navFileToLoad = 'source/json/NavBarNever.json';
       break;
     case 'REDCITY':
       header.textContent += " - " + testGetValue(PLAYERS_REDCITY, window.PLAYER_ROLE);
