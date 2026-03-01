@@ -26,13 +26,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const currentCampaign = localStorage.getItem('selectedCampaign');
 
     switch (currentCampaign) {
-    case 'rise':
+    case 'RISE':
         roleSelectConstructor(PLAYERS_RISE, currentCampaign);
         break;
-    case 'neverwitch':
+    case 'NEVERWITCH':
         roleSelectConstructor(PLAYERS_NEVERWITCH, currentCampaign);
         break;
-    case 'redcity':
+    case 'REDCITY':
         roleSelectConstructor(PLAYERS_REDCITY, currentCampaign);
         break;
     default:
