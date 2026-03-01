@@ -354,16 +354,14 @@ window.addEventListener('resize', updateCarousel);
 
 
 const urlParams = new URLSearchParams(window.location.search);
-const playerRole = urlParams.get('role');
 
-  // Store role globally if needed
-window.PLAYER_ROLE = playerRole.replace(/^--|--$/g, '');
+window.PLAYER_ROLE = urlParams.get('role');
 
 const header = document.getElementById('main_header');
 
 const currentCampaign = localStorage.getItem('selectedCampaign') || 'rise'
 let navFileToLoad = '';
-
+header.textContent = campaignData[currentCampaign] || campaignData['rise']
 switch (currentCampaign) {
   case 'rise':
     header.textContent += " - " + testGetValue(PLAYERS_RISE, window.PLAYER_ROLE);
