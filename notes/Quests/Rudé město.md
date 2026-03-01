@@ -2,7 +2,7 @@
 data-name="Rudé Město"
 data-who="kapitán Dahra"
 data-where="okolí Moraby"
-data-reward=" - "
+data-reward=" 200GP (per person) "
 data-deadline="Princova smrt"
 data-status="Probýhající"
 data-description="Rada města Moraba vás požádala o poskytnutí ochrany princovy na jeho brzké výpravě."
